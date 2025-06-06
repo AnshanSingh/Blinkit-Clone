@@ -1,0 +1,84 @@
+.navbar-brand {
+  color:#f5d000;;
+}
+.container span {
+  color: #0c831f;
+}
+.img-main img {
+  width: 100%;
+  max-width: 1300px;
+  height: 300px;
+  margin: 20px;
+  border-radius: 10px;
+} 
+.corner {
+  position: absolute;
+  top: 18px;
+  left: 18%;
+  color: white;
+  max-width: 80%;
+}
+.box1{
+    background-color: #538CEE;;
+}
+.box2{
+    background-color: #C4EFAE;
+}
+.box3{
+    background-color: cornflowerblue;
+}
+.box4{
+    background-color: yellowgreen;
+}
+
+ .flex-wrap-cards {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .flex-card {
+    flex: 0 0 calc(50% - 10px); 
+    max-width: calc(50% - 10px);
+  }
+
+  @media (min-width: 576px) {
+    .flex-card {
+      flex: 0 0 calc(33.33% - 10px);
+      max-width: calc(33.33% - 10px);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .flex-card {
+      flex: 0 0 calc(25% - 10px); 
+      max-width: calc(25% - 10px);
+    }
+  }
+
+  @media (min-width: 992px) {
+    .flex-card {
+      flex: 0 0 calc(20% - 10px); /* 5 per row */
+      max-width: calc(20% - 10px);
+    }
+  }
+
+  .card-img-top {
+    margin-left: 30px;
+    width: 60%;
+    height: auto;
+  }
+  .google{
+    width: 180px;
+    height: 40px;
+    margin-left: 10px;
+  }
+    .card-body img{
+    width: 60px;
+    /* height: 40px; */
+    margin-left: 10px;
+  }
+  .card-body .play{
+     width: 130px;
+    height: 130px;
+    margin-left: 10px;
+  }
