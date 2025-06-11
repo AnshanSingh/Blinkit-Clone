@@ -6,15 +6,14 @@
 }
 .img-main img {
   width: 100%;
-  max-width: 1145px;
+  max-width: 1300px;
   height: 300px;
   margin: 20px;
   border-radius: 10px;
 }
-
 .corner {
   position: absolute;
-  top: 18px;
+  top: 40px;
   left: 18%;
   color: white;
   max-width: 80%;
@@ -55,9 +54,9 @@
   width: 60%;
   height: auto;
 }
-.card-body .google {
-  width: 130px;
-  height: 35px;
+.google {
+  width: 180px;
+  height: 40px;
   margin-left: 10px;
 }
 .card-body img {
@@ -66,24 +65,9 @@
   margin-left: 10px;
 }
 .card-body .play {
-  width: 135px;
+  width: 130px;
   height: 130px;
   margin-left: 10px;
-}
-@media (max-width: 576px) {
-  .card-title {
-    font-size: 14px;
-  }
-
-  .text p,
-  .text span {
-    font-size: 12px;
-  }
-
-  .btn {
-    font-size: 12px;
-    padding: 4px 10px;
-  }
 }
 
 /* scroll system */
@@ -143,7 +127,7 @@
   }
 }
 /* footer */
-.footer {
+/* .footer {
   font-size: 1rem;
 }
 
@@ -171,4 +155,4 @@
     width: 40px;
     height: auto;
   }
-}
+} */
