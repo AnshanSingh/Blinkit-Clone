@@ -95,7 +95,8 @@
 .grocery {
   max-width: 100%;
   width: 1300px;
-  height: auto;
+  height: 540px;
+  /* height: auto; */
   margin: 0 auto;
 }
 .sells .col-2 {
@@ -119,9 +120,39 @@
 .HouseHold {
   max-width: 100%;
   width: 1300px;
-  height: auto;
+  height: 290px;
   margin: 0 auto;
 }
+/* order */
+.shop-img img {
+  width: 100%;
+  max-width: 1300px;
+  height: 300px;
+  margin: 20px;
+  border-radius: 10px;
+}
+.order {
+  position: absolute;
+  top: 40px;
+  left: 18%;
+  color: white;
+  max-width: 80%;
+}
+@media (max-width: 576px) {
+  .shop-img img {
+    width: 94%;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+  }
+
+  .order {
+    left: 10%;
+    top: 30px;
+    max-width: 80%;
+  }
+}
+/* kitchen */
 @media (max-width: 768px) {
   .kitchen-img img {
     width: 110px;
@@ -131,12 +162,12 @@
   }
   .grocery {
     width: 94%;
-    height: 375px;
+    height: 420px;
     margin: 10px auto;
     border: none !important;
   }
   .HouseHold {
-    height: 210px;
+    height: 245px;
     width: 94%;
     margin: 10px auto;
   }

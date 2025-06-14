@@ -1,0 +1,38 @@
+.category-scroll {
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+.category-scroll::-webkit-scrollbar {
+  height: 5px;
+}
+.category-scroll::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+.category-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.banner-box {
+  max-height: 430px;
+}
+.category {
+  position: relative;
+}
+.main-wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: cornflowerblue;
+}
+@media (max-width: 768px) {
+  .custom-card {
+    width: 110px;
+    height: 60px;
+  }
+
+  .custom-img {
+    width: 110px;
+    height: 70px;
+  }
+}
