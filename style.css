@@ -152,6 +152,101 @@
     max-width: 80%;
   }
 }
+
+style.css .event-box img {
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.Flavours {
+  position: relative;
+}
+
+.card h6 {
+  font-size: 14px;
+}
+
+.card p {
+  font-size: 13px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-content: center;
+}
+
+.card-body {
+  text-align: center;
+  align-items: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.card {
+  width: 100%;
+}
+
+.card-img-top {
+  width: 90%;
+  height: 200px;
+  /* or 250px */
+  object-fit: cover;
+}
+
+@media (min-width: 1200px) {
+  .Flavours {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Reduce card padding on mobile */
+  .card {
+    padding: 0 !important;
+    /* margin: 0 !important; */
+    margin-top: 30px;
+  }
+
+  /* Reduce inner card-body padding */
+  .card-body {
+    position: static;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+  }
+
+  .card-body .d-flex {
+    gap: 4px;
+    justify-content: center;
+  }
+
+  .card h6 {
+    font-size: 13px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .card-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.card {
+  width: 100%;
+}
 /* kitchen */
 @media (max-width: 768px) {
   .kitchen-img img {
@@ -335,33 +430,3 @@
     width: 140px;
   }
 }
-/* footer */
-/* .footer {
-  font-size: 1rem;
-}
-
-@media (max-width: 768px) {
-  .footer-lists {
-    display: none !important;
-  }
-
-  .footer {
-    font-size: 0.85rem;
-  }
-
-  .card-title {
-    font-size: 1rem;
-  }
-
-  .card-body a,
-  .card-body img {
-    display: inline-block;
-    margin-right: 10px;
-    margin-bottom: 8px;
-  }
-
-  .card-body img {
-    width: 40px;
-    height: auto;
-  }
-} */
