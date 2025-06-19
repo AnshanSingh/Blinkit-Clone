@@ -19,10 +19,12 @@
 }
 .category {
   position: relative;
+  /* margin-top: 200px; */
 }
 .main-wrapper {
   max-width: 1300px;
   margin: 0 auto;
+  /* padding: 140px; */
   background-color: cornflowerblue;
 }
 @media (max-width: 768px) {
@@ -36,3 +38,6 @@
     height: 70px;
   }
 }
+/* .fix{
+  /* background-color: cornflowerblue; 
+} */

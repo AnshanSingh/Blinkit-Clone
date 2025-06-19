@@ -14,181 +14,307 @@
 </head>
 
 <body>
-    <div id="navbar-placeholder"></div>
+    <!-- <div id="navbar-placeholder"></div> -->
 
-    <div class="border p-2 mt-2 seller">
-        <h4 class="fs-6 fs-md-4 fw-bold ms-0 ms-md-4">Bestsellers</h4>
-        <div class="row d-flex justify-content-evenly align-items-center sell">
-            <div class="col-2 border text-center bg-light custom-box">
-                <div class="img-grid">
-                    <img src="https://www.jiomart.com/images/product/original/590003309/potato-1-kg-pack-product-images-o590003309-p590003309-1-202409251835.jpg?im=Resize=(420,420)"
-                        alt="" />
-                    <img src="https://png.pngtree.com/png-clipart/20230113/ourmid/pngtree-red-fresh-tomato-with-green-leaf-png-image_6561484.png"
-                        class="bg-white rounded-2" alt="" />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN9-OuOtsl4iecwrOQ4c00iOqngoUdBz1dzQ&s"
-                        alt="" />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN9-OuOtsl4iecwrOQ4c00iOqngoUdBz1dzQ&s"
-                        alt="" />
+
+    <!-- navbar -->
+
+    <div class="main-wrapper py-3">
+        <div class="container header-top">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <div class="fw-bold">Blinkit in</div>
+                    <div class="d-flex align-items-center">
+                        <h3 class="fw-bold mb-0 me-2">19 minute</h3>
+                        <span class="surge-badge">Surge applicable</span>
+                    </div>
+                    <div>Block D, Sector 10, Meerut Divison</div>
                 </div>
-                <div class="more-container mx-auto d-block d-md-none">
-                    <p class="text-center mb-0" style="font-size: 10px">+124 more</p>
+                <div class="d-flex align-items-center gap-3">
+                    <!-- <i class="fa-solid fa-wallet"></i> -->
+                    <img src="https://cdn-icons-png.flaticon.com/512/10149/10149443.png" alt="" width="30"
+                        height="30" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/9131/9131478.png" alt="" width="30" height="30" />
                 </div>
-                <h4 class="text-center fs-6 fs-md-4">Vegetable & Fruits</h4>
             </div>
-            <div class="col-2 border text-center bg-light custom-box">
-                <div class="img-grid">
-                    <img src="https://www.jiomart.com/images/product/original/590003309/potato-1-kg-pack-product-images-o590003309-p590003309-1-202409251835.jpg?im=Resize=(420,420)"
-                        alt="" />
-                    <img src="https://png.pngtree.com/png-clipart/20230113/ourmid/pngtree-red-fresh-tomato-with-green-leaf-png-image_6561484.png"
-                        class="bg-white rounded-2" alt="" />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN9-OuOtsl4iecwrOQ4c00iOqngoUdBz1dzQ&s"
-                        alt="" />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN9-OuOtsl4iecwrOQ4c00iOqngoUdBz1dzQ&s"
-                        alt="" />
+        </div>
+
+
+        <div class="sticky-wrapper" id="stickyElement">
+            <div class="container my-3">
+                <div class="input-group rounded-pill bg-white px-3 py-2 align-items-center">
+                    <span class="input-group-text bg-white border-0">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <input type="text" class="form-control border-0" placeholder='Search "diaper xxl"'
+                        aria-label="Search" />
+                    <span class="input-group-text bg-white border-0"></span>
                 </div>
-                <div class="more-container mx-auto d-block d-md-none">
-                    <p class="text-center mb-0" style="font-size: 10px">+124 more</p>
-                </div>
-                <h4 class="text-center fs-6 fs-md-4">Vegetable & Fruits</h4>
             </div>
-            <div class="col-2 border text-center bg-light custom-box">
-                <div class="img-grid">
-                    <img src="https://www.jiomart.com/images/product/original/590003309/potato-1-kg-pack-product-images-o590003309-p590003309-1-202409251835.jpg?im=Resize=(420,420)"
-                        alt="" />
-                    <img src="https://png.pngtree.com/png-clipart/20230113/ourmid/pngtree-red-fresh-tomato-with-green-leaf-png-image_6561484.png"
-                        class="bg-white rounded-2" alt="" />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN9-OuOtsl4iecwrOQ4c00iOqngoUdBz1dzQ&s"
-                        alt="" />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN9-OuOtsl4iecwrOQ4c00iOqngoUdBz1dzQ&s"
-                        alt="" />
+            <!-- Categories Menu -->
+            <div class="container mb-3">
+                <div
+                    class="d-flex justify-content-between text-white text-center overflow-auto gap-3 py-2 category-scroll">
+                    <div><i class="fa-solid fa-bag-shopping"></i> <br>
+                        <small>All</small>
+                    </div>
+
+                    <div><i class="fa-solid fa-list"></i> <br>
+                        <small>Electronics</small>
+                    </div>
+
+                    <div><i class="fa-solid fa-headphones"></i> <br>
+                        <small>Beauty</small>
+                    </div>
+
+                    <div><i class="fa-solid fa-book"></i> <br>
+                        <small>Decor</small>
+                    </div>
+
+                    <div><i class="fa-solid fa-child"></i> <br>
+                        <small>Kids</small>
+                    </div>
+
+                    <div><i class="fa-solid fa-gift"></i> <br>
+                        <small>Gifting</small>
+                    </div>
+
+                    <div><i class="fa-solid fa-money-bill"></i> <br>
+                        <small>Premium</small>
+                    </div>
+
                 </div>
-                <div class="more-container mx-auto d-block d-md-none">
-                    <p class="text-center mb-0" style="font-size: 10px">+124 more</p>
+            </div>
+        </div>
+
+
+
+        <!-- father's day banner -->
+
+        <div class="container mb-4 category">
+            <div class="position-relative rounded-4 overflow-hidden banner-box text-white text-center">
+                <!-- <img src="https://media.istockphoto.com/id/1317628039/photo/elegant-modern-fathers-day-greeting-card-design-with-3d-gift-box-mustache-and-sunglasses-on.jpg?s=2048x2048&w=is&k=20&c=F_UzdgQYKWsu79l9lsXrHu3FLNdnQR2d1Z8bHs0K1JM="class="img-fluid w-100" alt=""> -->
+                <!-- <div class="position-absolute top-0 start-50 translate-middle-x mt-5"> -->
+                <div>
+                    <h4 class="fst-italic fw-bold">CELEBRATE <br> FATHER'S DAY</h4>
+                    <p class="mb-0">on 15th june</p>
                 </div>
-                <h4 class="text-center fs-6 fs-md-4">Vegetable & Fruits</h4>
             </div>
 
-            <div class="col-2 border text-center bg-light mt-0 mt-md-3 custom-box">
-                <div class="img-grid">
-                    <img src="https://www.jiomart.com/images/product/original/590003309/potato-1-kg-pack-product-images-o590003309-p590003309-1-202409251835.jpg?im=Resize=(420,420)"
-                        alt="" />
-                    <img src="https://png.pngtree.com/png-clipart/20230113/ourmid/pngtree-red-fresh-tomato-with-green-leaf-png-image_6561484.png"
-                        class="bg-white rounded-2" alt="" />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN9-OuOtsl4iecwrOQ4c00iOqngoUdBz1dzQ&s"
-                        alt="" />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN9-OuOtsl4iecwrOQ4c00iOqngoUdBz1dzQ&s"
-                        alt="" />
+
+            <!-- Three category box -->
+
+            <!-- <div class="container position-absolute bottom-0 start-50 translate-middle-x"> -->
+            <div class="container mt-4">
+                <div class="d-flex justify-content-between gap-2">
+                    <div class="card text-center custom-card border-0 shadow-sm h-50" style="width: 30%;height: 230px;">
+                        <img src="https://images.pexels.com/photos/16412204/pexels-photo-16412204/free-photo-of-bag-with-flowers-on-windowsill.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            class="rounded-3 custom-img" style="height: 230px" alt="">
+                    </div>
+
+                    <div class="card text-center custom-card border-0 shadow-sm" style="width: 30%; height: 230px;">
+                        <img src="https://images.pexels.com/photos/5982459/pexels-photo-5982459.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            class="rounded-3 custom-img" style="height: 230px;" alt="">
+                    </div>
+
+                    <div class="card text-center custom-card border-0 shadow-sm" style="width: 30%; height: 230px;">
+                        <img src="https://images.pexels.com/photos/26654644/pexels-photo-26654644/free-photo-of-still-life-with-vase-with-flowers-small-bird-and-book.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="rounded-3 custom-img" style="height: 230px ;" alt="">
+                    </div>
+
                 </div>
-                <div class="more-container mx-auto d-block d-md-none">
-                    <p class="text-center mb-0" style="font-size: 10px">+124 more</p>
-                </div>
-                <h4 class="text-center fs-6 fs-md-4">Vegetable & Fruits</h4>
             </div>
-            <div class="col-2 border text-center bg-light mt-0 mt-md-3 custom-box">
-                <div class="img-grid">
-                    <img src="https://www.jiomart.com/images/product/original/590003309/potato-1-kg-pack-product-images-o590003309-p590003309-1-202409251835.jpg?im=Resize=(420,420)"
-                        alt="" />
-                    <img src="https://png.pngtree.com/png-clipart/20230113/ourmid/pngtree-red-fresh-tomato-with-green-leaf-png-image_6561484.png"
-                        class="bg-white rounded-2" alt="" />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN9-OuOtsl4iecwrOQ4c00iOqngoUdBz1dzQ&s"
-                        alt="" />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN9-OuOtsl4iecwrOQ4c00iOqngoUdBz1dzQ&s"
-                        alt="" />
+        </div>
+
+        <!-- pop-quiz -->
+        <div class="container mb-4">
+            <div class="d-flex justify-content-between align-items-center p-3 rounded-3"
+                style="background-color: #ffe4e1;">
+                <div>
+                    <h6 class="mb-1 fw-bold">Play & Win ₹100 OFF</h6>
+                    <p class="mb-0 small">Answer 3 simple questions to win</p>
                 </div>
-                <div class="more-container mx-auto d-block d-md-none">
-                    <p class="text-center mb-0" style="font-size: 10px">+124 more</p>
+                <div>
+                    <i class="fa-solid fa-chevron-right"></i>
                 </div>
-                <h4 class="text-center fs-6 fs-md-4">Vegetable & Fruits</h4>
-            </div>
-            <div class="col-2 border text-center bg-light mt-0 mt-md-3 custom-box">
-                <div class="img-grid">
-                    <img src="https://www.jiomart.com/images/product/original/590003309/potato-1-kg-pack-product-images-o590003309-p590003309-1-202409251835.jpg?im=Resize=(420,420)"
-                        alt="" />
-                    <img src="https://png.pngtree.com/png-clipart/20230113/ourmid/pngtree-red-fresh-tomato-with-green-leaf-png-image_6561484.png"
-                        class="bg-white rounded-2" alt="" />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN9-OuOtsl4iecwrOQ4c00iOqngoUdBz1dzQ&s"
-                        alt="" />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN9-OuOtsl4iecwrOQ4c00iOqngoUdBz1dzQ&s"
-                        alt="" />
-                </div>
-                <div class="more-container mx-auto d-block d-md-none">
-                    <p class="text-center mb-0" style="font-size: 10px">+124 more</p>
-                </div>
-                <h4 class="text-center fs-6 fs-md-4">Vegetable & Fruits</h4>
             </div>
         </div>
     </div>
 
+
+    <!--  -->
+
+    <div class="border p-2 mt-2 seller">
+        <h4 class="fs-6 fs-md-4 fw-bold ms-0 ms-md-4">Bestsellers</h4>
+        <div class="row d-flex justify-content-evenly align-items-center sell">
+            <div class="col-2 border text-center bg-light custom-box" data-url="Vegatables.html">
+                <div class="img-grid">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4swR-gn2EFNYPXD5IIJF2P7lbu_2dWf-aHA&s"
+                        class="bg-white rounded-2" alt="" />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTI-mgt9Qul8XV6WDY2OqOTWkKGyh1RjEhJA&s"
+                        class="bg-white rounded-2" alt="" />
+                    <img src="https://pngimg.com/d/broccoli_PNG2820.png" class="bg-white rounded-2" alt="" />
+                    <img src="https://img.lovepik.com/free-png/20211216/lovepik-bitter-melon-fresh-vegetables-png-image_401678112_wh1200.png"
+                        class="bg-white rounded-2" alt="" />
+                </div>
+                <div class="more-container mx-auto d-block d-md-none">
+                    <p class="text-center mb-0" style="font-size: 10px">+124 more</p>
+                </div>
+                <h4 class="text-center fs-6 fs-md-4">Vegetable & Fruits</h4>
+            </div>
+            <div class="col-2 border text-center bg-light custom-box" data-url="Vegatables.html">
+                <div class="img-grid">
+                    <img src="https://png.pngtree.com/png-vector/20250129/ourmid/pngtree-ghee-in-a-jar-isolated-on-transparent-background-pure-png-image_15363951.png"
+                        alt="" />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHQcKgZpXMyvv2-SYYdTFUWI0t8VEB56vzKom_QhRND-tqCSKFzndjnl1Xgoy8NRofDiU&usqp=CAU"
+                        class="bg-white rounded-2" alt="" />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrbx-iyKwOje0VwgQEErumbWYFhrX3tUKqXA&s"
+                        alt="" />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbp-9gPqZ2RXB-ad1m5aOeLASpS3sH7vmADQ&s"
+                        alt="" />
+                </div>
+                <div class="more-container mx-auto d-block d-md-none">
+                    <p class="text-center mb-0" style="font-size: 10px">+124 more</p>
+                </div>
+                <h4 class="text-center fs-6 fs-md-4">Oil, Ghee & Masala</h4>
+            </div>
+            <div class="col-2 border text-center bg-light custom-box" data-url="Vegatables.html">
+                <div class="img-grid">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/050/754/301/small_2x/an-image-of-toast-with-eggs-and-vegetables-png.png"
+                        alt="" />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR74_DqrhQ76zMS2InH_L6S9W4Uzm7vyXwp9w&s"
+                        class="bg-white rounded-2" alt="" />
+                    <img src="https://cdn.vectorstock.com/i/500p/35/77/cartoon-color-fresh-eggs-in-a-cardboard-box-vector-46613577.jpg"
+                        alt="" />
+                    <img src="https://cdn.zeptonow.com/production/ik-seo/tr:w-400,ar-1500-1500,pr-true,f-auto,q-80/cms/product_variant/e44c5b03-537c-4bd9-b9c6-db11e9619260/Britannia-Milk-Slice-White-Bread.jpeg"
+                        alt="" />
+                </div>
+                <div class="more-container mx-auto d-block d-md-none">
+                    <p class="text-center mb-0" style="font-size: 10px">+171 more</p>
+                </div>
+                <h4 class="text-center fs-6 fs-md-4">Bread & Eggs</h4>
+            </div>
+
+            <div class="col-2 border text-center bg-light mt-0 mt-md-3 custom-box" data-url="Vegatables.html">
+                <div class="img-grid">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTacwJ08uKrW-ygO5VHwgaCgw-quatz2wuRRg&s"
+                        class="bg-white rounded-2" alt="" />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTacwJ08uKrW-ygO5VHwgaCgw-quatz2wuRRg&s"
+                        class="bg-white rounded-2" alt="" />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTacwJ08uKrW-ygO5VHwgaCgw-quatz2wuRRg&s"
+                        alt="" />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTacwJ08uKrW-ygO5VHwgaCgw-quatz2wuRRg&s"
+                        alt="" />
+                </div>
+                <div class="more-container mx-auto d-block d-md-none">
+                    <p class="text-center mb-0" style="font-size: 10px">+286 more</p>
+                </div>
+                <h4 class="text-center fs-6 fs-md-4">Chips & Namkeen</h4>
+            </div>
+            <div class="col-2 border text-center bg-light mt-0 mt-md-3 custom-box" data-url="Vegatables.html">
+                <div class="img-grid">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrq9wW9UlAibOkEL8oMhipdPT0MA5dSpmlBQ&s"
+                        class="bg-white rounded-2" alt="" />
+                    <img src="https://www.bbassets.com/media/uploads/p/l/40120174_6-fortune-chakki-fresh-atta-100-atta-0-maida.jpg"
+                        class="bg-white rounded-2" alt="" />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgTLjbqbYV27p35jv3cIrwBR4xHsPAMZUI5Q&s"
+                        alt="" />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlui6uGHoqMAZ30Hyqmg6Pm92N7kakoI_zA03Z6w7MqbPuXA0ZHZuM1xSJl4u0K0zON4Q&usqp=CAU"
+                        alt="" />
+                </div>
+                <div class="more-container mx-auto d-block d-md-none">
+                    <p class="text-center mb-0" style="font-size: 10px">+36 more</p>
+                </div>
+                <h4 class="text-center fs-6 fs-md-4">Atta , Rice & Dal</h4>
+            </div>
+            <div class="col-2 border text-center bg-light mt-0 mt-md-3 custom-box" data-url="Vegatables.html">
+                <div class="img-grid">
+                    <img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/41jl2nGAUiL._FMwebp__SR300,300__TTD_.jpg"
+                        alt="" />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDmfTwcd_xP2m3609pwj_osPLtfJUkkfDpz0RpR6Xu5tC7ht-YhFpEece1w6yoU0tihNc&usqp=CAU"
+                        class="bg-white rounded-2" alt="" />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDmfTwcd_xP2m3609pwj_osPLtfJUkkfDpz0RpR6Xu5tC7ht-YhFpEece1w6yoU0tihNc&usqp=CAU"
+                        alt="" />
+                    <img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/41jl2nGAUiL._FMwebp__SR300,300__TTD_.jpg"
+                        alt="" />
+                </div>
+                <div class="more-container mx-auto d-block d-md-none">
+                    <p class="text-center mb-0" style="font-size: 10px">+142 more</p>
+                </div>
+                <h4 class="text-center fs-6 fs-md-4">Bakery & Biscuits</h4>
+            </div>
+        </div>
+    </div>
     <!-- Feature this week -->
 
     <div class="container mt-2">
         <h4 class="fs-6 fs-md-4 fw-bold ms-0 ms-md-4">Featured this week</h4>
         <div class="scroll-container">
             <!-- Repeat this  -->
-            <div class="flex-week">
+            <div class="flex-week" data-url="oil.html">
                 <div class="feature">
                     <p>Featured</p>
                     <img src="https://images.pexels.com/photos/12026055/pexels-photo-12026055.jpeg?auto=compress&cs=tinysrgb&w=600"
                         alt="Milk" />
                 </div>
             </div>
-            <div class="flex-week">
+            <div class="flex-week" data-url="oil.html">
                 <div class="feature">
                     <p>Featured</p>
                     <img src="https://images.pexels.com/photos/8534088/pexels-photo-8534088.jpeg?auto=compress&cs=tinysrgb&w=600"
                         alt="Milk" />
                 </div>
             </div>
-            <div class="flex-week">
+            <div class="flex-week" data-url="oil.html">
                 <div class="feature">
                     <p>Featured</p>
                     <img src="https://images.pexels.com/photos/21424632/pexels-photo-21424632/free-photo-of-modern-smartphone-on-wooden-table.jpeg?auto=compress&cs=tinysrgb&w=600"
                         alt="Milk" />
                 </div>
             </div>
-            <div class="flex-week">
+            <div class="flex-week" data-url="oil.html">
                 <div class="feature">
                     <p>Featured</p>
                     <img src="https://images.pexels.com/photos/3819969/pexels-photo-3819969.jpeg?auto=compress&cs=tinysrgb&w=600"
                         alt="Coca cola" />
                 </div>
             </div>
-            <div class="flex-week">
+            <div class="flex-week" data-url="oil.html">
                 <div class="feature">
                     <p>Featured</p>
                     <img src="https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=600"
                         alt="Face Wash" />
                 </div>
             </div>
-            <div class="flex-week">
+            <div class="flex-week" data-url="oil.html">
                 <div class="feature">
                     <p>Featured</p>
                     <img src="https://images.pexels.com/photos/3373737/pexels-photo-3373737.jpeg?auto=compress&cs=tinysrgb&w=600"
                         alt="Milk" />
                 </div>
             </div>
-            <div class="flex-week">
+            <div class="flex-week" data-url="oil.html">
                 <div class="feature">
                     <p>Featured</p>
                     <img src="https://images.pexels.com/photos/2783873/pexels-photo-2783873.jpeg?auto=compress&cs=tinysrgb&w=600"
                         alt="Milk" />
                 </div>
             </div>
-            <div class="flex-week">
+            <div class="flex-week" data-url="oil.html">
                 <div class="feature">
                     <p>Featured</p>
                     <img src="https://images.pexels.com/photos/4389678/pexels-photo-4389678.jpeg?auto=compress&cs=tinysrgb&w=600"
                         alt="Milk" />
                 </div>
             </div>
-            <div class="flex-week">
+            <div class="flex-week" data-url="oil.html">
                 <div class="feature">
                     <p>Featured</p>
                     <img src="https://images.pexels.com/photos/2893635/pexels-photo-2893635.jpeg?auto=compress&cs=tinysrgb&w=600"
                         alt="Milk" />
                 </div>
             </div>
-            <div class="flex-week">
+            <div class="flex-week" data-url="oil.html">
                 <div class="feature">
                     <p>Featured</p>
                     <img src="https://images.pexels.com/photos/7881483/pexels-photo-7881483.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -404,19 +530,36 @@
 
     <!-- shop now -->
 
-    <div class="shop-img d-flex justify-content-center" style="position: relative">
-        <img src="https://wallpapercave.com/wp/Cy7YPNg.jpg" class="image-fluid rounded main shop" alt="" />
-        <div class="order">
-            <h1 class="fst-italic">FATHER'S DAY <br> SPECIALS </h1>
-            <p>Get cake and desserts in minute <br><strong>Enjoy 50% off</strong>on your first order </p>
-            <button class="border-0 rounded-2 p-1 bg-dark">
-                <a class="text-decoration-none text-white" href="#">Order now</a>
-            </button>
-        </div>
+    <div class="shop-img d-flex justify-content-center mt-3" style="position: relative">
+        <img src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+            class="image-fluid rounded main shop" alt="" />
+        <img src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+            class="image-fluid rounded main shop" alt="" />
+        <img src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+            class="image-fluid rounded main shop" alt="" />
+
+        <img src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+            class="image-fluid rounded main shop" alt="" />
+        <img src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+            class="image-fluid rounded main shop" alt="" />
+        <img src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+            class="image-fluid rounded main shop" alt="" />
+        <img src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+            class="image-fluid rounded main shop" alt="" />
+        <img src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+            class="image-fluid rounded main shop" alt="" />
+        <img src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+            class="image-fluid rounded main shop" alt="" />
+        <!-- <div class="order">
+        <h1 class="fst-italic">FATHER'S DAY <br> SPECIALS </h1>
+        <p>Get cake and desserts in minute <br><strong>Enjoy 50% off</strong>on your first order </p>
+        <button class="border-0 rounded-2 p-1 bg-warning">
+          <a class="text-decoration-none text-white" href="#"
+            >Order now</a
+          >
+        </button>
+      </div> -->
     </div>
-
-
-    <!-- Flavours Section -->
 
     <section class="flavour-section my-4 px-3">
         <div class="mx-auto" style="max-width: 1300px;">
@@ -431,7 +574,7 @@
                             class="img-fluid rounded" style="height: 140px; object-fit: contain;" alt="Product">
                         <div class="mt-2 d-flex flex-wrap gap-1">
                             <span class="badge rounded-pill bg-warning text-white">🍳 Egg</span>
-                            <span class="badge rounded-pill bg-secondary">Banana Bread</span>
+                            <span class="badge rounded-pill bg-secondary">Cake</span>
                         </div>
                         <h6 class="fw-semibold mt-2 text-truncate-2">
                             The Baker's Dozen Banana Walnut Pound C...
@@ -561,36 +704,95 @@
         <h5><strong>Events this week</strong></h5>
         <div class="row g-3">
             <div class="col-6 col-md-3">
-                <div class="event-box p-2 rounded text-white" style="background: #8b2b88;">
+                <div class="event-box p-2 rounded text-white" style="background: #8b2b88; height: 250px">
                     <h6>Smooth Skin Days</h6>
-                    <img src="https://images.pexels.com/photos/6847824/pexels-photo-6847824.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        class="img-fluid d-block mx-auto" alt="" style="height: 200px; width: 200px;">
+                    <img src="https://images.pexels.com/photos/3373739/pexels-photo-3373739.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        class="img-fluid" style="height: 200px; width: 300px;" alt="">
                 </div>
             </div>
             <div class="col-6 col-md-3">
-                <div class="event-box p-2 rounded text-white" style="background: #b0e0e6;">
+                <div class="event-box p-2 rounded text-white" style="background: #b0e0e6; height: 250px">
                     <h6>Chill and Munch</h6>
-                    <img src="https://images.pexels.com/photos/6847824/pexels-photo-6847824.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        class="img-fluid d-block mx-auto" alt="" style="height: 200px; width: 200px;">
+                    <img src="https://images.pexels.com/photos/3373739/pexels-photo-3373739.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        class="img-fluid" style="height: 200px; width: 300px;" alt="">
                 </div>
             </div>
             <div class="col-6 col-md-3">
-                <div class="event-box p-2 rounded text-white" style="background: #fcd303;">
-                    <h6> Candy Land</h6>
-                    <img src="https://images.pexels.com/photos/6847824/pexels-photo-6847824.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        class="img-fluid d-block mx-auto" alt="" style="height: 200px; width: 200px;">
+                <div class="event-box p-2 rounded text-white" style="background: #fcd303; height: 250px">
+                    <h6>Candy Land</h6>
+                    <img src="https://images.pexels.com/photos/3373739/pexels-photo-3373739.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        class="img-fluid" style="height: 200px; width: 300px;" alt="">
                 </div>
             </div>
             <div class="col-6 col-md-3">
-                <div class="event-box p-2 rounded text-white" style="background: #7b3f00;">
+                <div class="event-box p-2 rounded text-white" style="background: #7b3f00; height: 250px">
                     <h6>Fuel & Flex</h6>
-                    <img src="https://images.pexels.com/photos/6847824/pexels-photo-6847824.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        class="img-fluid d-block mx-auto" alt=""
-                        style="height: 200px; width: 200px; text-align: center;">
+                    <img src="https://images.pexels.com/photos/3373739/pexels-photo-3373739.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        class="img-fluid" style="height: 200px; width: 300px;" alt="">
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- shop by store -->
+
+
+    <div class="border p-2 mt-2 grocery">
+        <h4 class="fs-6 fs-md-4 fw-bold ms-0 ms-md-4">Shop by Store</h4>
+        <div class="row d-flex justify-content-evenly align-items-center sells">
+            <div class="col-2 border text-center custom-box">
+                <div class="kitchen-img">
+                    <img src="https://www.pexels.com/photo/cute-cat-sitting-on-street-18762927/" alt="" />
+                </div>
+                <p>Syrem</p>
+            </div>
+            <div class="col-2 border text-center custom-box">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/6847824/pexels-photo-6847824.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+
+                </div>
+                <p>Sun Cream</p>
+            </div>
+
+            <div class="col-2 border text-center custom-box">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/8990301/pexels-photo-8990301.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+
+                </div>
+                Bodywash
+            </div>
+            <!--  repeat -- -->
+            <div class="col-2 border text-center mt-3 custom-box">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/7814991/pexels-photo-7814991.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+                </div>
+                <p>Spray</p>
+            </div>
+            <div class="col-2 border text-center mt-3 custom-box">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/3373739/pexels-photo-3373739.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+
+                </div>
+                <p>Makeup Kit</p>
+            </div>
+
+            <div class="col-2 border text-center mt-3 custom-box">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/3762875/pexels-photo-3762875.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+
+                </div>
+                <p>Skincare</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- flavor -->
+
 
 
     <!-- first image -->
@@ -1013,6 +1215,34 @@
             <!--more cards -->
         </div>
     </div>
+
+    <!-- Footer Section -->
+    <div class="bottom-nav-wrapper">
+        <div class="bottom-nav">
+            <div class="nav-item active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-shopping-bag"></i>
+                <span>Order Again</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-th"></i>
+                <span>Categories</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-print"></i>
+                <span>Print</span>
+            </div>
+            <div class="nav-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2uL62HSH00g5Ue7jkje3j2nyNHbWyye91Lg&s"
+                    style="border-radius: 5px;" alt="bistro" />
+            </div>
+        </div>
+    </div>
+
+
     <div id="footer-placeholder"></div>
     <script>
         fetch("footer.html")
