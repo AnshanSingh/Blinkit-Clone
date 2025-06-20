@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="s.css" /> -->
+    <title>Document</title>
+</head>
+
+<style>
+    .custom-box {
+        height: 230px;
+        border-radius: 10px;
+        background-color: rgba(135, 207, 235, 0.863);
+    }
+
+    .sell .col-2 {
+        flex: 0 0 30%;
+        max-width: 30%;
+        margin-bottom: 10px;
+    }
+
+    .img-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        /* margin-top: 5px; */
+        gap: 6px;
+    }
+
+    .img-grid img {
+        margin-left: 30px;
+        width: 50%;
+        object-fit: contain;
+        border-radius: 8px;
+        background-color: white;
+        border-radius: 5px;
+    }
+
+    .more-container {
+        width: fit-content;
+        background-color: #f0f0f0;
+        /* Light gray background (optional) */
+        padding: 2px 8px;
+        border-radius: 10px;
+        font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+        .custom-box {
+            height: 165px;
+            /* margin-left: 10px; */
+        }
+
+        .sell .col-2 {
+            flex: 0 0 30%;
+            max-width: 30%;
+            margin-bottom: 10px;
+        }
+
+        .seller {
+            width: 94%;
+            height: 375px;
+            margin: 10px auto;
+        }
+
+        .img-grid img {
+            width: 47px;
+            margin: 0 auto;
+            /* justify-content: center; */
+        }
+    }
+
+    .flex-week {
+        position: relative;
+        width: 160px;
+        flex-shrink: 0;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        border: 2px solid blue;
+        /* overflow-x: auto; */
+    }
+
+    .feature p {
+        position: absolute;
+        left: 40px;
+        color: red;
+        width: 80px;
+        text-align: center;
+        border-radius: 6px;
+        background-color: white;
+    }
+
+    .flex-week img {
+        width: 96%;
+        height: 120px;
+        margin: 3px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .grocery {
+        max-width: 100%;
+        width: 1300px;
+        height: 540px;
+        /* height: auto; */
+        margin: 0 auto;
+    }
+
+    .sells .col-2 {
+        flex: 0 0 30%;
+        max-width: 30%;
+        margin-bottom: 10px;
+    }
+
+    .kitchen-img {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .kitchen-img img {
+        width: 100%;
+        max-width: 360px;
+        height: 200px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    /* kitchen */
+    @media (max-width: 768px) {
+        .kitchen-img img {
+            width: 110px;
+            height: 140px;
+            object-fit: cover;
+            gap: 2px;
+        }
+
+        .grocery {
+            width: 94%;
+            height: 420px;
+            margin: 10px auto;
+            border: none !important;
+        }
+
+        .HouseHold {
+            height: 245px;
+            width: 94%;
+            margin: 10px auto;
+        }
+    }
+
+
+    /* scroll system */
+    .scroll-container {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    /* Hide scrollbars */
+    .scroll-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .scroll-container {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+
+    /* footer */
+
+    .bottom-nav-wrapper {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        background: #fff;
+        /* display: flex; */
+        justify-content: space-around;
+        align-items: center;
+        border-top: 1px solid #ccc;
+        box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    .bottom-nav {
+        max-width: 1300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+        color: #444;
+    }
+
+    .nav-item i {
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+
+    .nav-item.active i {
+        color: #f4c10f;
+    }
+
+    .nav-item.active span {
+        font-weight: bold;
+        color: #000;
+    }
+
+    .nav-item img {
+        height: 25px;
+    }
+</style>
+
+<body>
+
+    <!-- Feature this week -->
+
+    <div class="container">
+        <h4 class="fs-6 fs-md-4 fw-bold ms-0 ms-md-4">Featured this week</h4>
+        <div class="scroll-container">
+            <!-- Repeat this  -->
+            <div class="flex-week" data-url="oil.html">
+                <div class="feature">
+                    <p>Featured</p>
+                    <img src="https://images.pexels.com/photos/12026055/pexels-photo-12026055.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Milk" />
+                </div>
+            </div>
+            <div class="flex-week" data-url="oil.html">
+                <div class="feature">
+                    <p>Featured</p>
+                    <img src="https://images.pexels.com/photos/8534088/pexels-photo-8534088.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Milk" />
+                </div>
+            </div>
+            <div class="flex-week" data-url="oil.html">
+                <div class="feature">
+                    <p>Featured</p>
+                    <img src="https://images.pexels.com/photos/21424632/pexels-photo-21424632/free-photo-of-modern-smartphone-on-wooden-table.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Milk" />
+                </div>
+            </div>
+            <div class="flex-week" data-url="oil.html">
+                <div class="feature">
+                    <p>Featured</p>
+                    <img src="https://images.pexels.com/photos/3819969/pexels-photo-3819969.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Coca cola" />
+                </div>
+            </div>
+            <div class="flex-week" data-url="oil.html">
+                <div class="feature">
+                    <p>Featured</p>
+                    <img src="https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Face Wash" />
+                </div>
+            </div>
+            <div class="flex-week" data-url="oil.html">
+                <div class="feature">
+                    <p>Featured</p>
+                    <img src="https://images.pexels.com/photos/3373737/pexels-photo-3373737.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Milk" />
+                </div>
+            </div>
+            <div class="flex-week" data-url="oil.html">
+                <div class="feature">
+                    <p>Featured</p>
+                    <img src="https://images.pexels.com/photos/2783873/pexels-photo-2783873.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Milk" />
+                </div>
+            </div>
+            <div class="flex-week" data-url="oil.html">
+                <div class="feature">
+                    <p>Featured</p>
+                    <img src="https://images.pexels.com/photos/4389678/pexels-photo-4389678.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Milk" />
+                </div>
+            </div>
+            <div class="flex-week" data-url="oil.html">
+                <div class="feature">
+                    <p>Featured</p>
+                    <img src="https://images.pexels.com/photos/2893635/pexels-photo-2893635.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Milk" />
+                </div>
+            </div>
+            <div class="flex-week" data-url="oil.html">
+                <div class="feature">
+                    <p>Featured</p>
+                    <img src="https://images.pexels.com/photos/7881483/pexels-photo-7881483.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Chair" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Grocery & Kitchen -->
+
+    <div class="border p-2 mt-2 grocery">
+        <h4 class="fs-6 fs-md-4 fw-bold ms-0 ms-md-4">Grocery & Kitchen</h4>
+        <div class="row d-flex justify-content-evenly align-items-center sells">
+            <div class="col-2 border text-center custom-box" data-url="masala.html">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/2802527/pexels-photo-2802527.jpeg" alt="" />
+                </div>
+                <p>Oil, Masala</p>
+            </div>
+
+            <div class="col-2 border text-center custom-box">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/7262898/pexels-photo-7262898.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+
+                </div>
+                <p>Vegetable</p>
+            </div>
+
+            <div class="col-2 border text-center  custom-box">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/10822135/pexels-photo-10822135.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+
+                </div>
+                <p>Oats</p>
+            </div>
+            <!--  repeat -- -->
+            <div class="col-2 border text-center mt-4 custom-box">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/6294242/pexels-photo-6294242.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+                </div>
+                <p>Eggs</p>
+            </div>
+            <div class="col-2 border text-center mt-4 custom-box">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/23801241/pexels-photo-23801241/free-photo-of-smiling-brunette-woman-holding-bag-of-flour.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+
+                </div>
+                <p>Kaju</p>
+            </div>
+
+            <div class="col-2 border text-center mt-4 custom-box">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/13418302/pexels-photo-13418302.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+
+                </div>
+                <p>Breads</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Snack and Drinks -->
+
+    <div class="border p-2 mt-2 grocery">
+        <h4 class="fs-6 fs-md-4 fw-bold ms-0 ms-md-4">Snacks & Drinks</h4>
+        <div class="row d-flex justify-content-evenly align-items-center sells">
+            <div class="col-2 border text-center custom-box">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/3252138/pexels-photo-3252138.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+                </div>
+                <p>Chai</p>
+            </div>
+            <div class="col-2 border text-center custom-box">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/24870653/pexels-photo-24870653/free-photo-of-a-hot-dog-and-chips-are-served-with-a-drink.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+
+                </div>
+                <p>Juice</p>
+            </div>
+
+            <div class="col-2 border text-center custom-box">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/6941039/pexels-photo-6941039.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+
+                </div>
+                <p>Snacks</p>
+            </div>
+            <!--  repeat -- -->
+            <div class="col-2 border text-center mt-3 custom-box">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/6941028/pexels-photo-6941028.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+                </div>
+                <p>Cranchy</p>
+            </div>
+            <div class="col-2 border text-center mt-3 custom-box">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/4113664/pexels-photo-4113664.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+
+                </div>
+                <p>Cocacola</p>
+            </div>
+
+            <div class="col-2 border text-center mt-3 custom-box">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/12464511/pexels-photo-12464511.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+                </div>
+                <p>Fruity</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Beauty & Personal Care -->
+
+    <div class="border p-2 mt-2 grocery">
+        <h4 class="fs-6 fs-md-4 fw-bold ms-0 ms-md-4">Beauty & Personal Care</h4>
+        <div class="row d-flex justify-content-evenly align-items-center sells">
+            <div class="col-2 border text-center custom-box">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/8945932/pexels-photo-8945932.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+                </div>
+                <p>Syrem</p>
+            </div>
+            <div class="col-2 border text-center custom-box">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/6847824/pexels-photo-6847824.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+
+                </div>
+                <p>Sun Cream</p>
+            </div>
+
+            <div class="col-2 border text-center custom-box">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/8990301/pexels-photo-8990301.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+
+                </div>
+                Bodywash
+            </div>
+            <!--  repeat -- -->
+            <div class="col-2 border text-center mt-3 custom-box">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/7814991/pexels-photo-7814991.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+                </div>
+                <p>Spray</p>
+            </div>
+            <div class="col-2 border text-center mt-3 custom-box">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/3373739/pexels-photo-3373739.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+
+                </div>
+                <p>Makeup Kit</p>
+            </div>
+
+            <div class="col-2 border text-center mt-3 custom-box">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/3762875/pexels-photo-3762875.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+
+                </div>
+                <p>Skincare</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
