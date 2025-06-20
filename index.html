@@ -55,27 +55,27 @@
             <div class="container mb-3">
                 <div
                     class="d-flex justify-content-between text-white text-center overflow-auto gap-3 py-2 category-scroll">
-                    <div><i class="fa-solid fa-bag-shopping"></i> <br>
+                    <div class="category-item" data-category="All"><i class="fa-solid fa-bag-shopping"></i> <br>
                         <small>All</small>
                     </div>
 
-                    <div><i class="fa-solid fa-list"></i> <br>
+                    <div class="category-item" data-category="electronics"><i class="fa-solid fa-list"></i> <br>
                         <small>Electronics</small>
                     </div>
 
-                    <div><i class="fa-solid fa-headphones"></i> <br>
+                    <div class="category-item" data-category="beauty"><i class="fa-solid fa-headphones"></i> <br>
                         <small>Beauty</small>
                     </div>
 
-                    <div><i class="fa-solid fa-book"></i> <br>
+                    <div class="category-item" data-category="decor"><i class="fa-solid fa-book"></i> <br>
                         <small>Decor</small>
                     </div>
 
-                    <div><i class="fa-solid fa-child"></i> <br>
+                    <div class="category-item" data-category="kids"><i class="fa-solid fa-child"></i> <br>
                         <small>Kids</small>
                     </div>
 
-                    <div><i class="fa-solid fa-gift"></i> <br>
+                    <div class="category-item" data-category="gift"><i class="fa-solid fa-gift"></i> <br>
                         <small>Gifting</small>
                     </div>
 
@@ -93,8 +93,6 @@
 
         <div class="container mb-4 category">
             <div class="position-relative rounded-4 overflow-hidden banner-box text-white text-center">
-                <!-- <img src="https://media.istockphoto.com/id/1317628039/photo/elegant-modern-fathers-day-greeting-card-design-with-3d-gift-box-mustache-and-sunglasses-on.jpg?s=2048x2048&w=is&k=20&c=F_UzdgQYKWsu79l9lsXrHu3FLNdnQR2d1Z8bHs0K1JM="class="img-fluid w-100" alt=""> -->
-                <!-- <div class="position-absolute top-0 start-50 translate-middle-x mt-5"> -->
                 <div>
                     <h4 class="fst-italic fw-bold">CELEBRATE <br> FATHER'S DAY</h4>
                     <p class="mb-0">on 15th june</p>
@@ -139,6 +137,11 @@
                 </div>
             </div>
         </div>
+    </div>
+
+
+    <!-- 🔹 Where dynamic category content will be loaded -->
+    <div id="categoryContent" class="container py-4">
     </div>
 
 
@@ -329,12 +332,11 @@
     <div class="border p-2 mt-2 grocery">
         <h4 class="fs-6 fs-md-4 fw-bold ms-0 ms-md-4">Grocery & Kitchen</h4>
         <div class="row d-flex justify-content-evenly align-items-center sells">
-            <div class="col-2 border text-center custom-box">
+            <div class="col-2 border text-center custom-box" data-url="masala.html">
                 <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/3693700/pexels-photo-3693700.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
+                    <img src="https://images.pexels.com/photos/2802527/pexels-photo-2802527.jpeg" alt="" />
                 </div>
-                <p>Camera</p>
+                <p>Oil, Masala</p>
             </div>
 
             <div class="col-2 border text-center custom-box">
@@ -550,15 +552,6 @@
             class="image-fluid rounded main shop" alt="" />
         <img src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
             class="image-fluid rounded main shop" alt="" />
-        <!-- <div class="order">
-        <h1 class="fst-italic">FATHER'S DAY <br> SPECIALS </h1>
-        <p>Get cake and desserts in minute <br><strong>Enjoy 50% off</strong>on your first order </p>
-        <button class="border-0 rounded-2 p-1 bg-warning">
-          <a class="text-decoration-none text-white" href="#"
-            >Order now</a
-          >
-        </button>
-      </div> -->
     </div>
 
     <section class="flavour-section my-4 px-3">

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .right-products {
+        flex-grow: 1;
+        height: auto;
+        /* overflow-y: auto; */
+        padding: 5px;
+        background-color: #f9f9f9;
+    }
+
+    .product-card {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        height: 100%;
+    }
+
+    .product-card img {
+        width: 100%;
+        height: 100px;
+        border-radius: 10px;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+        .main-wrapper {
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .right-products {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-card {
+            width: 150px;
+        }
+
+        .text-mobile-small {
+            font-size: 1rem;
+        }
+
+        .text-mobile-small {
+            font-size: 0.75rem;
+        }
+
+        .text-small-mobile {
+            font-size: 1rem;
+        }
+
+        .text-small-mobile {
+            font-size: 0.75rem;
+            /* margin-right: 10px;  */
+        }
+    }
+</style>
+
+<body>
+
+    <div class="right-products">
+        <div class="container">
+            <div class="row g-2">
+                <!-- Repeatable Product Boxes -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="product-card">
+                        <img src="https://images.pexels.com/photos/7194920/pexels-photo-7194920.jpeg" alt="img" />
+                        <p class="text-start text-mobile-small m-0">8 MINS</p>
+                        <h6 class="text-start">Banana</h6>
+                        <p class="text-start text-mobile-small m-0">3 Pack</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="m-0">₹39</p>
+                            <button class="btn btn-sm btn-success">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="product-card">
+                        <img src="https://media.istockphoto.com/id/1257538623/photo/fresh-food-delivery-service.jpg?s=2048x2048&w=is&k=20&c=tl18NVzJW1gdbMoFaFUG8A2S98l9sXXBwYIGJcAK124="
+                            alt="img" />
+                        <p class="text-start text-mobile-small m-0">8 MINS</p>
+                        <h6 class="text-start">Tomato</h6>
+                        <p class="text-start text-mobile-small m-0">500g</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="m-0">₹20</p>
+                            <button class="btn btn-sm btn-success">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="product-card">
+                        <img src="https://media.istockphoto.com/id/512283094/photo/fresh-lychee.jpg?s=2048x2048&w=is&k=20&c=oDnJMFIIREaHeUOp0UfW65WlfQiYD57GKsm2ZRAJAPg="
+                            alt="img" />
+                        <p class="text-start text-mobile-small m-0">8 MINS</p>
+                        <h6 class="text-start">Muzafferpur Litchi</h6>
+                        <p class="text-start text-mobile-small m-0">250g</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="m-0">₹30</p>
+                            <button class="btn btn-sm btn-success">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="product-card">
+                        <img src="https://media.istockphoto.com/id/1047115132/photo/fresh-fruit-lychee-on-a-dark-background.jpg?s=2048x2048&w=is&k=20&c=3_KIpE2zJTb208BmmENiF2_DFP1yEbWfqeJP2GNCB6U="
+                            alt="img" />
+                        <p class="text-start text-mobile-small m-0">8 MINS</p>
+                        <h6 class="text-start">Perfect Ultra Thin</h6>
+                        <p class="text-start text-mobile-small m-0">500g</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="m-0">₹60</p>
+                            <button class="btn btn-sm btn-success">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="product-card">
+                        <img src="https://media.istockphoto.com/id/534608466/photo/popular-kesar-mangoes-with-light-green-backround-isolated.jpg?s=2048x2048&w=is&k=20&c=RdJRhgLbcU9iGnGDtb0UhYn1zT5eaua3RRwH5Uk5KSA="
+                            alt="img" />
+                        <p class="text-start text-mobile-small m-0">8 MINS</p>
+                        <h6 class="text-start">Langda Mango</h6>
+                        <p class="text-start text-mobile-small m-0">1 Kg</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="m-0">₹60</p>
+                            <button class="btn btn-sm btn-success">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="product-card">
+                        <img src="https://media.istockphoto.com/id/904617420/photo/fresh-mango-smoothie-in-the-glass.jpg?s=612x612&w=0&k=20&c=ogIRn5AfahJNU4W8UmQIZ-mJqL9tgOm9yH_-5WJmkSQ="
+                            alt="img" />
+                        <p class="text-start text-mobile-small m-0">10 MINS</p>
+                        <h6 class="text-start">Safeda Mango</h6>
+                        <p class="text-start text-mobile-small m-0">2 kg</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="m-0">₹120</p>
+                            <button class="btn btn-sm btn-success">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="product-card">
+                        <img src="https://images.pexels.com/photos/7194920/pexels-photo-7194920.jpeg" alt="img" />
+                        <p class="text-start text-mobile-small m-0">8 MINS</p>
+                        <h6 class="text-start">Banana</h6>
+                        <p class="text-start text-mobile-small m-0">3 Pack</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="m-0">₹39</p>
+                            <button class="btn btn-sm btn-success">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="product-card">
+                        <img src="https://media.istockphoto.com/id/1257538623/photo/fresh-food-delivery-service.jpg?s=2048x2048&w=is&k=20&c=tl18NVzJW1gdbMoFaFUG8A2S98l9sXXBwYIGJcAK124="
+                            alt="img" />
+                        <p class="text-start text-mobile-small m-0">8 MINS</p>
+                        <h6 class="text-start">Tomato</h6>
+                        <p class="text-start text-mobile-small m-0">500g</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="m-0">₹20</p>
+                            <button class="btn btn-sm btn-success">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="product-card">
+                        <img src="https://media.istockphoto.com/id/512283094/photo/fresh-lychee.jpg?s=2048x2048&w=is&k=20&c=oDnJMFIIREaHeUOp0UfW65WlfQiYD57GKsm2ZRAJAPg="
+                            alt="img" />
+                        <p class="text-start text-mobile-small m-0">8 MINS</p>
+                        <h6 class="text-start">Muzafferpur Litchi</h6>
+                        <p class="text-start text-mobile-small m-0">250g</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="m-0">₹30</p>
+                            <button class="btn btn-sm btn-success">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="product-card">
+                        <img src="https://media.istockphoto.com/id/1047115132/photo/fresh-fruit-lychee-on-a-dark-background.jpg?s=2048x2048&w=is&k=20&c=3_KIpE2zJTb208BmmENiF2_DFP1yEbWfqeJP2GNCB6U="
+                            alt="img" />
+                        <p class="text-start text-mobile-small m-0">8 MINS</p>
+                        <h6 class="text-start">Perfect Ultra Thin</h6>
+                        <p class="text-start text-mobile-small m-0">500g</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="m-0">₹60</p>
+                            <button class="btn btn-sm btn-success">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="product-card">
+                        <img src="https://media.istockphoto.com/id/534608466/photo/popular-kesar-mangoes-with-light-green-backround-isolated.jpg?s=2048x2048&w=is&k=20&c=RdJRhgLbcU9iGnGDtb0UhYn1zT5eaua3RRwH5Uk5KSA="
+                            alt="img" />
+                        <p class="text-start text-mobile-small m-0">8 MINS</p>
+                        <h6 class="text-start">Langda Mango</h6>
+                        <p class="text-start text-mobile-small m-0">1 Kg</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="m-0">₹60</p>
+                            <button class="btn btn-sm btn-success">ADD</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="product-card">
+                        <img src="https://media.istockphoto.com/id/904617420/photo/fresh-mango-smoothie-in-the-glass.jpg?s=612x612&w=0&k=20&c=ogIRn5AfahJNU4W8UmQIZ-mJqL9tgOm9yH_-5WJmkSQ="
+                            alt="img" />
+                        <p class="text-start text-mobile-small m-0">10 MINS</p>
+                        <h6 class="text-start">Safeda Mango</h6>
+                        <p class="text-start text-mobile-small m-0">2 kg</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="m-0">₹120</p>
+                            <button class="btn btn-sm btn-success">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

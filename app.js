@@ -56,4 +56,50 @@
     }
   });
 
+  // grocery and kitchen
+  // masala.html
+
+  document.addEventListener("DOMContentLoaded", function (){
+    document.querySelectorAll(".custom-box").forEach(function(box) {
+      box.style.cursor = "pointer";
+
+      box.addEventListener("click", function (){
+        const url = box.getAttribute("data-url");
+        if(url){
+          window.location.href = url;
+        }
+      })
+    })
+  })
+
+  // for navbar refresh
+
+  const categoryItems = document.querySelectorAll(".category-item");
+  const contentArea = document.getElementById("categoryContent");
+
+  categoryItems.forEach(item => {
+    item.addEventListener("click", () => {
+      const category = item.getAttribute("data-category");
+
+      // Optional loading indicator
+      contentArea.innerHTML = "<p>Loading...</p>";
+
+      // Load content from external HTML file
+      fetch(`${category}.html`)
+        .then(res => {
+          if (!res.ok) throw new Error("File not found");
+          return res.text();
+        })
+        .then(html => {
+          contentArea.innerHTML = html;
+        })
+        .catch(err => {
+          contentArea.innerHTML = `<p class="text-danger">Content not available.</p>`;
+          console.error(err);
+        });
+    });
+  });
+
+
+
 

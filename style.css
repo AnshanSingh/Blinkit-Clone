@@ -163,7 +163,7 @@
 .grocery {
   max-width: 100%;
   width: 1300px;
-  height: 560px;
+  height: 540px;
   /* height: auto; */
   margin: 0 auto;
 }
@@ -181,7 +181,7 @@
 .kitchen-img img {
   width: 100%;
   max-width: 360px;
-  height: 210px;
+  height: 200px;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -246,7 +246,7 @@
   }
   .grocery {
     width: 94%;
-    height: 430px;
+    height: 420px;
     margin: 10px auto;
     border: none !important;
   }
