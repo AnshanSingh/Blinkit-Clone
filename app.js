@@ -74,32 +74,96 @@
 
   // for navbar refresh
 
-  const categoryItems = document.querySelectorAll(".category-item");
-  const contentArea = document.getElementById("categoryContent");
+//   const categoryItems = document.querySelectorAll(".category-item");
+// const contentArea = document.getElementById("categoryContent");
+// const loader = document.getElementById("loader");
 
-  categoryItems.forEach(item => {
-    item.addEventListener("click", () => {
-      const category = item.getAttribute("data-category");
+// categoryItems.forEach(item => {
+//   item.addEventListener("click", () => {
+//     const category = item.getAttribute("data-category");
 
-      // Optional loading indicator
-      contentArea.innerHTML = "<p>Loading...</p>";
+//     window.scrollTo({ top: 0, behavior: 'smooth' });
 
-      // Load content from external HTML file
-      fetch(`${category}.html`)
-        .then(res => {
-          if (!res.ok) throw new Error("File not found");
-          return res.text();
-        })
-        .then(html => {
-          contentArea.innerHTML = html;
-        })
-        .catch(err => {
-          contentArea.innerHTML = `<p class="text-danger">Content not available.</p>`;
-          console.error(err);
-        });
-    });
+
+//     // Show loader, hide content
+//     loader.style.display = "block";
+//     contentArea.style.display = "none";
+
+//     // Wait 1.5 seconds before fetching
+//     setTimeout(() => {
+//       fetch(`${category}.html`)
+//         .then(res => {
+//           if (!res.ok) throw new Error("File not found");
+//           return res.text();
+//         })
+//         .then(html => {
+//           contentArea.innerHTML = html;
+//         })
+//         .catch(err => {
+//           contentArea.innerHTML = `<p class="text-danger">Content not available.</p>`;
+//           console.error(err);
+//         })
+//         .finally(() => {
+//           loader.style.display = "none"; // Hide loader
+//           contentArea.style.display = "block"; // Show content
+//         });
+//     }, 1500); // 1.5 second delay
+//   });
+// });
+
+
+const categoryItems = document.querySelectorAll(".category-item");
+const contentArea = document.getElementById("categoryContent");
+const loader = document.getElementById("loader"); // make sure this exists in HTML
+
+categoryItems.forEach(item => {
+  item.addEventListener("click", () => {
+    const category = item.getAttribute("data-category");
+
+    // Scroll to top and show loader
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    loader.style.display = "block";
+    contentArea.style.display = "none";
+
+    // Fetch data from Flask backend
+fetch(`http://localhost:5000/api/category/${category}`)
+  .then(res => res.json())
+  .then(data => {
+
+
+    let html = `<div class="row g-2">`;  // g-2 = small gap
+
+data.products.forEach(product => {
+  html += `
+    <div class="col-4">
+      <div class="card-pro shadow-sm p-2 align-items-center" style="height: auto;">
+        <img src="${product.image}" alt="${product.name}" class="img-fluid rounded" 
+             style="width: 400px; height: 180px; object-fit: cover; flex-shrink: 0;">
+        <div class="d-flex flex-row m-2" style="width: 100%";>
+          <h6 class="mb-1">${product.name}</h6>
+          <p class="mb-0 text-muted">₹${product.price}</p>
+        </div>
+      </div>
+    </div>
+  `;
+});
+
+html += `</div>`;
+
+
+    contentArea.innerHTML = html;
+  })
+  .catch(err => {
+    contentArea.innerHTML = `<p class="text-danger">Error loading content.</p>`;
+    console.error("Fetch error:", err);
+  })
+  .finally(() => {
+    loader.style.display = "none";
+    contentArea.style.display = "block";
   });
 
 
+  });
+});
 
 

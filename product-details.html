@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<style>
+.shop-img {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  gap: 10px;
+  width: 94%;
+  height: 250px;
+  margin: 0 auto;
+  display: flex;
+  object-fit: contain;
+  border-radius: 10px;
+  justify-content: flex-start;
+  scroll-snap-type: x mandatory;
+  /* position: relative; */
+}
+
+.shop-img img {
+  flex: 0 0 100%;
+  max-width: 1300px;
+  height: 300px;
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 10px;
+  scroll-snap-align: start;
+}
+@media (min-width: 992px) {
+  .shop-img {
+    width: 1300px;
+    margin: 0 auto;
+  }
+  .shop-img img {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}  
+
+.pan-container {
+  display: flex;
+  overflow: hidden;
+  gap: 8px;
+  padding-bottom: 10px;
+}
+.flex {
+  flex: 0 0 auto;
+  width: 150px;
+  border-radius: 8px;
+  /* overflow: hidden; */
+  margin-right: 4px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.flex img {
+  width: 100%;
+  height: 120px;
+}
+
+.card-body {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 576px) {
+  .pan-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    padding-bottom: 10px;
+  }
+
+  .flex {
+    width: calc(33.33% - 8px);
+    height: auto;
+  }
+
+  .flex img {
+    height: 80px;
+  }
+
+  .card-body {
+    height: auto;
+    font-size: 12px;
+  }
+     .card-body h6 {
+      font-size: 0.75rem; /* smaller font for mobile */
+    }
+}
+
+.fix {
+  background-color: cornflowerblue;
+}
+
+</style>
+<body>
+
+
+
+      <div
+      class="shop-img d-flex justify-content-center mt-3"
+      style="position: relative"
+    >
+       <img
+        src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+        class="image-fluid rounded main shop"
+        alt=""
+      />
+        <img
+        src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+        class="image-fluid rounded main shop"
+        alt=""
+      />
+       <img
+        src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+        class="image-fluid rounded main shop"
+        alt=""
+      />
+
+        <img
+        src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+        class="image-fluid rounded main shop"
+        alt=""
+      />
+       <img
+        src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+        class="image-fluid rounded main shop"
+        alt=""
+      />
+       <img
+        src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+        class="image-fluid rounded main shop"
+        alt=""
+      />
+       <img
+        src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+        class="image-fluid rounded main shop"
+        alt=""
+      />
+       <img
+        src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+        class="image-fluid rounded main shop"
+        alt=""
+      />
+       <img
+        src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+        class="image-fluid rounded main shop"
+        alt=""
+      />
+    </div>
+
+        <div class="container mt-3">
+          <h2>Similar Products</h2>
+      <div class="pan-container">
+        <div class="flex">
+          <img
+            src="https://images-static.nykaa.com/media/catalog/product/6/e/6e44188PLIXX00000304_1.jpg?tr=w-500"
+            alt="Paan Corner"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-1">Plix Jamun Active Acne control Cleans...  ⭐⭐⭐⭐<span>(134)</span> <br>₹645 MRP<span><strike>₹649</strike></span></h6>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://bakson-production.s3.ap-south-1.amazonaws.com/pub/media/catalog/product/f/a/face-wash-gel-neem4.jpg"
+            alt="Dairy, Bread"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-1">Garnier Skin Naturals Bright Complete Over...  ⭐⭐⭐⭐<span>(311)</span> <br>₹297 MRP<span><strike>₹329</strike></span></h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://images.pexels.com/photos/15844906/pexels-photo-15844906.jpeg"
+            alt="Chocolate"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-1">Garnier Skin Naturals Bright Complete 30x... ⭐⭐⭐⭐<span>(311)</span> <br>₹297 MRP<span><strike>₹619</strike></span></h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://images.pexels.com/photos/20292101/pexels-photo-20292101.jpeg"
+            alt="More Dairy"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-1">Plum Burgarian Rose & 2% Hyaluric Aci... ⭐⭐⭐⭐<span>(311)</span> <br>₹297 MRP<span><strike>₹417</strike></span></h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://shop.lakmesalon.in/cdn/shop/products/SIZE-W-600-X-H-600-PX-01_cb6ed353-46dd-41ec-903e-dea81c1caa3f.jpg?v=1623326486"
+            alt="Pet Care"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-1">Lakme Absolute Perfect Radiance Face Serum  ⭐⭐⭐⭐<span>(311)</span> <br>₹297 MRP<span><strike>₹417</strike></span></h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://suganda.co/cdn/shop/files/CGTF_Old_New_Packaging_1_1280x.jpg?v=1743696294"
+            alt="Pet Care"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-1">The Derma Co 2% Kojic Acid Face Serum Fo... ⭐⭐⭐⭐<span>(311)</span> <br>₹297 MRP<span><strike>₹417</strike></span></h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJWBpBrb7bUWjwKuvaRPG0FAf8SrQEA2rLlw&s"
+            alt="Pet Care"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-1">Garnier 30x Vitamin C Booster Face S... ⭐⭐⭐⭐<span>(311)</span> <br>₹297 MRP<span><strike>₹417</strike></span></h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2023/8/335490226/NR/TL/GM/193368252/150ml-clean-clear-foaming-face-wash.jpg"
+            alt="Pet Care"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-1">Clean & clear Foaming Facewash ⭐⭐⭐⭐<span>(311)</span> <br>₹297 MRP<span><strike>₹417</strike></span></h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbsLnBE22-uD2_peNK7Ax43AK2g26-22KTzQ&s"
+            alt="Pet Care"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-1">Clean & clear Foaming Facewash ⭐⭐⭐⭐<span>(311)</span> <br>₹297 MRP<span><strike>₹417</strike></span>s</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- repeat -->
+    <div class="container mt-2">
+      <h3>Power up your hygiene game</h3>
+      <div class="pan-container">
+        <div class="flex">
+          <img
+            src="https://www.tastyrewards.com/sites/default/files/2024-03/M220861_IQO_HP_Maple%20Brown%20Sugar_6ct_Carton_EN.png"
+            alt="Paan Corner"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-1">Pintola High Protein Fruit Nut<br>₹327 MRP<span><strike>₹365</strike></span></h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://rukminim2.flixcart.com/image/750/900/xif0q/cereal-flake/2/b/2/500-oats-high-protein-oats-pouch-1-rk-nutrition-original-imah6ernvxfgxgpz.jpeg?q=90&crop=false"
+            alt="Paan Corner"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-1">Tata Soulfull Millet Muesli With 90% Fruits, Nut & wh...<br>₹327 MRP<span><strike>₹365</strike></span></h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/NI_CATALOG/IMAGES/ciw/2025/2/19/ece2f90d-7241-4599-a8c9-2f06e7b1b1af_121891_1_20250214_112949.png"
+            alt="Paan Corner"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-1">Tata Soulfull Millet Muesli With 90% Fruits, Nut & wh...<br>₹327 MRP<span><strike>₹365</strike></span></h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://images.pexels.com/photos/17580993/pexels-photo-17580993.jpeg"
+            alt="Paan Corner"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-1">Tata Soulfull Millet Muesli With 90% Fruits, Nut & wh...<br>₹327 MRP<span><strike>₹365</strike></span></h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://images-static.nykaa.com/media/catalog/product/5/4/54b3cabMUSAF00000520_1.jpg"
+            alt="Paan Corner"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-1">Tata Soulfull Millet Muesli With 90% Fruits, Nut & wh...<br>₹327 MRP<span><strike>₹365</strike></span></h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://images-cdn.ubuy.co.in/65b520238a070f38651ef701-muscleblaze-high-protein-oats-17-g.jpg"
+            alt="Dairy, Bread"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-1">Tata Soulfull Millet Muesli With 90% Fruits, Nut & wh...<br>₹327 MRP<span><strike>₹365</strike></span></h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://gainz4ever.com/cdn/shop/files/O_W-kesarmalairubdi.png?v=1710414410"
+            alt="Chocolate"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-1">Tata Soulfull Millet Muesli With 90% Fruits, Nut & wh...<br>₹327 MRP<span><strike>₹365</strike></span></h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXMUy3wqacPdSigePankI_mj7D4XoRzM1AVA&s"
+            alt="More Dairy"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-1">Tata Soulfull Millet Muesli With 90% Fruits, Nut & wh...<br>₹327 MRP<span><strike>₹365</strike></span></h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://5.imimg.com/data5/ZH/YG/HG/SELLER-42100832/protien-oats-drink-mix-500x500.jpg  "
+            alt="Pet Care"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-1">Tata Soulfull Millet Muesli With 90% Fruits, Nut & wh...<br>₹327 MRP<span><strike>₹365</strike></span></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</body>
+</html>

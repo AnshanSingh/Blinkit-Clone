@@ -1,685 +1,860 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- <div id="navbar-placeholder"></div> -->
 
 
     <!-- navbar -->
 
-    <div class="main-wrapper py-3">
-        <div class="container header-top">
-            <div class="d-flex justify-content-between align-items-center">
-                <div>
-                    <div class="fw-bold">Blinkit in</div>
-                    <div class="d-flex align-items-center">
-                        <h3 class="fw-bold mb-0 me-2">19 minute</h3>
-                        <span class="surge-badge">Surge applicable</span>
-                    </div>
-                    <div>Block D, Sector 10, Meerut Divison</div>
-                </div>
-                <div class="d-flex align-items-center gap-3">
-                    <!-- <i class="fa-solid fa-wallet"></i> -->
-                    <img src="https://cdn-icons-png.flaticon.com/512/10149/10149443.png" alt="" width="30"
-                        height="30" />
-                    <img src="https://cdn-icons-png.flaticon.com/512/9131/9131478.png" alt="" width="30" height="30" />
-                </div>
-            </div>
+      <div class="main-wrapper py-3">
+    <div class="container header-top">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <div class="fw-bold">Blinkit in</div>
+          <div class="d-flex align-items-center">
+            <h3 class="fw-bold mb-0 me-2">19 minute</h3>
+            <span class="surge-badge">Surge applicable</span>
+          </div>
+          <div>Block D, Sector 10, Meerut Divison</div>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <!-- <i class="fa-solid fa-wallet"></i> -->
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/10149/10149443.png"
+            alt=""
+            width="30"
+            height="30"
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/9131/9131478.png"
+            alt=""
+            width="30"
+            height="30"
+          />
+        </div>
+      </div>
+    </div>
+
+
+    <div class="sticky-wrapper" id="stickyElement">
+    <div class="container my-3">
+      <div
+        class="input-group rounded-pill bg-white px-3 py-2 align-items-center"
+      >
+        <span class="input-group-text bg-white border-0">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </span>
+        <input
+          type="text"
+          class="form-control border-0"
+          placeholder='Search "diaper xxl"' aria-label="Search"
+        />
+        <span class="input-group-text bg-white border-0"></span>
+      </div>
+    </div>
+    <!-- Categories Menu -->
+     <div class="container mb-3">
+      <div class="d-flex justify-content-between text-white text-center overflow-auto gap-3 py-2 category-scroll">
+        <div class="category-item" data-category="All"><i class="fa-solid fa-bag-shopping"></i> <br>
+          <small>All</small>
         </div>
 
-
-        <div class="sticky-wrapper" id="stickyElement">
-            <div class="container my-3">
-                <div class="input-group rounded-pill bg-white px-3 py-2 align-items-center">
-                    <span class="input-group-text bg-white border-0">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </span>
-                    <input type="text" class="form-control border-0" placeholder='Search "diaper xxl"'
-                        aria-label="Search" />
-                    <span class="input-group-text bg-white border-0"></span>
-                </div>
-            </div>
-            <!-- Categories Menu -->
-            <div class="container mb-3">
-                <div
-                    class="d-flex justify-content-between text-white text-center overflow-auto gap-3 py-2 category-scroll">
-                    <div class="category-item" data-category="All"><i class="fa-solid fa-bag-shopping"></i> <br>
-                        <small>All</small>
-                    </div>
-
-                    <div class="category-item" data-category="electronics"><i class="fa-solid fa-list"></i> <br>
-                        <small>Electronics</small>
-                    </div>
-
-                    <div class="category-item" data-category="beauty"><i class="fa-solid fa-headphones"></i> <br>
-                        <small>Beauty</small>
-                    </div>
-
-                    <div class="category-item" data-category="decor"><i class="fa-solid fa-book"></i> <br>
-                        <small>Decor</small>
-                    </div>
-
-                    <div class="category-item" data-category="kids"><i class="fa-solid fa-child"></i> <br>
-                        <small>Kids</small>
-                    </div>
-
-                    <div class="category-item" data-category="gift"><i class="fa-solid fa-gift"></i> <br>
-                        <small>Gifting</small>
-                    </div>
-
-                    <div><i class="fa-solid fa-money-bill"></i> <br>
-                        <small>Premium</small>
-                    </div>
-
-                </div>
-            </div>
+         <div class="category-item" data-category="electronics"><i class="fa-solid fa-list"></i> <br>
+          <small>Electronics</small>
         </div>
 
-
-
-        <!-- father's day banner -->
-
-        <div class="container mb-4 category">
-            <div class="position-relative rounded-4 overflow-hidden banner-box text-white text-center">
-                <div>
-                    <h4 class="fst-italic fw-bold">CELEBRATE <br> FATHER'S DAY</h4>
-                    <p class="mb-0">on 15th june</p>
-                </div>
-            </div>
-
-
-            <!-- Three category box -->
-
-            <!-- <div class="container position-absolute bottom-0 start-50 translate-middle-x"> -->
-            <div class="container mt-4">
-                <div class="d-flex justify-content-between gap-2">
-                    <div class="card text-center custom-card border-0 shadow-sm h-50" style="width: 30%;height: 230px;">
-                        <img src="https://images.pexels.com/photos/16412204/pexels-photo-16412204/free-photo-of-bag-with-flowers-on-windowsill.jpeg?auto=compress&cs=tinysrgb&w=600"
-                            class="rounded-3 custom-img" style="height: 230px" alt="">
-                    </div>
-
-                    <div class="card text-center custom-card border-0 shadow-sm" style="width: 30%; height: 230px;">
-                        <img src="https://images.pexels.com/photos/5982459/pexels-photo-5982459.jpeg?auto=compress&cs=tinysrgb&w=600"
-                            class="rounded-3 custom-img" style="height: 230px;" alt="">
-                    </div>
-
-                    <div class="card text-center custom-card border-0 shadow-sm" style="width: 30%; height: 230px;">
-                        <img src="https://images.pexels.com/photos/26654644/pexels-photo-26654644/free-photo-of-still-life-with-vase-with-flowers-small-bird-and-book.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            class="rounded-3 custom-img" style="height: 230px ;" alt="">
-                    </div>
-
-                </div>
-            </div>
+         <div class="category-item" data-category="beauty"><i class="fa-solid fa-headphones"></i> <br>
+          <small>Beauty</small>
         </div>
 
-        <!-- pop-quiz -->
+         <div class="category-item" data-category="decor"><i class="fa-solid fa-book"></i> <br>
+          <small>Decor</small>
+        </div>
+
+         <div class="category-item" data-category="kids"><i class="fa-solid fa-child"></i> <br>
+          <small>Kids</small>
+        </div>
+
+         <div class="category-item" data-category="gift"><i class="fa-solid fa-gift"></i> <br>
+          <small>Gifting</small>
+        </div>
+
+         <div class="category-item" data-category="premium"><i class="fa-solid fa-money-bill"></i> <br>
+          <small>Premium</small>
+        </div>
+
+      </div>
+     </div>
+     </div>
+     
+    
+
+     <!-- father's day banner -->
+
+     <div class="container mb-4 category">
+      <div class="position-relative rounded-4 overflow-hidden banner-box text-white text-center">
+          <div>
+          <h4 class="fst-italic fw-bold">CELEBRATE <br> FATHER'S DAY</h4>
+          <p class="mb-0">on 15th june</p>
+        </div>
+      </div>
+    
+
+     <!-- Three category box -->
+
+      <!-- <div class="container position-absolute bottom-0 start-50 translate-middle-x"> -->
+        <div class="container mt-4">
+        <div class="d-flex justify-content-between gap-2">
+          <div class="card text-center custom-card border-0 shadow-sm h-50" style="width: 30%;height: 230px;">
+          <img src="https://images.pexels.com/photos/16412204/pexels-photo-16412204/free-photo-of-bag-with-flowers-on-windowsill.jpeg?auto=compress&cs=tinysrgb&w=600" class="rounded-3 custom-img"style="height: 230px" alt="">
+          </div>
+
+          <div class="card text-center custom-card border-0 shadow-sm" style="width: 30%; height: 230px;">
+          <img src="https://images.pexels.com/photos/5982459/pexels-photo-5982459.jpeg?auto=compress&cs=tinysrgb&w=600" class="rounded-3 custom-img" style="height: 230px;" alt="">
+          </div>
+
+          <div class="card text-center custom-card border-0 shadow-sm" style="width: 30%; height: 230px;">
+          <img src="https://images.pexels.com/photos/26654644/pexels-photo-26654644/free-photo-of-still-life-with-vase-with-flowers-small-bird-and-book.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="rounded-3 custom-img" style="height: 230px ;" alt="">
+          </div>
+
+        </div>
+      </div>
+       </div>
+
+       <!-- pop-quiz -->
         <div class="container mb-4">
-            <div class="d-flex justify-content-between align-items-center p-3 rounded-3"
-                style="background-color: #ffe4e1;">
-                <div>
-                    <h6 class="mb-1 fw-bold">Play & Win ₹100 OFF</h6>
-                    <p class="mb-0 small">Answer 3 simple questions to win</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-chevron-right"></i>
-                </div>
+          <div class="d-flex justify-content-between align-items-center p-3 rounded-3" style="background-color: #ffe4e1;">
+            <div>
+              <h6 class="mb-1 fw-bold">Play & Win ₹100 OFF</h6>
+              <p class="mb-0 small">Answer 3 simple questions to win</p>
             </div>
+            <div>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
         </div>
-    </div>
+        </div>
 
 
-    <!-- 🔹 Where dynamic category content will be loaded -->
-    <div id="categoryContent" class="container py-4">
-    </div>
+        <!-- 🔹 Where dynamic category content will be loaded -->
+          
+
+      <!-- Spinner Loader -->
+<div id="loader" style="display: none; text-align: center;">
+  <div class="spinner-border text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+<div id="categoryContent" class="container py-4"></div>
+
 
 
     <!--  -->
 
-    <div class="border p-2 mt-2 seller">
-        <h4 class="fs-6 fs-md-4 fw-bold ms-0 ms-md-4">Bestsellers</h4>
-        <div class="row d-flex justify-content-evenly align-items-center sell">
-            <div class="col-2 border text-center bg-light custom-box" data-url="Vegatables.html">
-                <div class="img-grid">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4swR-gn2EFNYPXD5IIJF2P7lbu_2dWf-aHA&s"
-                        class="bg-white rounded-2" alt="" />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTI-mgt9Qul8XV6WDY2OqOTWkKGyh1RjEhJA&s"
-                        class="bg-white rounded-2" alt="" />
-                    <img src="https://pngimg.com/d/broccoli_PNG2820.png" class="bg-white rounded-2" alt="" />
-                    <img src="https://img.lovepik.com/free-png/20211216/lovepik-bitter-melon-fresh-vegetables-png-image_401678112_wh1200.png"
-                        class="bg-white rounded-2" alt="" />
-                </div>
-                <div class="more-container mx-auto d-block d-md-none">
-                    <p class="text-center mb-0" style="font-size: 10px">+124 more</p>
-                </div>
-                <h4 class="text-center fs-6 fs-md-4">Vegetable & Fruits</h4>
-            </div>
-            <div class="col-2 border text-center bg-light custom-box" data-url="Vegatables.html">
-                <div class="img-grid">
-                    <img src="https://png.pngtree.com/png-vector/20250129/ourmid/pngtree-ghee-in-a-jar-isolated-on-transparent-background-pure-png-image_15363951.png"
-                        alt="" />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHQcKgZpXMyvv2-SYYdTFUWI0t8VEB56vzKom_QhRND-tqCSKFzndjnl1Xgoy8NRofDiU&usqp=CAU"
-                        class="bg-white rounded-2" alt="" />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrbx-iyKwOje0VwgQEErumbWYFhrX3tUKqXA&s"
-                        alt="" />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbp-9gPqZ2RXB-ad1m5aOeLASpS3sH7vmADQ&s"
-                        alt="" />
-                </div>
-                <div class="more-container mx-auto d-block d-md-none">
-                    <p class="text-center mb-0" style="font-size: 10px">+124 more</p>
-                </div>
-                <h4 class="text-center fs-6 fs-md-4">Oil, Ghee & Masala</h4>
-            </div>
-            <div class="col-2 border text-center bg-light custom-box" data-url="Vegatables.html">
-                <div class="img-grid">
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/050/754/301/small_2x/an-image-of-toast-with-eggs-and-vegetables-png.png"
-                        alt="" />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR74_DqrhQ76zMS2InH_L6S9W4Uzm7vyXwp9w&s"
-                        class="bg-white rounded-2" alt="" />
-                    <img src="https://cdn.vectorstock.com/i/500p/35/77/cartoon-color-fresh-eggs-in-a-cardboard-box-vector-46613577.jpg"
-                        alt="" />
-                    <img src="https://cdn.zeptonow.com/production/ik-seo/tr:w-400,ar-1500-1500,pr-true,f-auto,q-80/cms/product_variant/e44c5b03-537c-4bd9-b9c6-db11e9619260/Britannia-Milk-Slice-White-Bread.jpeg"
-                        alt="" />
-                </div>
-                <div class="more-container mx-auto d-block d-md-none">
-                    <p class="text-center mb-0" style="font-size: 10px">+171 more</p>
-                </div>
-                <h4 class="text-center fs-6 fs-md-4">Bread & Eggs</h4>
-            </div>
-
-            <div class="col-2 border text-center bg-light mt-0 mt-md-3 custom-box" data-url="Vegatables.html">
-                <div class="img-grid">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTacwJ08uKrW-ygO5VHwgaCgw-quatz2wuRRg&s"
-                        class="bg-white rounded-2" alt="" />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTacwJ08uKrW-ygO5VHwgaCgw-quatz2wuRRg&s"
-                        class="bg-white rounded-2" alt="" />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTacwJ08uKrW-ygO5VHwgaCgw-quatz2wuRRg&s"
-                        alt="" />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTacwJ08uKrW-ygO5VHwgaCgw-quatz2wuRRg&s"
-                        alt="" />
-                </div>
-                <div class="more-container mx-auto d-block d-md-none">
-                    <p class="text-center mb-0" style="font-size: 10px">+286 more</p>
-                </div>
-                <h4 class="text-center fs-6 fs-md-4">Chips & Namkeen</h4>
-            </div>
-            <div class="col-2 border text-center bg-light mt-0 mt-md-3 custom-box" data-url="Vegatables.html">
-                <div class="img-grid">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrq9wW9UlAibOkEL8oMhipdPT0MA5dSpmlBQ&s"
-                        class="bg-white rounded-2" alt="" />
-                    <img src="https://www.bbassets.com/media/uploads/p/l/40120174_6-fortune-chakki-fresh-atta-100-atta-0-maida.jpg"
-                        class="bg-white rounded-2" alt="" />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgTLjbqbYV27p35jv3cIrwBR4xHsPAMZUI5Q&s"
-                        alt="" />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlui6uGHoqMAZ30Hyqmg6Pm92N7kakoI_zA03Z6w7MqbPuXA0ZHZuM1xSJl4u0K0zON4Q&usqp=CAU"
-                        alt="" />
-                </div>
-                <div class="more-container mx-auto d-block d-md-none">
-                    <p class="text-center mb-0" style="font-size: 10px">+36 more</p>
-                </div>
-                <h4 class="text-center fs-6 fs-md-4">Atta , Rice & Dal</h4>
-            </div>
-            <div class="col-2 border text-center bg-light mt-0 mt-md-3 custom-box" data-url="Vegatables.html">
-                <div class="img-grid">
-                    <img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/41jl2nGAUiL._FMwebp__SR300,300__TTD_.jpg"
-                        alt="" />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDmfTwcd_xP2m3609pwj_osPLtfJUkkfDpz0RpR6Xu5tC7ht-YhFpEece1w6yoU0tihNc&usqp=CAU"
-                        class="bg-white rounded-2" alt="" />
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDmfTwcd_xP2m3609pwj_osPLtfJUkkfDpz0RpR6Xu5tC7ht-YhFpEece1w6yoU0tihNc&usqp=CAU"
-                        alt="" />
-                    <img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/41jl2nGAUiL._FMwebp__SR300,300__TTD_.jpg"
-                        alt="" />
-                </div>
-                <div class="more-container mx-auto d-block d-md-none">
-                    <p class="text-center mb-0" style="font-size: 10px">+142 more</p>
-                </div>
-                <h4 class="text-center fs-6 fs-md-4">Bakery & Biscuits</h4>
-            </div>
+    <div class="border p-2 seller">
+      <h4 class="fs-6 fs-md-4 fw-bold ms-0 ms-md-4">Bestsellers</h4>
+      <div class="row d-flex justify-content-evenly align-items-center sell">
+        <div class="col-2 border text-center bg-light custom-box" data-url="Vegatables.html">
+          <div class="img-grid">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4swR-gn2EFNYPXD5IIJF2P7lbu_2dWf-aHA&s"class="bg-white rounded-2"
+              alt=""
+            />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTI-mgt9Qul8XV6WDY2OqOTWkKGyh1RjEhJA&s"class="bg-white rounded-2"
+              alt=""
+            />
+            <img
+              src="https://pngimg.com/d/broccoli_PNG2820.png"class="bg-white rounded-2"
+              alt=""
+            />
+            <img
+              src="https://img.lovepik.com/free-png/20211216/lovepik-bitter-melon-fresh-vegetables-png-image_401678112_wh1200.png"class="bg-white rounded-2"
+              alt=""
+            />
+          </div>
+          <div class="more-container mx-auto d-block d-md-none">
+            <p class="text-center mb-0" style="font-size: 10px">+124 more</p>
+          </div>
+          <h4 class="text-center fs-6 fs-md-4">Vegetable & Fruits</h4>
         </div>
+        <div class="col-2 border text-center bg-light custom-box" data-url="Vegatables.html">
+            <div class="img-grid">
+            <img
+              src="https://png.pngtree.com/png-vector/20250129/ourmid/pngtree-ghee-in-a-jar-isolated-on-transparent-background-pure-png-image_15363951.png"
+              alt=""
+            />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHQcKgZpXMyvv2-SYYdTFUWI0t8VEB56vzKom_QhRND-tqCSKFzndjnl1Xgoy8NRofDiU&usqp=CAU"
+              class="bg-white rounded-2"
+              alt=""
+            />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrbx-iyKwOje0VwgQEErumbWYFhrX3tUKqXA&s"
+              alt=""
+            />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbp-9gPqZ2RXB-ad1m5aOeLASpS3sH7vmADQ&s"
+              alt=""
+            />
+          </div>
+          <div class="more-container mx-auto d-block d-md-none">
+            <p class="text-center mb-0" style="font-size: 10px">+124 more</p>
+          </div>
+          <h4 class="text-center fs-6 fs-md-4">Oil, Ghee & Masala</h4>
+        </div>
+        <div class="col-2 border text-center bg-light custom-box" data-url="Vegatables.html">
+            <div class="img-grid">
+            <img
+              src="https://static.vecteezy.com/system/resources/thumbnails/050/754/301/small_2x/an-image-of-toast-with-eggs-and-vegetables-png.png"
+              alt=""
+            />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR74_DqrhQ76zMS2InH_L6S9W4Uzm7vyXwp9w&s"
+              class="bg-white rounded-2"
+              alt=""
+            />
+            <img
+              src="https://cdn.vectorstock.com/i/500p/35/77/cartoon-color-fresh-eggs-in-a-cardboard-box-vector-46613577.jpg"
+              alt=""
+            />
+            <img
+              src="https://cdn.zeptonow.com/production/ik-seo/tr:w-400,ar-1500-1500,pr-true,f-auto,q-80/cms/product_variant/e44c5b03-537c-4bd9-b9c6-db11e9619260/Britannia-Milk-Slice-White-Bread.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="more-container mx-auto d-block d-md-none">
+            <p class="text-center mb-0" style="font-size: 10px">+171 more</p>
+          </div>
+          <h4 class="text-center fs-6 fs-md-4">Bread & Eggs</h4>
+        </div>
+
+        <div class="col-2 border text-center bg-light mt-0 mt-md-3 custom-box" data-url="Vegatables.html">
+            <div class="img-grid">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTacwJ08uKrW-ygO5VHwgaCgw-quatz2wuRRg&s"class="bg-white rounded-2"
+              alt=""
+            />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTacwJ08uKrW-ygO5VHwgaCgw-quatz2wuRRg&s"
+              class="bg-white rounded-2"
+              alt=""
+            />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTacwJ08uKrW-ygO5VHwgaCgw-quatz2wuRRg&s"
+              alt=""
+            />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTacwJ08uKrW-ygO5VHwgaCgw-quatz2wuRRg&s"
+              alt=""
+            />
+          </div>
+          <div class="more-container mx-auto d-block d-md-none">
+            <p class="text-center mb-0" style="font-size: 10px">+286 more</p>
+          </div>
+          <h4 class="text-center fs-6 fs-md-4">Chips & Namkeen</h4>
+        </div>
+        <div class="col-2 border text-center bg-light mt-0 mt-md-3 custom-box" data-url="Vegatables.html">
+            <div class="img-grid">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrq9wW9UlAibOkEL8oMhipdPT0MA5dSpmlBQ&s"class="bg-white rounded-2"
+              alt=""
+            />
+            <img
+              src="https://www.bbassets.com/media/uploads/p/l/40120174_6-fortune-chakki-fresh-atta-100-atta-0-maida.jpg"
+              class="bg-white rounded-2"
+              alt=""
+            />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgTLjbqbYV27p35jv3cIrwBR4xHsPAMZUI5Q&s"
+              alt=""
+            />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlui6uGHoqMAZ30Hyqmg6Pm92N7kakoI_zA03Z6w7MqbPuXA0ZHZuM1xSJl4u0K0zON4Q&usqp=CAU"
+              alt=""
+            />
+          </div>
+          <div class="more-container mx-auto d-block d-md-none">
+            <p class="text-center mb-0" style="font-size: 10px">+36 more</p>
+          </div>
+          <h4 class="text-center fs-6 fs-md-4">Atta , Rice & Dal</h4>
+        </div>
+        <div class="col-2 border text-center bg-light mt-0 mt-md-3 custom-box" data-url="Vegatables.html">
+            <div class="img-grid">
+            <img
+              src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/41jl2nGAUiL._FMwebp__SR300,300__TTD_.jpg"
+              alt=""
+            />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDmfTwcd_xP2m3609pwj_osPLtfJUkkfDpz0RpR6Xu5tC7ht-YhFpEece1w6yoU0tihNc&usqp=CAU"
+              class="bg-white rounded-2"
+              alt=""
+            />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDmfTwcd_xP2m3609pwj_osPLtfJUkkfDpz0RpR6Xu5tC7ht-YhFpEece1w6yoU0tihNc&usqp=CAU"
+              alt=""
+            />
+            <img
+              src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/41jl2nGAUiL._FMwebp__SR300,300__TTD_.jpg"
+              alt=""
+            />
+          </div>
+          <div class="more-container mx-auto d-block d-md-none">
+            <p class="text-center mb-0" style="font-size: 10px">+142 more</p>
+          </div>
+          <h4 class="text-center fs-6 fs-md-4">Bakery & Biscuits</h4>
+        </div>
+      </div>
     </div>
     <!-- Feature this week -->
 
-    <div class="container mt-2">
+      <div class="container mt-2">
         <h4 class="fs-6 fs-md-4 fw-bold ms-0 ms-md-4">Featured this week</h4>
-        <div class="scroll-container">
-            <!-- Repeat this  -->
-            <div class="flex-week" data-url="oil.html">
-                <div class="feature">
-                    <p>Featured</p>
-                    <img src="https://images.pexels.com/photos/12026055/pexels-photo-12026055.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="Milk" />
-                </div>
+      <div class="scroll-container">
+        <!-- Repeat this  -->
+        <div class="flex-week" data-url="oil.html">
+          <div class="feature">
+            <p>Featured</p>
+          <img
+            src="https://images.pexels.com/photos/12026055/pexels-photo-12026055.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Milk"
+          />
             </div>
-            <div class="flex-week" data-url="oil.html">
-                <div class="feature">
-                    <p>Featured</p>
-                    <img src="https://images.pexels.com/photos/8534088/pexels-photo-8534088.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="Milk" />
-                </div>
             </div>
-            <div class="flex-week" data-url="oil.html">
-                <div class="feature">
-                    <p>Featured</p>
-                    <img src="https://images.pexels.com/photos/21424632/pexels-photo-21424632/free-photo-of-modern-smartphone-on-wooden-table.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="Milk" />
-                </div>
+             <div class="flex-week" data-url="oil.html">
+              <div class="feature">
+            <p>Featured</p>
+          <img
+            src="https://images.pexels.com/photos/8534088/pexels-photo-8534088.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Milk"
+          />
+              </div>
             </div>
-            <div class="flex-week" data-url="oil.html">
-                <div class="feature">
-                    <p>Featured</p>
-                    <img src="https://images.pexels.com/photos/3819969/pexels-photo-3819969.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="Coca cola" />
-                </div>
+             <div class="flex-week"data-url="oil.html">
+              <div class="feature">
+            <p>Featured</p>
+          <img
+            src="https://images.pexels.com/photos/21424632/pexels-photo-21424632/free-photo-of-modern-smartphone-on-wooden-table.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Milk"
+          />
+              </div>
             </div>
-            <div class="flex-week" data-url="oil.html">
-                <div class="feature">
-                    <p>Featured</p>
-                    <img src="https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="Face Wash" />
-                </div>
+             <div class="flex-week" data-url="oil.html">
+              <div class="feature">
+            <p>Featured</p>
+          <img
+            src="https://images.pexels.com/photos/3819969/pexels-photo-3819969.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Coca cola"
+          />
+              </div>
             </div>
-            <div class="flex-week" data-url="oil.html">
-                <div class="feature">
-                    <p>Featured</p>
-                    <img src="https://images.pexels.com/photos/3373737/pexels-photo-3373737.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="Milk" />
-                </div>
+             <div class="flex-week" data-url="oil.html">
+              <div class="feature">
+            <p>Featured</p>
+          <img
+            src="https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Face Wash"
+          />
+              </div>
             </div>
-            <div class="flex-week" data-url="oil.html">
-                <div class="feature">
-                    <p>Featured</p>
-                    <img src="https://images.pexels.com/photos/2783873/pexels-photo-2783873.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="Milk" />
-                </div>
+             <div class="flex-week" data-url="oil.html">
+              <div class="feature">
+            <p>Featured</p>
+          <img
+            src="https://images.pexels.com/photos/3373737/pexels-photo-3373737.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Milk"
+          />
+              </div>
             </div>
-            <div class="flex-week" data-url="oil.html">
-                <div class="feature">
-                    <p>Featured</p>
-                    <img src="https://images.pexels.com/photos/4389678/pexels-photo-4389678.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="Milk" />
-                </div>
+             <div class="flex-week" data-url="oil.html">
+              <div class="feature">
+            <p>Featured</p>
+          <img
+            src="https://images.pexels.com/photos/2783873/pexels-photo-2783873.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Milk"
+          />
+              </div>
             </div>
-            <div class="flex-week" data-url="oil.html">
-                <div class="feature">
-                    <p>Featured</p>
-                    <img src="https://images.pexels.com/photos/2893635/pexels-photo-2893635.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="Milk" />
-                </div>
+             <div class="flex-week" data-url="oil.html">
+              <div class="feature">
+            <p>Featured</p>
+          <img
+            src="https://images.pexels.com/photos/4389678/pexels-photo-4389678.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Milk"
+          />
             </div>
-            <div class="flex-week" data-url="oil.html">
-                <div class="feature">
-                    <p>Featured</p>
-                    <img src="https://images.pexels.com/photos/7881483/pexels-photo-7881483.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="Chair" />
-                </div>
+             </div>
+             <div class="flex-week" data-url="oil.html">
+              <div class="feature">
+            <p>Featured</p>
+          <img
+            src="https://images.pexels.com/photos/2893635/pexels-photo-2893635.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Milk"
+          />
             </div>
+             </div>
+             <div class="flex-week" data-url="oil.html">
+              <div class="feature">
+            <p>Featured</p>
+          <img
+            src="https://images.pexels.com/photos/7881483/pexels-photo-7881483.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Chair"
+          />
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
 
-    <!-- Grocery & Kitchen -->
+        <!-- Grocery & Kitchen -->
 
-    <div class="border p-2 mt-2 grocery">
-        <h4 class="fs-6 fs-md-4 fw-bold ms-0 ms-md-4">Grocery & Kitchen</h4>
-        <div class="row d-flex justify-content-evenly align-items-center sells">
-            <div class="col-2 border text-center custom-box" data-url="masala.html">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/2802527/pexels-photo-2802527.jpeg" alt="" />
-                </div>
-                <p>Oil, Masala</p>
-            </div>
-
-            <div class="col-2 border text-center custom-box">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/7262898/pexels-photo-7262898.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
-
-                </div>
-                <p>Vegetable</p>
-            </div>
-
-            <div class="col-2 border text-center  custom-box">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/10822135/pexels-photo-10822135.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
-
-                </div>
-                <p>Oats</p>
-            </div>
-            <!--  repeat -- -->
-            <div class="col-2 border text-center mt-4 custom-box">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/6294242/pexels-photo-6294242.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
-                </div>
-                <p>Eggs</p>
-            </div>
-            <div class="col-2 border text-center mt-4 custom-box">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/23801241/pexels-photo-23801241/free-photo-of-smiling-brunette-woman-holding-bag-of-flour.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
-
-                </div>
-                <p>Kaju</p>
-            </div>
-
-            <div class="col-2 border text-center mt-4 custom-box">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/13418302/pexels-photo-13418302.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
-
-                </div>
-                <p>Breads</p>
-            </div>
-
+          <div class="border p-2 mt-2 grocery">
+      <h4 class="fs-6 fs-md-4 fw-bold ms-0 ms-md-4">Grocery & Kitchen</h4>
+      <div class="row d-flex justify-content-evenly align-items-center sells">
+        <div class="col-2 border text-center custom-box" data-url="masala.html">
+          <div class="kitchen-img">
+            <img
+              src="https://images.pexels.com/photos/31280796/pexels-photo-31280796.jpeg"
+              alt=""
+            />
+          </div>
+           <p>Oil, Masala</p>
         </div>
+       
+        <div class="col-2 border text-center custom-box" data-url="vegatables.html">
+            <div class="kitchen-img">
+            <img
+              src="https://images.pexels.com/photos/142520/pexels-photo-142520.jpeg"
+              alt=""
+            />
+
+          </div>
+          <p>Vegetable</p>
+        </div>
+      
+        <div class="col-2 border text-center  custom-box" data-url="oats.html">
+            <div class="kitchen-img">
+            <img
+              src="https://images.pexels.com/photos/10822135/pexels-photo-10822135.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+  
+          </div>
+          <p>Breakfast</p>
+        </div>
+        <!--  repeat -- -->
+           <div class="col-2 border text-center mt-4 custom-box" data-url="dairy.html">
+          <div class="kitchen-img">
+            <img
+              src="https://t4.ftcdn.net/jpg/01/40/27/57/360_F_140275752_F22I8zvpniqS4dEqtLTCeXoyJjK6uiKz.jpg"
+              alt=""
+            />
+          </div>
+          <p>Dairy, Bread & Eggs</p>
+        </div>
+        <div class="col-2 border text-center mt-4 custom-box"  data-url="vegatables.html">
+            <div class="kitchen-img">
+            <img
+              src="https://images.pexels.com/photos/23801241/pexels-photo-23801241/free-photo-of-smiling-brunette-woman-holding-bag-of-flour.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+
+          </div>
+          <p>Kaju</p>
+        </div>
+      
+        <div class="col-2 border text-center mt-4 custom-box" data-url="masala.html">
+            <div class="kitchen-img">
+            <img
+              src="https://images.pexels.com/photos/13418302/pexels-photo-13418302.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+  
+          </div>
+          <p>Breads</p>
+        </div>
+
+      </div>
     </div>
 
     <!-- Snack and Drinks -->
 
-    <div class="border p-2 mt-2 grocery">
-        <h4 class="fs-6 fs-md-4 fw-bold ms-0 ms-md-4">Snacks & Drinks</h4>
-        <div class="row d-flex justify-content-evenly align-items-center sells">
-            <div class="col-2 border text-center custom-box">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/3252138/pexels-photo-3252138.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
-                </div>
-                <p>Chai</p>
-            </div>
-            <div class="col-2 border text-center custom-box">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/24870653/pexels-photo-24870653/free-photo-of-a-hot-dog-and-chips-are-served-with-a-drink.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
-
-                </div>
-                <p>Juice</p>
-            </div>
-
-            <div class="col-2 border text-center custom-box">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/6941039/pexels-photo-6941039.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
-
-                </div>
-                <p>Snacks</p>
-            </div>
-            <!--  repeat -- -->
-            <div class="col-2 border text-center mt-3 custom-box">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/6941028/pexels-photo-6941028.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
-                </div>
-                <p>Cranchy</p>
-            </div>
-            <div class="col-2 border text-center mt-3 custom-box">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/4113664/pexels-photo-4113664.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
-
-                </div>
-                <p>Cocacola</p>
-            </div>
-
-            <div class="col-2 border text-center mt-3 custom-box">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/12464511/pexels-photo-12464511.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
-                </div>
-                <p>Fruity</p>
-            </div>
+            <div class="border p-2 mt-2 grocery">
+      <h4 class="fs-6 fs-md-4 fw-bold ms-0 ms-md-4">Snacks & Drinks</h4>
+      <div class="row d-flex justify-content-evenly align-items-center sells">
+        <div class="col-2 border text-center custom-box">
+          <div class="kitchen-img">
+            <img
+              src="https://images.pexels.com/photos/3252138/pexels-photo-3252138.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+          </div>
+          <p>Chai</p>
         </div>
+        <div class="col-2 border text-center custom-box"  data-url="oats.html">
+            <div class="kitchen-img">
+            <img
+              src="https://images.pexels.com/photos/24870653/pexels-photo-24870653/free-photo-of-a-hot-dog-and-chips-are-served-with-a-drink.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+
+          </div>
+          <p>Juice</p>
+        </div>
+      
+        <div class="col-2 border text-center custom-box" data-url="dairy.html">
+            <div class="kitchen-img">
+            <img
+              src="https://images.pexels.com/photos/6941039/pexels-photo-6941039.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+  
+          </div>
+          <p>Snacks</p>
+        </div>
+        <!--  repeat -- -->
+           <div class="col-2 border text-center mt-3 custom-box" data-url="oats.html">
+          <div class="kitchen-img">
+            <img
+              src="https://images.pexels.com/photos/6941028/pexels-photo-6941028.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+          </div>
+          <p>Cranchy</p>
+        </div>
+        <div class="col-2 border text-center mt-3 custom-box" data-url="oats.html">
+            <div class="kitchen-img">
+            <img
+              src="https://images.pexels.com/photos/4113664/pexels-photo-4113664.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+
+          </div>
+          <p>Cocacola</p>
+        </div>
+      
+        <div class="col-2 border text-center mt-3 custom-box" data-url="oats.html">
+            <div class="kitchen-img">
+            <img
+              src="https://images.pexels.com/photos/12464511/pexels-photo-12464511.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+          </div>
+          <p>Fruity</p>
+        </div>
+      </div>
     </div>
 
     <!-- Beauty & Personal Care -->
 
-    <div class="border p-2 mt-2 grocery">
-        <h4 class="fs-6 fs-md-4 fw-bold ms-0 ms-md-4">Beauty & Personal Care</h4>
-        <div class="row d-flex justify-content-evenly align-items-center sells">
-            <div class="col-2 border text-center custom-box">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/8945932/pexels-photo-8945932.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
-                </div>
-                <p>Syrem</p>
-            </div>
-            <div class="col-2 border text-center custom-box">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/6847824/pexels-photo-6847824.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
-
-                </div>
-                <p>Sun Cream</p>
-            </div>
-
-            <div class="col-2 border text-center custom-box">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/8990301/pexels-photo-8990301.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
-
-                </div>
-                Bodywash
-            </div>
-            <!--  repeat -- -->
-            <div class="col-2 border text-center mt-3 custom-box">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/7814991/pexels-photo-7814991.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
-                </div>
-                <p>Spray</p>
-            </div>
-            <div class="col-2 border text-center mt-3 custom-box">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/3373739/pexels-photo-3373739.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
-
-                </div>
-                <p>Makeup Kit</p>
-            </div>
-
-            <div class="col-2 border text-center mt-3 custom-box">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/3762875/pexels-photo-3762875.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
-
-                </div>
-                <p>Skincare</p>
-            </div>
-
+            <div class="border p-2 mt-2 grocery">
+      <h4 class="fs-6 fs-md-4 fw-bold ms-0 ms-md-4">Beauty & Personal Care</h4>
+      <div class="row d-flex justify-content-evenly align-items-center sells">
+        <div class="col-2 border text-center custom-box" data-url="dairy.html">
+          <div class="kitchen-img">
+            <img
+              src="https://images.pexels.com/photos/8945932/pexels-photo-8945932.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+          </div>
+          <p>Syrem</p>
         </div>
+        <div class="col-2 border text-center custom-box" data-url="dairy.html">
+            <div class="kitchen-img">
+            <img
+              src="https://images.pexels.com/photos/6847824/pexels-photo-6847824.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+
+          </div>
+          <p>Sun Cream</p>
+        </div>
+      
+        <div class="col-2 border text-center custom-box" data-url="dairy.html">
+            <div class="kitchen-img">
+            <img
+              src="https://images.pexels.com/photos/8990301/pexels-photo-8990301.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+  
+          </div>
+          Bodywash
+        </div>
+        <!--  repeat -- -->
+           <div class="col-2 border text-center mt-3 custom-box" data-url="dairy.html">
+          <div class="kitchen-img">
+            <img
+              src="https://images.pexels.com/photos/7814991/pexels-photo-7814991.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+          </div>
+          <p>Spray</p>
+        </div>
+        <div class="col-2 border text-center mt-3 custom-box"  data-url="masala.html">
+            <div class="kitchen-img">
+            <img
+              src="https://images.pexels.com/photos/3373739/pexels-photo-3373739.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+
+          </div>
+          <p>Makeup Kit</p>
+        </div>
+      
+        <div class="col-2 border text-center mt-3 custom-box"  data-url="masala.html">
+            <div class="kitchen-img">
+            <img
+              src="https://images.pexels.com/photos/3762875/pexels-photo-3762875.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+  
+          </div>
+          <p>Skincare</p>
+        </div>
+
+      </div>
     </div>
 
     <!-- HouseHold Essentials -->
-    <div class="border p-2 mt-2 HouseHold">
-        <h4 class="fs-6 fs-md-4 fw-bold ms-0 ms-md-4">HouseHold Essentials</h4>
-        <div class="row d-flex justify-content-evenly align-items-center sells">
-            <div class="col-2 border text-center custom-box">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/5217912/pexels-photo-5217912.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
-                </div>
-                <p>House Cleaner</p>
-            </div>
-            <div class="col-2 border text-center custom-box">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/4107970/pexels-photo-4107970.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
-
-                </div>
-                <p>Dettol</p>
-            </div>
-
-            <div class="col-2 border text-center custom-box">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/13872556/pexels-photo-13872556.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
-
-                </div>
-                <p>Soap</p>
-            </div>
+        <div class="border p-2 mt-2 HouseHold">
+      <h4 class="fs-6 fs-md-4 fw-bold ms-0 ms-md-4">HouseHold Essentials</h4>
+      <div class="row d-flex justify-content-evenly align-items-center sells">
+        <div class="col-2 border text-center custom-box" data-url="masala.html">
+          <div class="kitchen-img">
+            <img
+              src="https://images.pexels.com/photos/5217912/pexels-photo-5217912.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+          </div>
+          <p>House Cleaner</p>
         </div>
+        <div class="col-2 border text-center custom-box" data-url="masala.html">
+            <div class="kitchen-img">
+            <img
+              src="https://images.pexels.com/photos/4107970/pexels-photo-4107970.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+
+          </div>
+          <p>Dettol</p>
+        </div>
+      
+        <div class="col-2 border text-center custom-box" data-url="masala.html">
+            <div class="kitchen-img">
+            <img
+              src="https://images.pexels.com/photos/13872556/pexels-photo-13872556.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+  
+          </div>
+          <p>Soap</p>
+        </div>
+      </div>
+        </div>
+
+        <!-- shop now -->
+
+         <div
+      class="shop-img d-flex justify-content-center mt-3"
+      style="position: relative"
+    >
+       <img
+        src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+        class="image-fluid rounded main shop"
+        alt=""
+      />
+        <img
+        src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+        class="image-fluid rounded main shop"
+        alt=""
+      />
+       <img
+        src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+        class="image-fluid rounded main shop"
+        alt=""
+      />
+
+        <img
+        src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+        class="image-fluid rounded main shop"
+        alt=""
+      />
+       <img
+        src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+        class="image-fluid rounded main shop"
+        alt=""
+      />
+       <img
+        src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+        class="image-fluid rounded main shop"
+        alt=""
+      />
+       <img
+        src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+        class="image-fluid rounded main shop"
+        alt=""
+      />
+       <img
+        src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+        class="image-fluid rounded main shop"
+        alt=""
+      />
+       <img
+        src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
+        class="image-fluid rounded main shop"
+        alt=""
+      />
     </div>
 
-    <!-- shop now -->
-
-    <div class="shop-img d-flex justify-content-center mt-3" style="position: relative">
-        <img src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
-            class="image-fluid rounded main shop" alt="" />
-        <img src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
-            class="image-fluid rounded main shop" alt="" />
-        <img src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
-            class="image-fluid rounded main shop" alt="" />
-
-        <img src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
-            class="image-fluid rounded main shop" alt="" />
-        <img src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
-            class="image-fluid rounded main shop" alt="" />
-        <img src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
-            class="image-fluid rounded main shop" alt="" />
-        <img src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
-            class="image-fluid rounded main shop" alt="" />
-        <img src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
-            class="image-fluid rounded main shop" alt="" />
-        <img src="https://img.freepik.com/free-vector/restaurant-mural-wallpaper_52683-47493.jpg"
-            class="image-fluid rounded main shop" alt="" />
-    </div>
-
-    <section class="flavour-section my-4 px-3">
+       <section class="flavour-section my-4 px-3">
         <div class="mx-auto" style="max-width: 1300px;">
-            <h5 class="fw-bold mb-0">Flavours that linger</h5>
+            <h5 class="fw-bold mb-0">A trial run before you commit</h5>
             <p class="text-muted small mb-3">Sponsored</p>
 
             <div class="row g-3">
                 <!-- 🔹 Card 1 -->
                 <div class="col-6 col-md-3 col-lg-2">
                     <div class="card border rounded-4 p-2 shadow-sm">
-                        <img src="https://images.pexels.com/photos/6847824/pexels-photo-6847824.jpeg"
+                        <img src="https://m.media-amazon.com/images/I/61f2IuATPsL.jpg"
                             class="img-fluid rounded" style="height: 140px; object-fit: contain;" alt="Product">
                         <div class="mt-2 d-flex flex-wrap gap-1">
-                            <span class="badge rounded-pill bg-warning text-white">🍳 Egg</span>
+                            <span class="badge rounded-pill bg-warning text-white">🍳 The Derma</span>
                             <span class="badge rounded-pill bg-secondary">Cake</span>
                         </div>
                         <h6 class="fw-semibold mt-2 text-truncate-2">
-                            The Baker's Dozen Banana Walnut Pound C...
+                            The Derma Co 1% Hyaluric Sunscreen Gel A...
                         </h6>
                         <p class="text-warning small mb-0">⭐ 4.5 (3,525)</p>
                         <p class="text-muted small mb-1">🕒 8 MINS</p>
                         <strong>₹185</strong>
-                        <button class="btn btn-outline-success btn-sm rounded-pill w-100 mt-2">
+                        <!-- <button class="btn btn-outline-success btn-sm rounded-pill w-100 mt-2">
                             ADD <small class="text-muted">2 options</small>
-                        </button>
+                        </button> -->
+                        <a href="product-details.html" class="btn btn-outline-success btn-sm rounded-pill w-100 mt-2">
+                         ADD <small class="text-muted">2 options</small>
+                          </a>
                     </div>
                 </div>
 
                 <!-- 🔹 Duplicate Card 2 -->
                 <div class="col-6 col-md-3 col-lg-2">
                     <div class="card border rounded-4 p-2 shadow-sm">
-                        <img src="https://images.pexels.com/photos/6847824/pexels-photo-6847824.jpeg"
+                        <img src="https://www.simpleskincare.in/cdn/shop/files/27278_S1-8901030954115_1.jpg?v=1689701946"
                             class="img-fluid rounded" style="height: 140px; object-fit: contain;" alt="Product">
                         <div class="mt-2 d-flex flex-wrap gap-1">
-                            <span class="badge rounded-pill bg-warning text-white">🍳 Egg</span>
-                            <span class="badge rounded-pill bg-primary">Banana Bread</span>
+                            <span class="badge rounded-pill bg-warning text-white">🍳 Dot &</span>
+                            <span class="badge rounded-pill bg-primary">key</span>
                         </div>
                         <h6 class="fw-semibold mt-2 text-truncate-2">
-                            The Baker's Dozen Banana Bread Zero Maid...
+                            Dot & key Watermelon Cooling Sunscreen 30g spf 50+...
                         </h6>
                         <p class="text-warning small mb-0">⭐ 4.2 (2,337)</p>
                         <p class="text-muted small mb-1">🕒 8 MINS</p>
                         <strong>₹165</strong>
-                        <button class="btn btn-outline-success btn-sm rounded-pill w-100 mt-2">
-                            ADD <small class="text-muted">2 options</small>
-                        </button>
+                       <a href="product-details.html" class="btn btn-outline-success btn-sm rounded-pill w-100 mt-2">
+                         ADD <small class="text-muted">2 options</small>
+                          </a>
                     </div>
                 </div>
 
                 <div class="col-6 col-md-3 col-lg-2">
                     <div class="card border rounded-4 p-2 shadow-sm">
-                        <img src="https://images.pexels.com/photos/6847824/pexels-photo-6847824.jpeg"
+                        <img src="https://smartwaywellness.com/wp-content/uploads/2021/10/PROMINENT-CHARCOAL-FACEWASH-100-GM-1.jpg"
                             class="img-fluid rounded" style="height: 140px; object-fit: contain;" alt="Product">
                         <div class="mt-2 d-flex flex-wrap gap-1">
-                            <span class="badge rounded-pill bg-warning text-white">🍳 Egg</span>
-                            <span class="badge rounded-pill bg-primary">Banana Bread</span>
+                            <span class="badge rounded-pill bg-warning text-white">🍳 minimalist</span>
+                            <span class="badge rounded-pill bg-primary">new</span>
                         </div>
                         <h6 class="fw-semibold mt-2 text-truncate-2">
-                            The Baker's Dozen Banana Bread Zero Maid...
+                            Minimalist Sunscreen (spf 50 ++++)Dry Matte...
                         </h6>
                         <p class="text-warning small mb-0">⭐ 4.2 (2,337)</p>
                         <p class="text-muted small mb-1">🕒 8 MINS</p>
                         <strong>₹165</strong>
-                        <button class="btn btn-outline-success btn-sm rounded-pill w-100 mt-2">
-                            ADD <small class="text-muted">2 options</small>
-                        </button>
+                      <a href="product-details.html" class="btn btn-outline-success btn-sm rounded-pill w-100 mt-2">
+                         ADD <small class="text-muted">2 options</small>
+                          </a>
                     </div>
                 </div>
 
                 <div class="col-6 col-md-3 col-lg-2">
                     <div class="card border rounded-4 p-2 shadow-sm">
-                        <img src="https://images.pexels.com/photos/6847824/pexels-photo-6847824.jpeg"
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOwrkUTKW9RQjDqC1y2KCFKQh1SZ_6x94K_A&s"
                             class="img-fluid rounded" style="height: 140px; object-fit: contain;" alt="Product">
                         <div class="mt-2 d-flex flex-wrap gap-1">
-                            <span class="badge rounded-pill bg-warning text-white">🍳 Egg</span>
-                            <span class="badge rounded-pill bg-primary">Banana Bread</span>
+                            <span class="badge rounded-pill bg-warning text-white">🍳 Garnier </span>
+                            <span class="badge rounded-pill bg-primary">Super</span>
                         </div>
                         <h6 class="fw-semibold mt-2 text-truncate-2">
-                            The Baker's Dozen Banana Bread Zero Maid...
+                            Garnier Super UV Invisible Air Mist Sunscreen...
                         </h6>
                         <p class="text-warning small mb-0">⭐ 4.2 (2,337)</p>
                         <p class="text-muted small mb-1">🕒 8 MINS</p>
                         <strong>₹165</strong>
-                        <button class="btn btn-outline-success btn-sm rounded-pill w-100 mt-2">
-                            ADD <small class="text-muted">2 options</small>
-                        </button>
+                        <a href="product-details.html" class="btn btn-outline-success btn-sm rounded-pill w-100 mt-2">
+                         ADD <small class="text-muted">2 options</small>
+                          </a>
                     </div>
                 </div>
 
                 <div class="col-6 col-md-3 col-lg-2">
                     <div class="card border rounded-4 p-2 shadow-sm">
-                        <img src="https://images.pexels.com/photos/6847824/pexels-photo-6847824.jpeg"
+                        <img src="https://images.mamaearth.in/catalog/product/r/i/rice-fw_1.jpg?format=auto&height=600&width=600"
                             class="img-fluid rounded" style="height: 140px; object-fit: contain;" alt="Product">
                         <div class="mt-2 d-flex flex-wrap gap-1">
-                            <span class="badge rounded-pill bg-warning text-white">🍳 Egg</span>
-                            <span class="badge rounded-pill bg-primary">Banana Bread</span>
+                            <span class="badge rounded-pill bg-warning text-white">🍳 MamaEarth</span>
+                            <span class="badge rounded-pill bg-primary">Dark</span>
                         </div>
                         <h6 class="fw-semibold mt-2 text-truncate-2">
-                            The Baker's Dozen Banana Bread Zero Maid...
+                            MamaEarth & Niacinamide Hybrid Sunscreen...
                         </h6>
                         <p class="text-warning small mb-0">⭐ 4.2 (2,337)</p>
                         <p class="text-muted small mb-1">🕒 8 MINS</p>
                         <strong>₹165</strong>
-                        <button class="btn btn-outline-success btn-sm rounded-pill w-100 mt-2">
-                            ADD <small class="text-muted">2 options</small>
-                        </button>
+                        <a href="product-details.html" class="btn btn-outline-success btn-sm rounded-pill w-100 mt-2">
+                         ADD <small class="text-muted">2 options</small>
+                          </a>
                     </div>
                 </div>
 
                 <!-- 🔹 Card 3 -->
                 <div class="col-6 col-md-3 col-lg-2">
                     <div class="card border rounded-4 p-2 shadow-sm">
-                        <img src="https://images.pexels.com/photos/6847824/pexels-photo-6847824.jpeg"
+                        <img src="https://pixies.in/media/catalog/product/cache/e9780188a08ae15edb442fcb34502371/0/1/01-garnier-power-white-face-wash-50gm.jpg"
                             class="img-fluid rounded" style="height: 140px; object-fit: contain;" alt="Product">
                         <div class="mt-2 d-flex flex-wrap gap-1">
-                            <span class="badge rounded-pill bg-warning text-white">🍳 Egg</span>
-                            <span class="badge rounded-pill bg-primary">Banana Bread</span>
+                            <span class="badge rounded-pill bg-warning text-white">🍳 Garnier</span>
+                            <span class="badge rounded-pill bg-primary">Men</span>
                         </div>
                         <h6 class="fw-semibold mt-2 text-truncate-2">
-                            The Baker's Dozen Banana Bread Zero Maid...
+                            Garnier Men Charchol Remove white spot and darkness...
                         </h6>
                         <p class="text-warning small mb-0">⭐ 4.2 (2,337)</p>
                         <p class="text-muted small mb-1">🕒 8 MINS</p>
                         <strong>₹165</strong>
-                        <button class="btn btn-outline-success btn-sm rounded-pill w-100 mt-2">
-                            ADD <small class="text-muted">2 options</small>
-                        </button>
+                       <a href="product-details.html" class="btn btn-outline-success btn-sm rounded-pill w-100 mt-2">
+                         ADD <small class="text-muted">2 options</small>
+                          </a>
                     </div>
                 </div>
 
@@ -693,563 +868,705 @@
     </section>
 
     <!-- Events Section -->
-    <div class="container my-4">
-        <h5><strong>Events this week</strong></h5>
-        <div class="row g-3">
-            <div class="col-6 col-md-3">
-                <div class="event-box p-2 rounded text-white" style="background: #8b2b88; height: 250px">
-                    <h6>Smooth Skin Days</h6>
-                    <img src="https://images.pexels.com/photos/3373739/pexels-photo-3373739.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        class="img-fluid" style="height: 200px; width: 300px;" alt="">
-                </div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="event-box p-2 rounded text-white" style="background: #b0e0e6; height: 250px">
-                    <h6>Chill and Munch</h6>
-                    <img src="https://images.pexels.com/photos/3373739/pexels-photo-3373739.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        class="img-fluid" style="height: 200px; width: 300px;" alt="">
-                </div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="event-box p-2 rounded text-white" style="background: #fcd303; height: 250px">
-                    <h6>Candy Land</h6>
-                    <img src="https://images.pexels.com/photos/3373739/pexels-photo-3373739.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        class="img-fluid" style="height: 200px; width: 300px;" alt="">
-                </div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="event-box p-2 rounded text-white" style="background: #7b3f00; height: 250px">
-                    <h6>Fuel & Flex</h6>
-                    <img src="https://images.pexels.com/photos/3373739/pexels-photo-3373739.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        class="img-fluid" style="height: 200px; width: 300px;" alt="">
-                </div>
-            </div>
-        </div>
+<div class="container my-4">
+  <h5><strong>Events this week</strong></h5>
+  <div class="row g-3">
+    <div class="col-6 col-md-3">
+      <div class="event-box p-2 rounded text-white" style="background: #8b2b88; height: 250px">
+        <h6>Smooth Skin Days</h6>
+        <img src="https://images.pexels.com/photos/3373739/pexels-photo-3373739.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid" style="height: 200px; width: 300px;" alt="">
+      </div>
     </div>
+    <div class="col-6 col-md-3">
+      <div class="event-box p-2 rounded text-white" style="background: #b0e0e6; height: 250px">
+        <h6>Chill and Munch</h6>
+        <img src="https://images.pexels.com/photos/3373739/pexels-photo-3373739.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid" style="height: 200px; width: 300px;" alt="">
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="event-box p-2 rounded text-white" style="background: #fcd303; height: 250px">
+        <h6>Candy Land</h6>
+        <img src="https://images.pexels.com/photos/3373739/pexels-photo-3373739.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid" style="height: 200px; width: 300px;" alt="">
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="event-box p-2 rounded text-white" style="background: #7b3f00; height: 250px">
+        <h6>Fuel & Flex</h6>
+        <img src="https://images.pexels.com/photos/3373739/pexels-photo-3373739.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid" style="height: 200px; width: 300px;" alt="">
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- shop by store -->
 
-
-    <div class="border p-2 mt-2 grocery">
-        <h4 class="fs-6 fs-md-4 fw-bold ms-0 ms-md-4">Shop by Store</h4>
-        <div class="row d-flex justify-content-evenly align-items-center sells">
-            <div class="col-2 border text-center custom-box">
-                <div class="kitchen-img">
-                    <img src="https://www.pexels.com/photo/cute-cat-sitting-on-street-18762927/" alt="" />
-                </div>
-                <p>Syrem</p>
-            </div>
-            <div class="col-2 border text-center custom-box">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/6847824/pexels-photo-6847824.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
-
-                </div>
-                <p>Sun Cream</p>
-            </div>
-
-            <div class="col-2 border text-center custom-box">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/8990301/pexels-photo-8990301.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
-
-                </div>
-                Bodywash
-            </div>
-            <!--  repeat -- -->
-            <div class="col-2 border text-center mt-3 custom-box">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/7814991/pexels-photo-7814991.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
-                </div>
-                <p>Spray</p>
-            </div>
-            <div class="col-2 border text-center mt-3 custom-box">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/3373739/pexels-photo-3373739.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
-
-                </div>
-                <p>Makeup Kit</p>
-            </div>
-
-            <div class="col-2 border text-center mt-3 custom-box">
-                <div class="kitchen-img">
-                    <img src="https://images.pexels.com/photos/3762875/pexels-photo-3762875.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="" />
-
-                </div>
-                <p>Skincare</p>
-            </div>
-
+    
+            <div class="border p-2 mt-2 grocery">
+      <h4 class="fs-6 fs-md-4 fw-bold ms-0 ms-md-4">Shop by Store</h4>
+      <div class="row d-flex justify-content-evenly align-items-center sells">
+        <div class="col-2 border text-center custom-box">
+          <div class="kitchen-img">
+            <img 
+              src="https://www.pexels.com/photo/cute-cat-sitting-on-street-18762927/"
+              alt=""
+            />
+          </div>
+          <p>Syrem</p>
         </div>
+        <div class="col-2 border text-center custom-box">
+            <div class="kitchen-img">
+            <img
+              src="https://images.pexels.com/photos/6847824/pexels-photo-6847824.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+
+          </div>
+          <p>Sun Cream</p>
+        </div>
+      
+        <div class="col-2 border text-center custom-box">
+            <div class="kitchen-img">
+            <img
+              src="https://images.pexels.com/photos/8990301/pexels-photo-8990301.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+  
+          </div>
+          Bodywash
+        </div>
+        <!--  repeat -- -->
+           <div class="col-2 border text-center mt-3 custom-box">
+          <div class="kitchen-img">
+            <img
+              src="https://images.pexels.com/photos/7814991/pexels-photo-7814991.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+          </div>
+          <p>Spray</p>
+        </div>
+        <div class="col-2 border text-center mt-3 custom-box">
+            <div class="kitchen-img">
+            <img
+              src="https://images.pexels.com/photos/3373739/pexels-photo-3373739.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+
+          </div>
+          <p>Makeup Kit</p>
+        </div>
+      
+        <div class="col-2 border text-center mt-3 custom-box">
+            <div class="kitchen-img">
+            <img
+              src="https://images.pexels.com/photos/3762875/pexels-photo-3762875.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt=""
+            />
+  
+          </div>
+          <p>Skincare</p>
+        </div>
+
+      </div>
     </div>
     <!-- flavor -->
 
 
 
     <!-- first image -->
-    <div class="img-main d-flex justify-content-center" style="position: relative">
-        <img src="https://wallpapercave.com/wp/Cy7YPNg.jpg" class="image-fluid rounded main img" alt="" />
-        <div class="corner">
-            <h1>Paan Corner</h1>
-            <p>Your Favorite Paan Shop is now online</p>
-            <button class="border-0 rounded-2 p-1">
-                <a class="text-decoration-none text-success" href="shop.html">Shop Now</a>
-            </button>
-        </div>
+    <div
+      class="img-main d-flex justify-content-center"
+      style="position: relative"
+    >
+      <img
+        src="https://wallpapercave.com/wp/Cy7YPNg.jpg"
+        class="image-fluid rounded main img"
+        alt=""
+      />
+      <div class="corner">
+        <h1>Paan Corner</h1>
+        <p>Your Favorite Paan Shop is now online</p>
+        <button class="border-0 rounded-2 p-1">
+          <a class="text-decoration-none text-success" href="shop.html"
+            >Shop Now</a
+          >
+        </button>
+      </div>
     </div>
 
     <!-- second box -->
     <div class="container-fluid container-lg">
-        <div class="row">
-            <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-sm-0">
-                <div class="border border-primary bg-success p-3 text-center rounded-2 box1" style="min-height: 250px">
-                    <div class="about">
-                        <h1 class="fs-4 text-start text-white fs-sm-5 fs-md-5 fs-lg-4">
-                            Get anuthing in 10 Minute
-                        </h1>
-                        <div class="print d-flex justify-content-between align-items-center">
-                            <div class="text-start text-white">
-                                <!-- <h1 class="fs-6 fs-sm-5 fs-md-5 fs -lg-4">Get Printouts in 10 Minute</h1> -->
-                                <p class="fs-7 fs-sm-6 fs-md-6">
-                                    Safe & Secure<br />Convenient & Fast
-                                </p>
-                                <button class="border-0 p-1 bg-white rounded-2">
-                                    Order Now
-                                </button>
-                            </div>
-                            <div class="img-container ms-2">
-                                <img src="https://onlinepngtools.com/images/examples-onlinepngtools/yellow-rose-transparent.png"
-                                    alt="printer" style="max-width: 160px; height: 120px; margin-top: 15px" />
-                            </div>
-                        </div>
-                    </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-sm-0">
+          <div
+            class="border border-primary bg-success p-3 text-center rounded-2 box1"
+            style="min-height: 250px"
+          >
+            <div class="about">
+              <h1 class="fs-4 text-start text-white fs-sm-5 fs-md-5 fs-lg-4">
+                Get anuthing in 10 Minute
+              </h1>
+              <div
+                class="print d-flex justify-content-between align-items-center"
+              >
+                <div class="text-start text-white">
+                  <!-- <h1 class="fs-6 fs-sm-5 fs-md-5 fs -lg-4">Get Printouts in 10 Minute</h1> -->
+                  <p class="fs-7 fs-sm-6 fs-md-6">
+                    Safe & Secure<br />Convenient & Fast
+                  </p>
+                  <button class="border-0 p-1 bg-white rounded-2">
+                    Order Now
+                  </button>
                 </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-sm-0">
-                <div class="border border-primary bg-info p-3 text-center rounded-2 box2" style="min-height: 250px">
-                    <div class="about">
-                        <h1 class="fs-4 fs-sm-5 fs-md-5 text-start text-white fs-lg-4">
-                            Pharmacy at your Doorstep!
-                        </h1>
-                        <div class="print d-flex justify-content-between align-items-center">
-                            <div class="text-start text-white">
-                                <!-- <h1 class="fs-6 fs-sm-5 fs-md-5 fs -lg-4 ms-3">Get Printouts in 10 Minute</h1> -->
-                                <p class="fs-7 fs-sm-6 fs-md-6">
-                                    Cough Syrup and<br />Pain Releif
-                                </p>
-                                <button class="border-0 p-1 bg-white rounded-2">
-                                    Order Now
-                                </button>
-                            </div>
-
-                            <div class="img-container ms-2">
-                                <img src="https://cdn01.pharmeasy.in/dam/products_otc/Z98438/eno-fruit-salt-lemon-powder-5-gm-pack-of-30-2-1733470404.jpg"
-                                    alt="printer" style="max-width: 160px; height: 120px; margin-top: 15px" />
-                            </div>
-                        </div>
-                    </div>
+                <div class="img-container ms-2">
+                  <img
+                    src="https://onlinepngtools.com/images/examples-onlinepngtools/yellow-rose-transparent.png"
+                    alt="printer"
+                    style="max-width: 160px; height: 120px; margin-top: 15px"
+                  />
                 </div>
+              </div>
             </div>
-
-            <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-sm-0">
-                <div class="border border-primary bg-warning p-3 text-center rounded-2 box4" style="min-height: 250px">
-                    <div class="about">
-                        <h1 class="fs-4 fs-sm-5 fs-md-5 text-start fs-lg-4">
-                            Pet Care Supplies <br />
-                            in Minute
-                        </h1>
-                        <div class="print d-flex justify-content-between align-items-center">
-                            <div class="text-start text-black">
-                                <!-- <h1 class="fs-sm-5 fs-md-5 fs -lg-4 ms-3">Pet Care Supplies <br> in Minute</h1> -->
-                                <p class="fs-6 fs-sm-6 fs-md-6">
-                                    Food treate<br />Toys & More
-                                </p>
-                                <button class="border-1 p-1 btn btn-dark">Order Now</button>
-                            </div>
-
-                            <div class="img-container ms-2 pet">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy5vjKFx6KiQHRhyTyxeUp-ngL8zIQi-Zeqg&s"
-                                    alt="printer" style="max-width: 160px; margin-top: 15px" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-sm-0">
-                <div class="border border-primary bg-danger p-3 text-center rounded-2 box1" style="min-height: 250px">
-                    <div class="about">
-                        <h1 class="fs-4 text-start text-black fs-sm-5 fs-md-5 fs -lg-4">
-                            Get anuthing in 10 Minute
-                        </h1>
-                        <div class="print d-flex justify-content-between align-items-center">
-                            <div class="text-start text-black">
-                                <!-- <h1 class="fs-6 fs-sm-5 fs-md-5 fs -lg-4">Get Printouts in 10 Minute</h1> -->
-                                <p class="fs-7 fs-sm-6 fs-md-6">
-                                    Safe & Secure<br />Convenient & Fast
-                                </p>
-                                <button class="border-1 p-1 btn btn-dark">Order Now</button>
-                            </div>
-                            <div class="img-container ms-2">
-                                <img src="https://onlinepngtools.com/images/examples-onlinepngtools/yellow-rose-transparent.png"
-                                    alt="printer" style="max-width: 160px; height: 120px; margin-top: 15px" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-sm-0">
+          <div
+            class="border border-primary bg-info p-3 text-center rounded-2 box2"
+            style="min-height: 250px"
+          >
+            <div class="about">
+              <h1 class="fs-4 fs-sm-5 fs-md-5 text-start text-white fs-lg-4">
+                Pharmacy at your Doorstep!
+              </h1>
+              <div
+                class="print d-flex justify-content-between align-items-center"
+              >
+                <div class="text-start text-white">
+                  <!-- <h1 class="fs-6 fs-sm-5 fs-md-5 fs -lg-4 ms-3">Get Printouts in 10 Minute</h1> -->
+                  <p class="fs-7 fs-sm-6 fs-md-6">
+                    Cough Syrup and<br />Pain Releif
+                  </p>
+                  <button class="border-0 p-1 bg-white rounded-2">
+                    Order Now
+                  </button>
+                </div>
+
+                <div class="img-container ms-2">
+                  <img
+                    src="https://cdn01.pharmeasy.in/dam/products_otc/Z98438/eno-fruit-salt-lemon-powder-5-gm-pack-of-30-2-1733470404.jpg"
+                    alt="printer"
+                    style="max-width: 160px; height: 120px; margin-top: 15px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-sm-0">
+          <div
+            class="border border-primary bg-warning p-3 text-center rounded-2 box4"
+            style="min-height: 250px"
+          >
+            <div class="about">
+              <h1 class="fs-4 fs-sm-5 fs-md-5 text-start fs-lg-4">
+                Pet Care Supplies <br />
+                in Minute
+              </h1>
+              <div
+                class="print d-flex justify-content-between align-items-center"
+              >
+                <div class="text-start text-black">
+                  <!-- <h1 class="fs-sm-5 fs-md-5 fs -lg-4 ms-3">Pet Care Supplies <br> in Minute</h1> -->
+                  <p class="fs-6 fs-sm-6 fs-md-6">
+                    Food treate<br />Toys & More
+                  </p>
+                  <button class="border-1 p-1 btn btn-dark">Order Now</button>
+                </div>
+
+                <div class="img-container ms-2 pet">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy5vjKFx6KiQHRhyTyxeUp-ngL8zIQi-Zeqg&s"
+                    alt="printer"
+                    style="max-width: 160px; margin-top: 15px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3 mb-2 mb-sm-0">
+          <div
+            class="border border-primary bg-danger p-3 text-center rounded-2 box1"
+            style="min-height: 250px"
+          >
+            <div class="about">
+              <h1 class="fs-4 text-start text-black fs-sm-5 fs-md-5 fs -lg-4">
+                Get anuthing in 10 Minute
+              </h1>
+              <div
+                class="print d-flex justify-content-between align-items-center"
+              >
+                <div class="text-start text-black">
+                  <!-- <h1 class="fs-6 fs-sm-5 fs-md-5 fs -lg-4">Get Printouts in 10 Minute</h1> -->
+                  <p class="fs-7 fs-sm-6 fs-md-6">
+                    Safe & Secure<br />Convenient & Fast
+                  </p>
+                  <button class="border-1 p-1 btn btn-dark">Order Now</button>
+                </div>
+                <div class="img-container ms-2">
+                  <img
+                    src="https://onlinepngtools.com/images/examples-onlinepngtools/yellow-rose-transparent.png"
+                    alt="printer"
+                    style="max-width: 160px; height: 120px; margin-top: 15px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Third Box -->
 
     <div class="container mt-3">
-        <div class="pan-container">
-            <div class="flex">
-                <img src="https://5.imimg.com/data5/SELLER/Default/2022/9/GJ/CS/IA/159590095/2-1000x1000.jpg"
-                    alt="Paan Corner" />
-                <div class="card-body">
-                    <h6 class="card-title text-center mb-0">Paan Corner</h6>
-                </div>
-            </div>
-
-            <div class="flex">
-                <img src="https://m.media-amazon.com/images/I/61AIPPYY7cL._AC_UF1000,1000_QL80_.jpg"
-                    alt="Dairy, Bread" />
-                <div class="card-body">
-                    <h6 class="card-title text-center mb-0">Dairy, Bread</h6>
-                </div>
-            </div>
-
-            <div class="flex">
-                <img src="https://tse4.mm.bing.net/th/id/OIP.-6iDrSL0rFPhvNr7joghXgHaHa?r=0&rs=1&pid=ImgDetMain"
-                    alt="Chocolate" />
-                <div class="card-body">
-                    <h6 class="card-title text-center mb-0">Chocolate</h6>
-                </div>
-            </div>
-
-            <div class="flex">
-                <img src="https://tse4.mm.bing.net/th/id/OIP.JNmdbWWupVFO3pOdIhwt1QHaHY?r=0&rs=1&pid=ImgDetMain"
-                    alt="More Dairy" />
-                <div class="card-body">
-                    <h6 class="card-title text-center mb-0">Dairy, Bread</h6>
-                </div>
-            </div>
-
-            <div class="flex">
-                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pet-care-service-design-template-c8545145a404444a76605eaa804eeef6_screen.jpg?ts=1708077969"
-                    alt="Pet Care" />
-                <div class="card-body">
-                    <h6 class="card-title text-center mb-0">Pet & Care</h6>
-                </div>
-            </div>
-
-            <div class="flex">
-                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pet-care-service-design-template-c8545145a404444a76605eaa804eeef6_screen.jpg?ts=1708077969"
-                    alt="Pet Care" />
-                <div class="card-body">
-                    <h6 class="card-title text-center mb-0">Pet & Care</h6>
-                </div>
-            </div>
-
-            <div class="flex">
-                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pet-care-service-design-template-c8545145a404444a76605eaa804eeef6_screen.jpg?ts=1708077969"
-                    alt="Pet Care" />
-                <div class="card-body">
-                    <h6 class="card-title text-center mb-0">Pet & Care</h6>
-                </div>
-            </div>
-
-            <div class="flex">
-                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pet-care-service-design-template-c8545145a404444a76605eaa804eeef6_screen.jpg?ts=1708077969"
-                    alt="Pet Care" />
-                <div class="card-body">
-                    <h6 class="card-title text-center mb-0">Pet & Care</h6>
-                </div>
-            </div>
-
-            <div class="flex">
-                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pet-care-service-design-template-c8545145a404444a76605eaa804eeef6_screen.jpg?ts=1708077969"
-                    alt="Pet Care" />
-                <div class="card-body">
-                    <h6 class="card-title text-center mb-0">Pet & Care</h6>
-                </div>
-            </div>
+      <div class="pan-container">
+        <div class="flex">
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2022/9/GJ/CS/IA/159590095/2-1000x1000.jpg"
+            alt="Paan Corner"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-0">Paan Corner</h6>
+          </div>
         </div>
+
+        <div class="flex">
+          <img
+            src="https://m.media-amazon.com/images/I/61AIPPYY7cL._AC_UF1000,1000_QL80_.jpg"
+            alt="Dairy, Bread"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-0">Dairy, Bread</h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://tse4.mm.bing.net/th/id/OIP.-6iDrSL0rFPhvNr7joghXgHaHa?r=0&rs=1&pid=ImgDetMain"
+            alt="Chocolate"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-0">Chocolate</h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://tse4.mm.bing.net/th/id/OIP.JNmdbWWupVFO3pOdIhwt1QHaHY?r=0&rs=1&pid=ImgDetMain"
+            alt="More Dairy"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-0">Dairy, Bread</h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pet-care-service-design-template-c8545145a404444a76605eaa804eeef6_screen.jpg?ts=1708077969"
+            alt="Pet Care"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-0">Pet & Care</h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pet-care-service-design-template-c8545145a404444a76605eaa804eeef6_screen.jpg?ts=1708077969"
+            alt="Pet Care"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-0">Pet & Care</h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pet-care-service-design-template-c8545145a404444a76605eaa804eeef6_screen.jpg?ts=1708077969"
+            alt="Pet Care"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-0">Pet & Care</h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pet-care-service-design-template-c8545145a404444a76605eaa804eeef6_screen.jpg?ts=1708077969"
+            alt="Pet Care"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-0">Pet & Care</h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pet-care-service-design-template-c8545145a404444a76605eaa804eeef6_screen.jpg?ts=1708077969"
+            alt="Pet Care"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-0">Pet & Care</h6>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- repeat -->
     <div class="container mt-2">
-        <div class="pan-container">
-            <div class="flex">
-                <img src="https://5.imimg.com/data5/SELLER/Default/2022/9/GJ/CS/IA/159590095/2-1000x1000.jpg"
-                    alt="Paan Corner" />
-                <div class="card-body">
-                    <h6 class="card-title text-center mb-0">Paan Corner</h6>
-                </div>
-            </div>
-
-            <div class="flex">
-                <img src="https://5.imimg.com/data5/SELLER/Default/2022/9/GJ/CS/IA/159590095/2-1000x1000.jpg"
-                    alt="Paan Corner" />
-                <div class="card-body">
-                    <h6 class="card-title text-center mb-0">Paan Corner</h6>
-                </div>
-            </div>
-
-            <div class="flex">
-                <img src="https://5.imimg.com/data5/SELLER/Default/2022/9/GJ/CS/IA/159590095/2-1000x1000.jpg"
-                    alt="Paan Corner" />
-                <div class="card-body">
-                    <h6 class="card-title text-center mb-0">Paan Corner</h6>
-                </div>
-            </div>
-
-            <div class="flex">
-                <img src="https://5.imimg.com/data5/SELLER/Default/2022/9/GJ/CS/IA/159590095/2-1000x1000.jpg"
-                    alt="Paan Corner" />
-                <div class="card-body">
-                    <h6 class="card-title text-center mb-0">Paan Corner</h6>
-                </div>
-            </div>
-
-            <div class="flex">
-                <img src="https://5.imimg.com/data5/SELLER/Default/2022/9/GJ/CS/IA/159590095/2-1000x1000.jpg"
-                    alt="Paan Corner" />
-                <div class="card-body">
-                    <h6 class="card-title text-center mb-0">Paan Corner</h6>
-                </div>
-            </div>
-
-            <div class="flex">
-                <img src="https://m.media-amazon.com/images/I/61AIPPYY7cL._AC_UF1000,1000_QL80_.jpg"
-                    alt="Dairy, Bread" />
-                <div class="card-body">
-                    <h6 class="card-title text-center mb-0">Dairy, Bread</h6>
-                </div>
-            </div>
-
-            <div class="flex">
-                <img src="https://tse4.mm.bing.net/th/id/OIP.-6iDrSL0rFPhvNr7joghXgHaHa?r=0&rs=1&pid=ImgDetMain"
-                    alt="Chocolate" />
-                <div class="card-body">
-                    <h6 class="card-title text-center mb-0">Chocolate</h6>
-                </div>
-            </div>
-
-            <div class="flex">
-                <img src="https://tse4.mm.bing.net/th/id/OIP.JNmdbWWupVFO3pOdIhwt1QHaHY?r=0&rs=1&pid=ImgDetMain"
-                    alt="More Dairy" />
-                <div class="card-body">
-                    <h6 class="card-title text-center mb-0">Dairy, Bread</h6>
-                </div>
-            </div>
-
-            <div class="flex">
-                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pet-care-service-design-template-c8545145a404444a76605eaa804eeef6_screen.jpg?ts=1708077969"
-                    alt="Pet Care" />
-                <div class="card-body">
-                    <h6 class="card-title text-center mb-0">Pet & Care</h6>
-                </div>
-            </div>
+      <div class="pan-container">
+        <div class="flex">
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2022/9/GJ/CS/IA/159590095/2-1000x1000.jpg"
+            alt="Paan Corner"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-0">Paan Corner</h6>
+          </div>
         </div>
+
+        <div class="flex">
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2022/9/GJ/CS/IA/159590095/2-1000x1000.jpg"
+            alt="Paan Corner"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-0">Paan Corner</h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2022/9/GJ/CS/IA/159590095/2-1000x1000.jpg"
+            alt="Paan Corner"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-0">Paan Corner</h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2022/9/GJ/CS/IA/159590095/2-1000x1000.jpg"
+            alt="Paan Corner"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-0">Paan Corner</h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2022/9/GJ/CS/IA/159590095/2-1000x1000.jpg"
+            alt="Paan Corner"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-0">Paan Corner</h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://m.media-amazon.com/images/I/61AIPPYY7cL._AC_UF1000,1000_QL80_.jpg"
+            alt="Dairy, Bread"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-0">Dairy, Bread</h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://tse4.mm.bing.net/th/id/OIP.-6iDrSL0rFPhvNr7joghXgHaHa?r=0&rs=1&pid=ImgDetMain"
+            alt="Chocolate"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-0">Chocolate</h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://tse4.mm.bing.net/th/id/OIP.JNmdbWWupVFO3pOdIhwt1QHaHY?r=0&rs=1&pid=ImgDetMain"
+            alt="More Dairy"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-0">Dairy, Bread</h6>
+          </div>
+        </div>
+
+        <div class="flex">
+          <img
+            src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pet-care-service-design-template-c8545145a404444a76605eaa804eeef6_screen.jpg?ts=1708077969"
+            alt="Pet Care"
+          />
+          <div class="card-body">
+            <h6 class="card-title text-center mb-0">Pet & Care</h6>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- last section -->
 
     <div class="container mt-2">
-        <div class="scroll-container">
-            <!-- Repeat this  -->
-            <div class="flex-card">
-                <img src="https://fetchnbuy.in/cdn/shop/files/FullSizeRender_grande.jpg?v=1724562386" alt="Milk" />
-                <div class="card-flex">
-                    <div class="text">
-                        <p class="fs-6 mt-2 text-secondary">13 MINS</p>
-                        <h6 class="card-title">Amul Taza Toned Milk</h6>
-                        <p class="mt-2">500ml</p>
-                        <div class="d-flex justify-content-between align-items-center mt-2">
-                            <span class="fw-bold text-dark mb-3">₹29</span>
-                            <button class="btn btn-sm btn-outline-success rounded-pill px-3 mb-3">
-                                Add
-                            </button>
-                        </div>
-                    </div>
-                </div>
+      <div class="scroll-container">
+        <!-- Repeat this  -->
+        <div class="flex-card">
+          <img
+            src="https://fetchnbuy.in/cdn/shop/files/FullSizeRender_grande.jpg?v=1724562386"
+            alt="Milk"
+          />
+          <div class="card-flex">
+            <div class="text">
+              <p class="fs-6 mt-2 text-secondary">13 MINS</p>
+              <h6 class="card-title">Amul Taza Toned Milk</h6>
+              <p class="mt-2">500ml</p>
+              <div
+                class="d-flex justify-content-between align-items-center mt-2"
+              >
+                <span class="fw-bold text-dark mb-3">₹29</span>
+                <button
+                  class="btn btn-sm btn-outline-success rounded-pill px-3 mb-3"
+                >
+                  Add
+                </button>
+              </div>
             </div>
-            <!--more cards -->
-
-            <div class="flex-card">
-                <img src="https://sabardairy.org/wp-content/uploads/2022/05/Amul-Masti-Featured.jpg" alt="Milk" />
-                <div class="card-flex">
-                    <div class="text">
-                        <p class="fs-6 mt-2 text-secondary">13 MINS</p>
-                        <h6 class="card-title">Amul Taza Toned Milk</h6>
-                        <p class="mt-2">500ml</p>
-                        <div class="d-flex justify-content-between align-items-center mt-2">
-                            <span class="fw-bold text-dark mb-3">₹35</span>
-                            <button class="btn btn-sm btn-outline-success rounded-pill px-3 mb-3">
-                                Add
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--more cards -->
-
-            <div class="flex-card">
-                <img src="https://fetchnbuy.in/cdn/shop/files/FullSizeRender_grande.jpg?v=1724562386" alt="Milk" />
-                <div class="card-flex">
-                    <div class="text">
-                        <p class="fs-6 mt-2 text-secondary">13 MINS</p>
-                        <h6 class="card-title">Amul Taza Toned Milk</h6>
-                        <p class="mt-2">500ml</p>
-                        <div class="d-flex justify-content-between align-items-center mt-2">
-                            <span class="fw-bold text-dark mb-3">₹29</span>
-                            <button class="btn btn-sm btn-outline-success rounded-pill px-3 mb-3">
-                                Add
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--more cards -->
-
-            <div class="flex-card">
-                <img src="https://fetchnbuy.in/cdn/shop/files/FullSizeRender_grande.jpg?v=1724562386" alt="Milk" />
-                <div class="card-flex">
-                    <div class="text">
-                        <p class="fs-6 mt-2 text-secondary">13 MINS</p>
-                        <h6 class="card-title">Amul Taza Toned Milk</h6>
-                        <p class="mt-2">500ml</p>
-                        <div class="d-flex justify-content-between align-items-center mt-2">
-                            <span class="fw-bold text-dark mb-3">₹29</span>
-                            <button class="btn btn-sm btn-outline-success rounded-pill px-3 mb-3">
-                                Add
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- more cards -->
-
-            <div class="flex-card">
-                <img src="https://fetchnbuy.in/cdn/shop/files/FullSizeRender_grande.jpg?v=1724562386" alt="Milk" />
-                <div class="card-flex">
-                    <div class="text">
-                        <p class="fs-6 mt-2 text-secondary">13 MINS</p>
-                        <h6 class="card-title">Amul Taza Toned Milk</h6>
-                        <p class="mt-2">500ml</p>
-                        <div class="d-flex justify-content-between align-items-center mt-2">
-                            <span class="fw-bold text-dark mb-3">₹29</span>
-                            <button class="btn btn-sm btn-outline-success rounded-pill px-3 mb-3">
-                                Add
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--more cards -->
-
-            <div class="flex-card">
-                <img src="https://fetchnbuy.in/cdn/shop/files/FullSizeRender_grande.jpg?v=1724562386" alt="Milk" />
-                <div class="card-flex">
-                    <div class="text">
-                        <p class="fs-6 mt-2 text-secondary">13 MINS</p>
-                        <h6 class="card-title">Amul Taza Toned Milk</h6>
-                        <p class="mt-2">500ml</p>
-                        <div class="d-flex justify-content-between align-items-center mt-2">
-                            <span class="fw-bold text-dark mb-3">₹29</span>
-                            <button class="btn btn-sm btn-outline-success rounded-pill px-3 mb-3">
-                                Add
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--more cards -->
-
-            <div class="flex-card">
-                <img src="https://fetchnbuy.in/cdn/shop/files/FullSizeRender_grande.jpg?v=1724562386" alt="Milk" />
-                <div class="card-flex">
-                    <div class="text">
-                        <p class="fs-6 mt-2 text-secondary">13 MINS</p>
-                        <h6 class="card-title">Amul Taza Toned Milk</h6>
-                        <p class="mt-2">500ml</p>
-                        <div class="d-flex justify-content-between align-items-center mt-2">
-                            <span class="fw-bold text-dark mb-3">₹29</span>
-                            <button class="btn btn-sm btn-outline-success rounded-pill px-3 mb-3">
-                                Add
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--more cards -->
-
-            <div class="flex-card">
-                <img src="https://fetchnbuy.in/cdn/shop/files/FullSizeRender_grande.jpg?v=1724562386" alt="Milk" />
-                <div class="card-flex">
-                    <div class="text">
-                        <p class="fs-6 mt-2 text-secondary">13 MINS</p>
-                        <h6 class="card-title">Amul Taza Toned Milk</h6>
-                        <p class="mt-2">500ml</p>
-                        <div class="d-flex justify-content-between align-items-center mt-2">
-                            <span class="fw-bold text-dark mb-3">₹29</span>
-                            <button class="btn btn-sm btn-outline-success rounded-pill px-3 mb-3">
-                                Add
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--more cards -->
+          </div>
         </div>
+        <!--more cards -->
+
+        <div class="flex-card">
+          <img
+            src="https://sabardairy.org/wp-content/uploads/2022/05/Amul-Masti-Featured.jpg"
+            alt="Milk"
+          />
+          <div class="card-flex">
+            <div class="text">
+              <p class="fs-6 mt-2 text-secondary">13 MINS</p>
+              <h6 class="card-title">Amul Taza Toned Milk</h6>
+              <p class="mt-2">500ml</p>
+              <div
+                class="d-flex justify-content-between align-items-center mt-2"
+              >
+                <span class="fw-bold text-dark mb-3">₹35</span>
+                <button
+                  class="btn btn-sm btn-outline-success rounded-pill px-3 mb-3"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--more cards -->
+
+        <div class="flex-card">
+          <img
+            src="https://fetchnbuy.in/cdn/shop/files/FullSizeRender_grande.jpg?v=1724562386"
+            alt="Milk"
+          />
+          <div class="card-flex">
+            <div class="text">
+              <p class="fs-6 mt-2 text-secondary">13 MINS</p>
+              <h6 class="card-title">Amul Taza Toned Milk</h6>
+              <p class="mt-2">500ml</p>
+              <div
+                class="d-flex justify-content-between align-items-center mt-2"
+              >
+                <span class="fw-bold text-dark mb-3">₹29</span>
+                <button
+                  class="btn btn-sm btn-outline-success rounded-pill px-3 mb-3"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--more cards -->
+
+        <div class="flex-card">
+          <img
+            src="https://fetchnbuy.in/cdn/shop/files/FullSizeRender_grande.jpg?v=1724562386"
+            alt="Milk"
+          />
+          <div class="card-flex">
+            <div class="text">
+              <p class="fs-6 mt-2 text-secondary">13 MINS</p>
+              <h6 class="card-title">Amul Taza Toned Milk</h6>
+              <p class="mt-2">500ml</p>
+              <div
+                class="d-flex justify-content-between align-items-center mt-2"
+              >
+                <span class="fw-bold text-dark mb-3">₹29</span>
+                <button
+                  class="btn btn-sm btn-outline-success rounded-pill px-3 mb-3"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- more cards -->
+
+        <div class="flex-card">
+          <img
+            src="https://fetchnbuy.in/cdn/shop/files/FullSizeRender_grande.jpg?v=1724562386"
+            alt="Milk"
+          />
+          <div class="card-flex">
+            <div class="text">
+              <p class="fs-6 mt-2 text-secondary">13 MINS</p>
+              <h6 class="card-title">Amul Taza Toned Milk</h6>
+              <p class="mt-2">500ml</p>
+              <div
+                class="d-flex justify-content-between align-items-center mt-2"
+              >
+                <span class="fw-bold text-dark mb-3">₹29</span>
+                <button
+                  class="btn btn-sm btn-outline-success rounded-pill px-3 mb-3"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--more cards -->
+
+        <div class="flex-card">
+          <img
+            src="https://fetchnbuy.in/cdn/shop/files/FullSizeRender_grande.jpg?v=1724562386"
+            alt="Milk"
+          />
+          <div class="card-flex">
+            <div class="text">
+              <p class="fs-6 mt-2 text-secondary">13 MINS</p>
+              <h6 class="card-title">Amul Taza Toned Milk</h6>
+              <p class="mt-2">500ml</p>
+              <div
+                class="d-flex justify-content-between align-items-center mt-2"
+              >
+                <span class="fw-bold text-dark mb-3">₹29</span>
+                <button
+                  class="btn btn-sm btn-outline-success rounded-pill px-3 mb-3"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--more cards -->
+
+        <div class="flex-card">
+          <img
+            src="https://fetchnbuy.in/cdn/shop/files/FullSizeRender_grande.jpg?v=1724562386"
+            alt="Milk"
+          />
+          <div class="card-flex">
+            <div class="text">
+              <p class="fs-6 mt-2 text-secondary">13 MINS</p>
+              <h6 class="card-title">Amul Taza Toned Milk</h6>
+              <p class="mt-2">500ml</p>
+              <div
+                class="d-flex justify-content-between align-items-center mt-2"
+              >
+                <span class="fw-bold text-dark mb-3">₹29</span>
+                <button
+                  class="btn btn-sm btn-outline-success rounded-pill px-3 mb-3"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--more cards -->
+
+        <div class="flex-card">
+          <img
+            src="https://fetchnbuy.in/cdn/shop/files/FullSizeRender_grande.jpg?v=1724562386"
+            alt="Milk"
+          />
+          <div class="card-flex">
+            <div class="text">
+              <p class="fs-6 mt-2 text-secondary">13 MINS</p>
+              <h6 class="card-title">Amul Taza Toned Milk</h6>
+              <p class="mt-2">500ml</p>
+              <div
+                class="d-flex justify-content-between align-items-center mt-2"
+              >
+                <span class="fw-bold text-dark mb-3">₹29</span>
+                <button
+                  class="btn btn-sm btn-outline-success rounded-pill px-3 mb-3"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--more cards -->
+      </div>
     </div>
 
-    <!-- Footer Section -->
-    <div class="bottom-nav-wrapper">
-        <div class="bottom-nav">
-            <div class="nav-item active">
-                <i class="fas fa-home"></i>
-                <span>Home</span>
-            </div>
-            <div class="nav-item">
-                <i class="fas fa-shopping-bag"></i>
-                <span>Order Again</span>
-            </div>
-            <div class="nav-item">
-                <i class="fas fa-th"></i>
-                <span>Categories</span>
-            </div>
-            <div class="nav-item">
-                <i class="fas fa-print"></i>
-                <span>Print</span>
-            </div>
-            <div class="nav-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2uL62HSH00g5Ue7jkje3j2nyNHbWyye91Lg&s"
-                    style="border-radius: 5px;" alt="bistro" />
-            </div>
-        </div>
+      <!-- Footer Section -->
+       <div class="bottom-nav-wrapper">
+  <div class="bottom-nav">
+    <div class="nav-item active">
+      <i class="fas fa-home"></i>
+      <span>Home</span>
     </div>
+    <div class="nav-item">
+      <i class="fas fa-shopping-bag"></i>
+      <span>Order Again</span>
+    </div>
+    <div class="nav-item">
+      <i class="fas fa-th"></i>
+      <span>Categories</span>
+    </div>
+    <div class="nav-item">
+      <i class="fas fa-print"></i>
+      <span>Print</span>
+    </div>
+    <div class="nav-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2uL62HSH00g5Ue7jkje3j2nyNHbWyye91Lg&s" style="border-radius: 5px;" alt="bistro" />
+    </div>
+  </div>
+  </div>
 
 
     <div id="footer-placeholder"></div>
     <script>
-        fetch("footer.html")
-            .then((res) => res.text())
-            .then((data) => {
-                document.getElementById("footer-placeholder").innerHTML = data;
-            });
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
     </script>
-    <div class="container mt-3"></div>
+    <!-- <div class="container mt-3"></div> -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
