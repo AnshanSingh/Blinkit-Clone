@@ -75,6 +75,19 @@ body {
   height: auto;
   margin: 20px auto;
 }
+.image-wrapper {
+  position: relative;
+}
+
+.add-btn-on-img {
+  position: absolute;
+  bottom: 8px;
+  left: 10px;
+  z-index: 2;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+}
 
 @media (max-width: 768px) {
   .main-wrapper {

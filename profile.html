@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    .header {
+        background-color: #fff;
+        padding: 10px;
+        box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+    }
+
+    .cake {
+        position: absolute;
+        left: 70%;
+        top: 24px;
+    }
+
+    .cake img {
+        height: 90px;
+        width: 150px;
+    }
+
+    .card img {
+        width: 190px;
+        height: 130px;
+    }
+
+    .card-wrapper {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: nowrap;
+    }
+
+    .card-wrapper .card {
+        flex: 1;
+        min-width: 0;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .card-wrapper img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+    }
+
+    @media (max-width: 576px) {
+        .header {
+            overflow: hidden;
+        }
+
+        .container {
+            padding-left: 8px !important;
+            padding-right: 8px !important;
+        }
+
+        .cake img {
+            max-width: 100px;
+        }
+
+        .birthday {
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+
+        .card-wrapper {
+            flex-wrap: nowrap;
+        }
+
+        .card-wrapper .card {
+            height: 110px;
+        }
+
+        .card-wrapper img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        .card-title {
+            font-size: 0.85rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .call h3 {
+            font-size: 1rem;
+        }
+
+        .call p {
+            font-size: 0.85rem;
+        }
+
+        .call {
+            flex-wrap: wrap;
+        }
+
+        .mobile-spacing {
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+    }
+
+    .section-title {
+        color: gray;
+        font-size: 14px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .list-group-item {
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 0;
+    }
+
+    .icon-label {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .icon-circle {
+        background-color: #f1f3f5;
+        border-radius: 50%;
+        padding: 8px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon-circle img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .dot {
+        height: 8px;
+        width: 8px;
+        background-color: red;
+        border-radius: 50%;
+        margin-left: 4px;
+    }
+
+    .arrow {
+        font-size: 20px;
+        color: black;
+    }
+</style>
+
+<body>
+
+    <div class="container header sticky-top d-flex align-items-center">
+        <i class="fa-solid fa-arrow-left"></i>
+        <p class="fw-bold mt-3 ms-2">Profile</p>
+    </div>
+
+    <div class="container">
+        <h2>Your account</h2>
+        <div class="call d-flex align-items-center">
+            <i class="fa-solid fa-phone"></i>
+            <p class=" ms-2 m-0">8005243920</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="birthday mt-2 p-3 rounded-3 position-relative" style="background-color: lightyellow;">
+            <h3>Add your birthday</h3>
+            <div class="call d-flex align-items-center" style="color: green">
+                <p class="">Enter Details</p>
+                <i class="fa-solid fa-caret-right mb-2 ms-2"></i>
+            </div>
+            <div class="cake">
+                <img src="https://png.pngtree.com/png-vector/20230808/ourmid/pngtree-birthday-cake-dessert-pink-three-dimensional-png-image_9119670.png"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div class="container mt-2">
+        <div class="card-wrapper">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkUQWcpFX9B0JZqE1wML1v0jWb2SYZI2qxtg&s"
+                    alt="">
+                <div class="card-body p-2">
+                    <h5 class="card-title m-0">Card Title</h5>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="https://png.pngtree.com/png-vector/20190214/ourmid/pngtree-customer-support-icon-graphic-design-template-vector-png-image_384606.jpg"
+                    alt="">
+                <div class="card-body p-2">
+                    <h5 class="card-title m-0">Support</h5>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="https://static.vecteezy.com/system/resources/previews/023/642/784/non_2x/secure-payment-icon-isolated-on-white-background-vector.jpg"
+                    alt="">
+                <div class="card-body p-2">
+                    <h5 class="card-title m-0">Card Title</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="mobile-spacing  mt-2 p-3 rounded-3 position-relative "
+            style="background-color: rgba(135, 206, 250, 0.349);">
+            <div class="call d-flex align-items-center">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <h3 class="ms-4">App update available</h3>
+                <p class="ms-auto mb-0">v17.27.2</p>
+                <i class="fa-solid fa-caret-right m-0 ms-2"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="mobile-spacing  mt-2 p-3 rounded-3 position-relative "
+            style="background-color: rgba(135, 206, 250, 0.349);">
+            <div class="call d-flex align-items-center">
+                <i class="fa-solid fa-sun"></i>
+                <h3 class="ms-4">Appearance</h3>
+                <button class="ms-auto mb-0 border-0 rounded-2 me-2">Light</button>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Your Information -->
+        <div class="section-title">Your Information</div>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="icon-label">
+                    <div class="icon-circle"><img src="https://img.icons8.com/ios/50/order-history.png" /></div>
+                    Your orders
+                </div>
+                <span class="arrow">&gt;</span>
+            </li>
+
+            <li class="list-group-item">
+                <div class="icon-label">
+                    <div class="icon-circle"><img src="https://img.icons8.com/ios/50/like--v1.png" /></div>
+                    Your wishlist
+                </div>
+                <span class="arrow">&gt;</span>
+            </li>
+
+            <li class="list-group-item">
+                <div class="icon-label">
+                    <div class="icon-circle"><img src="https://img.icons8.com/ios/50/salad.png" /></div>
+                    Bookmarked recipes
+                </div>
+                <span class="arrow">&gt;</span>
+            </li>
+
+            <li class="list-group-item">
+                <div class="icon-label">
+                    <div class="icon-circle"><img src="https://img.icons8.com/ios/50/address.png" /></div>
+                    Address book
+                </div>
+                <span class="arrow">&gt;</span>
+            </li>
+
+            <li class="list-group-item">
+                <div class="icon-label">
+                    <div class="icon-circle"><img src="https://img.icons8.com/ios/50/document--v1.png" /></div>
+                    GST details
+                </div>
+                <span class="arrow">&gt;</span>
+            </li>
+
+            <li class="list-group-item">
+                <div class="icon-label">
+                    <div class="icon-circle"><img src="https://img.icons8.com/ios/50/gift-card.png" /></div>
+                    E-Gift Cards
+                </div>
+                <span class="arrow">&gt;</span>
+            </li>
+
+            <li class="list-group-item">
+                <div class="icon-label">
+                    <div class="icon-circle"><img src="https://img.icons8.com/ios/50/medical-doctor.png" /></div>
+                    Your Prescriptions
+                </div>
+                <span class="arrow">&gt;</span>
+            </li>
+        </ul>
+
+        <!-- Payments and Coupons -->
+        <div class="section-title">Payments and Coupons</div>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="icon-label">
+                    <div class="icon-circle"><img src="https://img.icons8.com/ios/50/wallet--v1.png" /></div>
+                    Wallet
+                </div>
+                <span class="arrow">&gt;</span>
+            </li>
+
+            <li class="list-group-item">
+                <div class="icon-label">
+                    <div class="icon-circle"><img src="https://img.icons8.com/ios/50/wallet.png" /></div>
+                    Blinkit Money
+                </div>
+                <span class="arrow">&gt;</span>
+            </li>
+
+            <li class="list-group-item">
+                <div class="icon-label">
+                    <div class="icon-circle"><img src="https://img.icons8.com/ios/50/card-payment.png" /></div>
+                    Payment settings
+                </div>
+                <span class="arrow">&gt;</span>
+            </li>
+
+            <li class="list-group-item">
+                <div class="icon-label">
+                    <div class="icon-circle"><img src="https://img.icons8.com/ios/50/settings--v1.png" /></div>
+                    Your collected rewards
+                </div>
+                <div class="d-flex align-items-center">
+                    <span class="dot"></span>
+                    <span class="arrow ms-2">&gt;</span>
+                </div>
+            </li>
+        </ul>
+
+
+
+        <!-- Payments and Coupons -->
+        <div class="section-title">OTHER INFORMATION</div>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="icon-label">
+                    <div class="icon-circle"><img src="https://img.icons8.com/ios/50/wallet--v1.png" /></div>
+                    shere the app
+                </div>
+                <span class="arrow">&gt;</span>
+            </li>
+
+            <li class="list-group-item">
+                <div class="icon-label">
+                    <div class="icon-circle"><img src="https://img.icons8.com/ios/50/wallet.png" /></div>
+                    About us
+                </div>
+                <span class="arrow">&gt;</span>
+            </li>
+
+            <li class="list-group-item">
+                <div class="icon-label">
+                    <div class="icon-circle"><img src="https://img.icons8.com/ios/50/card-payment.png" /></div>
+                    Get Feeding india receipt
+                </div>
+                <span class="arrow">&gt;</span>
+            </li>
+
+            <li class="list-group-item">
+                <div class="icon-label">
+                    <div class="icon-circle"><img src="https://img.icons8.com/ios/50/settings--v1.png" /></div>
+                    Account Privacy
+                </div>
+                <div class="d-flex align-items-center">
+                    <span class="dot"></span>
+                    <span class="arrow ms-2">&gt;</span>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div class="icon-label">
+                    <div class="icon-circle"><img src="https://img.icons8.com/ios/50/wallet.png" /></div>
+                    Notification preference
+                </div>
+                <span class="arrow">&gt;</span>
+            </li>
+
+            <li class="list-group-item">
+                <div class="icon-label">
+                    <div class="icon-circle"><img src="https://img.icons8.com/ios/50/card-payment.png" /></div>
+                    Log out
+                </div>
+                <span class="arrow">&gt;</span>
+            </li>
+        </ul>
+    </div>
+    </div>
+
+</body>
+
+</html>
