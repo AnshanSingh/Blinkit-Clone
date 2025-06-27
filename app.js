@@ -100,7 +100,7 @@ categoryItems.forEach(item => {
     contentArea.style.display = "none";
 
     // Fetch data from Flask backend
-fetch(`http://localhost:5000/api/category/${category}`)
+fetch(`https://blinkit-clone-mywx.onrender.com/api/category/${category}`)
   .then(res => res.json())
   .then(data => {
 
