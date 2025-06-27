@@ -15,16 +15,17 @@
   document.addEventListener("DOMContentLoaded", function () {
     // Target all boxes with the class
     document.querySelectorAll(".custom-box").forEach(function (box) {
-      box.style.cursor = "pointer"; // change cursor to pointer
+      box.style.cursor = "pointer";
 
       box.addEventListener("click", function () {
-        const url = box.getAttribute("data-url"); // e.g., "vegetables.html"
+        const url = box.getAttribute("data-url"); 
         if (url) {
-          window.location.href = url; // redirect
+          window.location.href = url; 
         }
       });
     });
   });
+
 
 
   // oil html
@@ -32,10 +33,10 @@
     document.addEventListener("DOMContentLoaded", function () {
     // Target all boxes with the class
     document.querySelectorAll(".flex-week").forEach(function (box) {
-      box.style.cursor = "pointer"; // change cursor to pointer
+      box.style.cursor = "pointer"; 
 
       box.addEventListener("click", function () {
-        const url = box.getAttribute("data-url"); // e.g., "vegetables.html"
+        const url = box.getAttribute("data-url"); 
         if (url) {
           window.location.href = url; // redirect
         }
@@ -72,49 +73,22 @@
     })
   })
 
+  // paancontainer
+
+    document.querySelectorAll(".flex").forEach(card => {
+    card.addEventListener("click", () => {
+      const url = card.getAttribute("data-url");
+      if (url) {
+        window.location.href = url;
+      }
+    });
+  });
+
   // for navbar refresh
-
-//   const categoryItems = document.querySelectorAll(".category-item");
-// const contentArea = document.getElementById("categoryContent");
-// const loader = document.getElementById("loader");
-
-// categoryItems.forEach(item => {
-//   item.addEventListener("click", () => {
-//     const category = item.getAttribute("data-category");
-
-//     window.scrollTo({ top: 0, behavior: 'smooth' });
-
-
-//     // Show loader, hide content
-//     loader.style.display = "block";
-//     contentArea.style.display = "none";
-
-//     // Wait 1.5 seconds before fetching
-//     setTimeout(() => {
-//       fetch(`${category}.html`)
-//         .then(res => {
-//           if (!res.ok) throw new Error("File not found");
-//           return res.text();
-//         })
-//         .then(html => {
-//           contentArea.innerHTML = html;
-//         })
-//         .catch(err => {
-//           contentArea.innerHTML = `<p class="text-danger">Content not available.</p>`;
-//           console.error(err);
-//         })
-//         .finally(() => {
-//           loader.style.display = "none"; // Hide loader
-//           contentArea.style.display = "block"; // Show content
-//         });
-//     }, 1500); // 1.5 second delay
-//   });
-// });
-
 
 const categoryItems = document.querySelectorAll(".category-item");
 const contentArea = document.getElementById("categoryContent");
-const loader = document.getElementById("loader"); // make sure this exists in HTML
+const loader = document.getElementById("loader"); 
 
 categoryItems.forEach(item => {
   item.addEventListener("click", () => {
@@ -126,12 +100,12 @@ categoryItems.forEach(item => {
     contentArea.style.display = "none";
 
     // Fetch data from Flask backend
-fetch(`https://blinkit-clone-mywx.onrender.com/api/category/${category}`)
+fetch(`http://localhost:5000/api/category/${category}`)
   .then(res => res.json())
   .then(data => {
 
 
-    let html = `<div class="row g-2">`;  // g-2 = small gap
+    let html = `<div class="row g-2">`;  
 
 data.products.forEach(product => {
   html += `
@@ -165,5 +139,7 @@ html += `</div>`;
 
   });
 });
+
+
 
 
