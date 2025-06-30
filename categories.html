@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .custom-box {
+        height: 230px;
+        border-radius: 10px;
+        background-color: rgba(135, 207, 235, 0.863);
+        /* background-color: #e6f6fb; */
+    }
+
+
+    @media (max-width: 768px) {
+        .custom-box {
+            height: 165px;
+            /* margin-left: 10px; */
+        }
+    }
+
+    .grocery {
+        max-width: 100%;
+        width: 1300px;
+        height: 560px;
+        /* height: auto; */
+        margin: 0 auto;
+    }
+
+    .sells .col-2 {
+        flex: 0 0 30%;
+        max-width: 30%;
+        margin-bottom: 10px;
+    }
+
+    .kitchen-img {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .kitchen-img img {
+        width: 100%;
+        max-width: 360px;
+        height: 200px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    footer h1 {
+        color: #ccc;
+        padding: 7px;
+        font-size: 40px;
+    }
+
+    /* kitchen */
+    @media (max-width: 768px) {
+        .kitchen-img img {
+            width: 100px;
+            height: 140px;
+            object-fit: cover;
+            gap: 2px;
+        }
+
+        .grocery {
+            width: 94%;
+            height: 435px;
+            margin: 10px auto;
+            border: none !important;
+        }
+    }
+</style>
+
+<body>
+
+
+    <div class="border p-2 mt-2 grocery">
+        <h4 class="fs-6 fs-md-4 fw-bold ms-0 ms-md-4">Grocery & Kitchen</h4>
+        <div class="row d-flex justify-content-evenly align-items-center sells">
+            <div class="col-2 border text-center custom-box" data-url="masala.html">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/31280796/pexels-photo-31280796.jpeg" alt="" />
+                </div>
+                <p class="mt-2 fs-6 fs-sm-6 fs-md-5 fs-lg-4">Oil, Masala</p>
+            </div>
+
+            <div class="col-2 border text-center custom-box" data-url="vegatables.html">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/142520/pexels-photo-142520.jpeg" alt="" />
+
+                </div>
+                <p class="mt-2 fs-6 fs-sm-6 fs-md-5 fs-lg-4">Vegetable</p>
+            </div>
+
+            <div class="col-2 border text-center  custom-box" data-url="oats.html">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/10822135/pexels-photo-10822135.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+
+                </div>
+                <p class="mt-2 fs-6 fs-sm-6 fs-md-5 fs-lg-4">Breakfast</p>
+            </div>
+            <!--  repeat -- -->
+            <div class="col-2 border text-center mt-4 custom-box" data-url="dairy.html">
+                <div class="kitchen-img">
+                    <img src="https://t4.ftcdn.net/jpg/01/40/27/57/360_F_140275752_F22I8zvpniqS4dEqtLTCeXoyJjK6uiKz.jpg"
+                        alt="" />
+                </div>
+                <p class="mt-2 fs-6 fs-sm-6 fs-md-5 fs-lg-4">Dairy, Bread</p>
+            </div>
+            <div class="col-2 border text-center mt-4 custom-box" data-url="vegatables.html">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/23801241/pexels-photo-23801241/free-photo-of-smiling-brunette-woman-holding-bag-of-flour.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+
+                </div>
+                <p class="mt-2 fs-6 fs-sm-6 fs-md-5 fs-lg-4">Kaju</p>
+            </div>
+
+            <div class="col-2 border text-center mt-4 custom-box" data-url="masala.html">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/13418302/pexels-photo-13418302.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+
+                </div>
+                <p class="mt-2 fs-6 fs-sm-6 fs-md-5 fs-lg-4">Breads</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Snack and Drinks -->
+
+    <div class="border p-2 mt-2 grocery">
+        <h4 class="fs-6 fs-md-4 fw-bold ms-0 ms-md-4">Snacks & Drinks</h4>
+        <div class="row d-flex justify-content-evenly align-items-center sells">
+            <div class="col-2 border text-center custom-box">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/3252138/pexels-photo-3252138.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+                </div>
+                <p class="mt-2 fs-6 fs-sm-6 fs-md-5 fs-lg-4">Chai</p>
+            </div>
+            <div class="col-2 border text-center custom-box" data-url="oats.html">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/24870653/pexels-photo-24870653/free-photo-of-a-hot-dog-and-chips-are-served-with-a-drink.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+
+                </div>
+                <p class="mt-2 fs-6 fs-sm-6 fs-md-5 fs-lg-4">Juice</p>
+            </div>
+
+            <div class="col-2 border text-center custom-box" data-url="dairy.html">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/6941039/pexels-photo-6941039.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+
+                </div>
+                <p class="mt-2 fs-6 fs-sm-6 fs-md-5 fs-lg-4">Snacks</p>
+            </div>
+            <!--  repeat -- -->
+            <div class="col-2 border text-center mt-3 custom-box" data-url="oats.html">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/6941028/pexels-photo-6941028.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+                </div>
+                <p class="mt-2 fs-6 fs-sm-6 fs-md-5 fs-lg-4">Cranchy</p>
+            </div>
+            <div class="col-2 border text-center mt-3 custom-box" data-url="oats.html">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/4113664/pexels-photo-4113664.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+
+                </div>
+                <p class="mt-2 fs-6 fs-sm-6 fs-md-5 fs-lg-4">Cocacola</p>
+            </div>
+
+            <div class="col-2 border text-center mt-3 custom-box" data-url="oats.html">
+                <div class="kitchen-img">
+                    <img src="https://images.pexels.com/photos/12464511/pexels-photo-12464511.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="" />
+                </div>
+                <p class="mt-2 fs-6 fs-sm-6 fs-md-5 fs-lg-4">Fruity</p>
+            </div>
+        </div>
+        <footer class="border-bottom mt-3">
+            <h1>India's last <br> minute app <span><img
+                        src="https://t4.ftcdn.net/jpg/06/01/61/87/360_F_601618751_O84KQREj3LWRurHGcowm5zmBzgXAwECs.jpg"
+                        alt="" class="logo"></span></h1>
+
+        </footer>
+        <h1 style="color: #ccc;">blinkit</h1>
+    </div>
+    </div>
+
+</body>
+
+</html>
