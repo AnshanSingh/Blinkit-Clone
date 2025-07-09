@@ -257,6 +257,99 @@
         }
     }
 
+    .get-popup-overlay {
+        position: fixed;
+        bottom: 0;
+        left: 15%;
+        right: 15%;
+        top: 0;
+        background: rgba(0, 0, 0, 0.4);
+        display: none;
+        justify-content: center;
+        align-items: flex-end;
+        z-index: 9999;
+    }
+
+    .get-popup {
+        background: white;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding: 20px;
+        animation: slideUp 0.3s ease-in-out;
+    }
+
+    .get-header {
+        /* position: relative; */
+        text-align: center;
+
+    }
+
+    .close-btn {
+        position: absolute;
+        text-align: center;
+        bottom: 43%;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .get-body {
+        text-align: center;
+    }
+
+    .gst-body h3 {
+        margin: 15px 0 5px;
+    }
+
+    .get-body input {
+        width: 100%;
+        padding: 10px;
+        margin: 15px 0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+
+    .confirm-btn {
+        width: 100%;
+        padding: 12px;
+        background: #999;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .terms-text {
+        font-size: 12px;
+        color: #777;
+        margin-top: 10px;
+    }
+
+    @media (max-width: 576px) {
+        .get-popup-overlay {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+        }
+
+        .get-popup {
+            border-radius: 16px 16px 0 0;
+            padding: 16px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .close-btn {
+            position: fixed;
+            bottom: 47%;
+        }
+    }
+
+
 
     @keyframes slideUp {
         from {
@@ -493,24 +586,29 @@
 
             <li class="list-group-item">
                 <div class="icon-label">
+                    <a href="about.html" style="text-decoration: none; color: black;">
                     <div class="icon-circle"><img src="https://img.icons8.com/ios/50/wallet.png" /></div>
                     About us
+                    </a>
                 </div>
                 <span class="arrow">&gt;</span>
             </li>
 
-            <li class="list-group-item">
+            <li class="list-group-item" onclick="openGSTPopup()">
                 <div class="icon-label">
+                    <a href="getFeeding.html" style="text-decoration: none; color: black;">
                     <div class="icon-circle"><img src="https://img.icons8.com/ios/50/card-payment.png" /></div>
-                    Get Feeding india receipt
+                   <p class="mb-0" style="cursor: pointer;">Get Feeding india receipt</p> </a>
                 </div>
                 <span class="arrow">&gt;</span>
             </li>
 
             <li class="list-group-item">
                 <div class="icon-label">
+                    <a href="privacy.html"  style="text-decoration: none; color: black;">
                     <div class="icon-circle"><img src="https://img.icons8.com/ios/50/settings--v1.png" /></div>
                     Account Privacy
+                    </a>
                 </div>
                 <div class="d-flex align-items-center">
                     <span class="dot"></span>
@@ -520,8 +618,10 @@
 
             <li class="list-group-item">
                 <div class="icon-label">
+                    <a href="Notification.html" style="text-decoration: none; color: black;">
                     <div class="icon-circle"><img src="https://img.icons8.com/ios/50/wallet.png" /></div>
                     Notification preference
+                    </a>
                 </div>
                 <span class="arrow">&gt;</span>
             </li>
@@ -554,6 +654,22 @@
         </div>
     </div>
 
+        <div id="getPopup" class="get-popup-overlay">
+        <div class="get-popup">
+            <div class="get-header">
+                <span class="close-btn" onclick="closeGETPopup()">×</span>
+            </div>
+            <div class="gst-body">
+                <img src="https://img.icons8.com/ios/100/document--v1.png" width="80" />
+                <h3                                                                                                                                               >Add GST Details</h3>
+                <p>If you're a business owner, add your GST details and get GST invoice on your orders</p>
+                <input type="text" placeholder="GET Number" />
+                <button class="confirm-btn">Confirm</button>
+                <p class="terms-text">By continuing, you agree to our <a href="#">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </div>
+
 
 
     <script>
@@ -564,6 +680,16 @@
 
         function closeGSTPopup() {
             document.getElementById("gstPopup").style.display = "none";
+            document.body.style.overflow = "";
+        }
+
+          function openGETPopup() {
+            document.getElementById("getPopup").style.display = "flex";
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeGETPopup() {
+            document.getElementById("getPopup").style.display = "none";
             document.body.style.overflow = "";
         }
     </script>
