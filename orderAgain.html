@@ -413,6 +413,17 @@
         </footer>
         <h1 style="color: #ccc;">blinkit</h1>
     </div>
+
+    <div id="footer"></div>
+
+<script>
+  fetch("bottomfooter.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
+
 </body>
 
 </html>

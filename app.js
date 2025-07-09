@@ -142,4 +142,22 @@ html += `</div>`;
 
 
 
+// for footer fix when i navigate
+function loadPage(page) {
+  const content = document.getElementById("content-area");
+
+  if (page === "home") {
+    content.innerHTML = "<h1>Welcome to Home Page</h1>";
+  } else if (page === "order") {
+    content.innerHTML = "<h1>Order Again Page</h1>";
+  } else if (page === "categories") {
+    content.innerHTML = "<h1>Categories Page</h1>";
+  } else if (page === "print") {
+    content.innerHTML = "<h1>Print Page</h1>";
+  }
+}
+
+
+
+
 
