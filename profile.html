@@ -164,6 +164,109 @@
         font-size: 20px;
         color: black;
     }
+
+    .gst-popup-overlay {
+        position: fixed;
+        bottom: 0;
+        left: 15%;
+        right: 15%;
+        top: 0;
+        background: rgba(0, 0, 0, 0.4);
+        display: none;
+        justify-content: center;
+        align-items: flex-end;
+        z-index: 9999;
+    }
+
+    .gst-popup {
+        background: white;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding: 20px;
+        animation: slideUp 0.3s ease-in-out;
+    }
+
+    .gst-header {
+        /* position: relative; */
+        text-align: center;
+
+    }
+
+    .close-btn {
+        position: absolute;
+        text-align: center;
+        bottom: 43%;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .gst-body {
+        text-align: center;
+    }
+
+    .gst-body h3 {
+        margin: 15px 0 5px;
+    }
+
+    .gst-body input {
+        width: 100%;
+        padding: 10px;
+        margin: 15px 0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+
+    .confirm-btn {
+        width: 100%;
+        padding: 12px;
+        background: #999;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .terms-text {
+        font-size: 12px;
+        color: #777;
+        margin-top: 10px;
+    }
+
+    @media (max-width: 576px) {
+        .gst-popup-overlay {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+        }
+
+        .gst-popup {
+            border-radius: 16px 16px 0 0;
+            padding: 16px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .close-btn {
+            position: fixed;
+            bottom: 47%;
+        }
+    }
+
+
+    @keyframes slideUp {
+        from {
+            transform: translateY(100%);
+        }
+
+        to {
+            transform: translateY(0%);
+        }
+    }
 </style>
 
 <body>
@@ -226,10 +329,10 @@
                 <a href="Payment.html" style="text-decoration: none; color: black;">
                     <div class="card-body p-2">
                         <h5 class="card-title m-0">Payments</h5>
+                    </div>
                 </a>
             </div>
         </div>
-    </div>
     </div>
 
 
@@ -273,17 +376,21 @@
 
             <li class="list-group-item">
                 <div class="icon-label">
-                    <div class="icon-circle"><img src="https://img.icons8.com/ios/50/like--v1.png" /></div>
-                    Your wishlist
+                    <a href="wishlist.html" style="text-decoration: none; color: black;">
+                        <div class="icon-circle"><img src="https://img.icons8.com/ios/50/like--v1.png" /></div>
+                        Your wishlist
                 </div>
+                </a>
                 <span class="arrow">&gt;</span>
             </li>
 
             <li class="list-group-item">
                 <div class="icon-label">
-                    <div class="icon-circle"><img src="https://img.icons8.com/ios/50/salad.png" /></div>
-                    Bookmarked recipes
+                    <a href="bookmarked.html" style="text-decoration: none; color: black;">
+                        <div class="icon-circle"><img src="https://img.icons8.com/ios/50/salad.png" /></div>
+                        Bookmarked recipes
                 </div>
+                </a>
                 <span class="arrow">&gt;</span>
             </li>
 
@@ -295,19 +402,23 @@
                 <span class="arrow">&gt;</span>
             </li>
 
-            <li class="list-group-item">
+            <li class="list-group-item" onclick="openGSTPopup()">
                 <div class="icon-label">
-                    <div class="icon-circle"><img src="https://img.icons8.com/ios/50/document--v1.png" /></div>
-                    GST details
+                    <div class="icon-circle">
+                        <img src="https://img.icons8.com/ios/50/document--v1.png" />
+                    </div>
+                    <p style="cursor: pointer; margin-bottom: 0;">GST details</p>
                 </div>
                 <span class="arrow">&gt;</span>
             </li>
 
             <li class="list-group-item">
                 <div class="icon-label">
-                    <div class="icon-circle"><img src="https://img.icons8.com/ios/50/gift-card.png" /></div>
-                    E-Gift Cards
+                    <a href="Egift.html" style="text-decoration: none; color: black;">
+                        <div class="icon-circle"><img src="https://img.icons8.com/ios/50/gift-card.png" /></div>
+                        E-Gift Cards
                 </div>
+                </a>
                 <span class="arrow">&gt;</span>
             </li>
 
@@ -325,33 +436,41 @@
         <ul class="list-group">
             <li class="list-group-item">
                 <div class="icon-label">
-                    <div class="icon-circle"><img src="https://img.icons8.com/ios/50/wallet--v1.png" /></div>
-                    Wallet
+                    <a href="wallet.html" style="text-decoration: none; color: black;">
+                        <div class="icon-circle"><img src="https://img.icons8.com/ios/50/wallet--v1.png" /></div>
+                        Wallet
                 </div>
+                </a>
                 <span class="arrow">&gt;</span>
             </li>
 
             <li class="list-group-item">
                 <div class="icon-label">
-                    <div class="icon-circle"><img src="https://img.icons8.com/ios/50/wallet.png" /></div>
-                    Blinkit Money
+                    <a href="money.html" style="text-decoration: none; color: black;">
+                        <div class="icon-circle"><img src="https://img.icons8.com/ios/50/wallet.png" /></div>
+                        Blinkit Money
                 </div>
+                </a>
                 <span class="arrow">&gt;</span>
             </li>
 
             <li class="list-group-item">
                 <div class="icon-label">
-                    <div class="icon-circle"><img src="https://img.icons8.com/ios/50/card-payment.png" /></div>
-                    Payment settings
+                    <a href="Payment.html" style="text-decoration: none; color: black;">
+                        <div class="icon-circle"><img src="https://img.icons8.com/ios/50/card-payment.png" /></div>
+                        Payment settings
                 </div>
+                </a>
                 <span class="arrow">&gt;</span>
             </li>
 
             <li class="list-group-item">
                 <div class="icon-label">
-                    <div class="icon-circle"><img src="https://img.icons8.com/ios/50/settings--v1.png" /></div>
-                    Your collected rewards
+                    <a href="reward.html" style="text-decoration: none; color: black;">
+                        <div class="icon-circle"><img src="https://img.icons8.com/ios/50/settings--v1.png" /></div>
+                        Your collected rewards
                 </div>
+                </a>
                 <div class="d-flex align-items-center">
                     <span class="dot"></span>
                     <span class="arrow ms-2">&gt;</span>
@@ -417,6 +536,37 @@
         </ul>
     </div>
     </div>
+
+    <!-- GST Bottom Sheet Popup (add this near the bottom of the body) -->
+    <div id="gstPopup" class="gst-popup-overlay">
+        <div class="gst-popup">
+            <div class="gst-header">
+                <span class="close-btn" onclick="closeGSTPopup()">×</span>
+            </div>
+            <div class="gst-body">
+                <img src="https://img.icons8.com/ios/100/document--v1.png" width="80" />
+                <h3>Add GST Details</h3>
+                <p>If you're a business owner, add your GST details and get GST invoice on your orders</p>
+                <input type="text" placeholder="GST Number" />
+                <button class="confirm-btn">Confirm</button>
+                <p class="terms-text">By continuing, you agree to our <a href="#">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        function openGSTPopup() {
+            document.getElementById("gstPopup").style.display = "flex";
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeGSTPopup() {
+            document.getElementById("gstPopup").style.display = "none";
+            document.body.style.overflow = "";
+        }
+    </script>
 
 </body>
 
