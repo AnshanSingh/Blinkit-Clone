@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+</head>
+<style>
+     .rupye {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 150px auto 0 auto;
+    text-align: center;
+  }
+
+  .buttons {
+    margin-top: 20px;
+  }
+
+  .buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+  }
+  ul li{
+    text-align: justify;
+  }
+
+  @media(max-width: 576px){
+    .wrapper{
+        width: 80px;
+    }
+    p{
+        font-size: 14px;
+    }
+  }
+</style>
+<body>
+    
+    <div class="container header p-3 d-flex align-items-center">
+          <i class="fa-solid fa-arrow-left"></i>
+      <p class="fw-bold ms-3 mb-0">Add money</p>
+    </div>
+
+
+    <div class="container rupye ">
+        <img src="https://media.istockphoto.com/id/1416459126/vector/cost-symbol-rupee-increase-icon-income-vector-symbol-isolated-on-background.jpg?s=612x612&w=is&k=20&c=M2KhAI7vbVGnvTXLfomE1Zz55DBVynNrV__FVHlukQg=" alt="" width="40" height="40">
+        <p>Enter amount to add</p>
+        <h4>₹2000</h4>
+        <p>you can add a maximum of ₹1,00,000 in this month</p>
+
+        <input type="number" id="amountInput" placeholder="Enter amount" />
+        <div class="buttons">
+            <button onclick="setAmount(500)">+₹500</button>
+            <button onclick="setAmount(1000)">+₹1000</button>
+            <button onclick="setAmount(2000)">+2000</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h4 class="mt-5">Note</h4>
+        <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cupiditate maiores, accusamus assumenda laboriosam ipsa doloribus quibusdam laudantium, optio doloremque accusantium hic numquam, recusandae incidunt totam illo minima mollitia molestias!</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, earum!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolore voluptas! Earum esse amet veniam recusandae illum exercitationem voluptate fugit!</li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+            <span class="border-1 p-2 bg-light rounded-2">
+                <img src="https://i.pinimg.com/736x/2a/cf/b6/2acfb6fb41f7fcb82c3230afdecff714.jpg" alt="" width="30px" height="30px">
+                </span>
+                <p class="text-muted ms-3">PAY USING</p>
+            </div>
+            <div class="card wrapper" style="width: 220px; background-color: green; color: white;">
+                <div class="d-flex align-items-center p-2 text-center justify-content-between">
+                    <div class="paise">
+                    <p class="mb-0">₹2000.00</p>
+                    <p class="mb-0">Total</p>
+                    </div>
+                    <p class="mb-0" onclick="addMoney()">Add Money</p>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+        
+        <p id="result" class="text-success mt-2"></p>
+        </div>
+
+    </footer>
+
+
+    <script>
+
+        function addMoney(){
+    const amount = document.getElementById('amountInput').value;
+
+    fetch('http://localhost:5000/add-money', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ amount: amount })
+    })
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById('result').innerText = data.message;
+    })
+    .catch(err => {
+        alert("Something went wrong");
+    });
+}
+
+
+
+
+
+        // function setAmount(value){
+        //     document.getElementById('amountInput').value = value;
+        // }
+        // function addMoney(){
+        //     const amount = document.getElementById('amountInput').value;
+        //      fetch('/add-money', {
+        //         method: 'POST',
+        //         headers: {'Content-Type': 'application/json'},
+        //         body: Json.stringify({amount: amount})
+        //      })
+        //      .then(res => res.json())
+        //      .then(data => {
+        //         document.getElementById('result').innerText = data.message;
+        //      })
+        //      .catch(err => {
+        //         alert("something went wrong")
+        //      });
+        // }
+    </script>
+</body>
+</html>
