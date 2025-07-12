@@ -158,6 +158,25 @@ function loadPage(page) {
 }
 
 
+// for database
+const amount = 100; // or however you collect it from user
+
+fetch('http://localhost:5000/add-money', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({ amount })
+})
+.then(res => {
+  if (!res.ok) throw new Error("Server error");
+  return res.json();
+})
+.then(data => alert(data.message))
+.catch(err => alert("Something went wrong: " + err.message));
+
+
+
 
 
 

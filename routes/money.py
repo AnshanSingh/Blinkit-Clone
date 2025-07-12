@@ -1,7 +1,9 @@
 from flask import Blueprint, request, jsonify
+from flask_cors import CORS      # ✅ Add this
 from database import get_connection
 
 money_routes = Blueprint("money", __name__)
+CORS(money_routes)               # ✅ This is required!
 
 @money_routes.route('/add-money', methods=['POST'])
 def add_money():

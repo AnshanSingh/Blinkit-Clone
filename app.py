@@ -76,28 +76,7 @@ def get_category(name):
             {"name": "Phone", "price": 20000, "image": "https://images.pexels.com/photos/3373738/pexels-photo-3373738.jpeg"},
             {"name": "Phone", "price": 20000, "image": "https://images.pexels.com/photos/20499754/pexels-photo-20499754.jpeg"}
         ]
-    # elif name == "feature":
-    #     products = [
-    #          { "name": "Parle Monaco Cheeslings Classic Biscuit",
-    #         "weight": "300g",
-    #         "price": 39,
-    #         "mrp": 160,
-    #         "discount": "10% off",
-    #         "rating": 4,
-    #         "ratingCount": 1956,
-    #         "time": "8 MINS","image": "https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg"},
-    #           { "name": "Parle Monaco Cheeslings Classic Biscuit",
-    #         "weight": "300g",
-    #         "price": 39,
-    #         "mrp": 160,
-    #         "discount": "10% off",
-    #         "rating": 4,
-    #         "ratingCount": 1956, "image": "https://images.pexels.com/photos/31683433/pexels-photo-31683433.jpeg"},   
-    #         {"image": "https://images.pexels.com/photos/1619651/pexels-photo-1619651.jpeg"},
-    #         {"image": "https://images.pexels.com/photos/18589085/pexels-photo-18589085.jpeg"},
-    #         {"https://images.pexels.com/photos/5099868/pexels-photo-5099868.jpeg"},
-    #         {"image": "https://images.pexels.com/photos/3330855/pexels-photo-3330855.jpeg"}
-    #     ]
+
     else:
         products = [
             {"name": "Laptop", "price": 50000, "image": "https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg"},
@@ -392,15 +371,20 @@ def get_paan():
     return jsonify({"category": "paan", "products": products})
 
 
+from flask import Flask
+from routes.money import money_routes  # your Blueprint file
+from flask_cors import CORS
 
-from flask import request
+app = Flask(__name__)
+CORS(app)
 
-@app.route('/add-money', methods=['POST'])
-def add_money():
-    data = request.get_json()
-    amount = data.get('amount')
+# Register Blueprint
+app.register_blueprint(money_routes)
 
-    return jsonify({"message": f"Successfully added ₹{amount}!"})
+# Other routes...
+if __name__ == '__main__':
+    app.run(debug=True, port=5000)
+
 
 
 

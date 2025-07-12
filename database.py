@@ -3,7 +3,7 @@ import mysql.connector
 def get_connection():
     return mysql.connector.connect(
         host="localhost",
-        user="your_user",
+        user="root",
         password="your_password",
-        database="your_database"
+        database="blinkit"
     )
