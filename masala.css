@@ -26,7 +26,8 @@ body {
 }
 
 .left-categories {
-  width: 100px;
+  width: 25%;
+  max-width: 25%;
   height: 90vh;
   background-color: #fff;
   border-right: 1px solid #ccc;
@@ -45,6 +46,7 @@ body {
 }
 
 .right-products {
+  width: 75%;
   flex-grow: 1;
   height: 90vh;
   overflow-y: auto;
@@ -83,8 +85,8 @@ body {
   }
 
   .left-categories {
-    width: 15%;
-    /* overflow-x: hidden; */
+    width: 30%;         /* ✅ Wider on mobile if needed */
+    max-width: 30%;
     overflow-y: auto;
     height: 100vh;
     border-right: none;
@@ -92,7 +94,7 @@ body {
   }
 
   .right-products {
-    width: 85%;
+    width: 70%;
     height: 100vh;
   }
   .product-card {
@@ -113,4 +115,8 @@ body {
     font-size: 0.75rem;
     margin-right: 10px;
   }
+ 
 }
+
+
+

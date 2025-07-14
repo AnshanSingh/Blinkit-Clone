@@ -26,6 +26,57 @@
     });
   });
 
+  // for google microphone
+ 
+  const micIcon = document.getElementById("micIcon");
+  const voicePopup = document.getElementById("voicePopup");
+
+  micIcon.addEventListener("click", () => {
+    voicePopup.style.display = "block";
+  });
+
+  function closePopup() {
+    voicePopup.style.display = "none";
+  }
+
+  // for when click input
+
+const searchInput = document.getElementById("searchInput");
+const liveResults = document.getElementById("liveResults");
+
+// Example product list (you can replace this with API call later)
+const items = [
+  "Mango", "Banana", "Apple", "Litchi", "Tomato", "Diaper XXL",
+  "Milk", "Bread", "Butter", "Chips", "Chocolates"
+];
+
+searchInput.addEventListener("input", () => {
+  const query = searchInput.value.toLowerCase();
+  if (query.trim() === "") {
+    liveResults.style.display = "none";
+    return;
+  }
+
+  const filtered = items.filter(item => item.toLowerCase().includes(query));
+  
+  if (filtered.length === 0) {
+    liveResults.innerHTML = "<p>No results found</p>";
+  } else {
+    liveResults.innerHTML = filtered.map(item => `<p>${item}</p>`).join("");
+  }
+
+  liveResults.style.display = "block";
+});
+
+// Optional: Hide result box when user clicks outside
+document.addEventListener("click", function (e) {
+  if (!searchInput.contains(e.target) && !liveResults.contains(e.target)) {
+    liveResults.style.display = "none";
+  }
+});
+
+
+
 
 
   // oil html

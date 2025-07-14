@@ -48,14 +48,24 @@
 
     <div class="sticky-wrapper" id="stickyElement">
       <div class="container my-3">
-        <div class="input-group rounded-pill bg-white px-3 py-2 align-items-center">
+        <div class="input-group rounded-4 bg-white px-3 py-2 align-items-center position-relative">
           <span class="input-group-text bg-white border-0">
             <i class="fa-solid fa-magnifying-glass"></i>
           </span>
-          <input type="text" class="form-control border-0" placeholder='Search "diaper xxl"' aria-label="Search" />
-          <span class="input-group-text bg-white border-0"></span>
+          <input type="text" id="searchInput" class="form-control border-0" placeholder='Search "diaper xxl"' aria-label="Search" />
+          <span class="input-group-text bg-white border-0 text-dark">|</span>
+          <i class="fa-solid fa-microphone" id="micIcon" style="cursor: pointer;"></i>
         </div>
       </div>
+      <div id="liveResults" class="live-search-box"></div>
+
+      <div id="voicePopup" class="voice-popup">
+  <div class="popup-box">
+    <i class="fa-solid fa-microphone"></i>
+    <p>Listening... Please say something</p>
+    <button class="btn btn-danger btn-sm mt-2" onclick="closePopup()">Close</button>
+  </div>
+</div>
       <!-- Categories Menu -->
       <div class="container mb-3">
         <div class="d-flex justify-content-between text-white text-center overflow-auto gap-3 py-2 category-scroll">
@@ -420,7 +430,7 @@
   <div class="border p-2 mt-2 grocery">
     <h4 class="fs-6 fs-md-4 fw-bold ms-0 ms-md-4">Snacks & Drinks</h4>
     <div class="row d-flex justify-content-evenly align-items-center sells">
-      <div class="col-2 border text-center custom-box">
+      <div class="col-2 border text-center custom-box" data-url="oats.html">
         <div class="kitchen-img">
           <img src="https://images.pexels.com/photos/3252138/pexels-photo-3252138.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="" />
@@ -472,6 +482,7 @@
       </div>
     </div>
   </div>
+  
 
   <!-- Beauty & Personal Care -->
 
