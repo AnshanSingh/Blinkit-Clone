@@ -371,21 +371,6 @@ def get_paan():
     return jsonify({"category": "paan", "products": products})
 
 
-from flask import Flask
-from routes.money import money_routes  # your Blueprint file
-from flask_cors import CORS
-
-app = Flask(__name__)
-CORS(app)
-
-# Register Blueprint
-app.register_blueprint(money_routes)
-
-# Other routes...
-if __name__ == '__main__':
-    app.run(debug=True, port=5000)
-
-
 
 
 if __name__ == '__main__':
