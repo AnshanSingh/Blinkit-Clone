@@ -10,6 +10,17 @@
       document.getElementById("footer-placeholder").innerHTML = data;
     });
 
+    // category-item
+      document.querySelectorAll('.category-item').forEach(item => {
+    item.addEventListener('click', function () {
+      // Remove active class from all
+      document.querySelectorAll('.category-item').forEach(i => i.classList.remove('active'));
+      
+      // Add active class to clicked item
+      this.classList.add('active');
+    });
+  });
+
     // vetables.html
 
   document.addEventListener("DOMContentLoaded", function () {

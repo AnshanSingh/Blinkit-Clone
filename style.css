@@ -7,11 +7,31 @@
 
 /* navbar */
 .category-scroll {
-  overflow-x: auto;
-  white-space: nowrap;
-  scrollbar-width: thin;
-  scrollbar-color: #ccc transparent;
+  overflow-x: auto;         
+  white-space: nowrap;        
+  -webkit-overflow-scrolling: touch;
+  background-color: #004953;  
+  border-radius: 8px;
 }
+
+.category-item {
+  display: inline-block;   
+  min-width: 70px;
+  padding-bottom: 4px; 
+  border-bottom: 2px solid transparent;           
+  /* flex-shrink: 0;              */
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+.category-item.active {
+  border-bottom: 2px solid white;
+}
+.category-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+
 .category-scroll::-webkit-scrollbar {
   height: 5px;
 }
