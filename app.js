@@ -39,11 +39,6 @@
     voicePopup.style.display = "none";
   }
 
-  // for when click input
-
-const searchInput = document.getElementById("searchInput");
-const liveResults = document.getElementById("liveResults");
-
 // Example product list (you can replace this with API call later)
 const items = [
   "Mango", "Banana", "Apple", "Litchi", "Tomato", "Diaper XXL",
