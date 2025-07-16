@@ -19,7 +19,6 @@
   min-width: 70px;
   padding-bottom: 4px; 
   border-bottom: 2px solid transparent;           
-  /* flex-shrink: 0;              */
   text-align: center;
   cursor: pointer;
   transition: border-color 0.3s;
@@ -578,3 +577,4 @@
     text-align: center;
   }
 }
+

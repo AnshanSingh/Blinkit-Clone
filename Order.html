@@ -74,7 +74,7 @@
 <body>
 
     <div class="container header sticky-top d-flex align-items-center">
-        <i class="fa-solid fa-arrow-left"></i>
+        <i class="fa-solid fa-arrow-left" onclick="goBack()" style="cursor: pointer;"></i>
         <p class="fw-bold mt-3 ms-2">Your Order</p>
     </div>
     <div class="container">
@@ -118,6 +118,10 @@
         closeBtn.addEventListener("click", () => {
             footerPopup.style.display = "none";
         })
+
+        function goBack(){
+            window.history.back();
+        }
     </script>
 </body>
 

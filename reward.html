@@ -33,7 +33,7 @@
 <body>
 
     <div class="container header p-3 sticky-top d-flex align-items-center">
-        <i class="fa-solid fa-arrow-left"></i>
+        <i class="fa-solid fa-arrow-left" onclick="goBack()" style="cursor: pointer;"></i>
         <p class="fw-bold ms-4 mb-0">you collected reward</p>
     </div>
     <div class="container">
@@ -41,6 +41,11 @@
         <h4 class="text-center mt-3">Nothing here yet..</h4>
     </div>
 
+    <script>
+        function goBack(){
+            window.history.back()
+        }
+    </script>
 </body>
 
 </html>

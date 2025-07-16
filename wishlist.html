@@ -66,7 +66,7 @@
 <body>
     <div class="container header p-3 sticky-top d-flex align-items-center justify-content-between">
         <div class="d-flex align-items-center">
-            <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-arrow-left" onclick="goBack()" style="cursor: pointer;"></i>
             <p class="fw-bold ms-3 mb-0">wishlist</p>
         </div>
         <i class="fa-solid fa-magnifying-glass"></i>
@@ -115,6 +115,12 @@
                 style="font-size: 20px; background-color: #28a74660;">&gt;</a>
         </div>
     </div>
+
+    <script>
+        function goBack(){
+            window.history.back();
+        }
+    </script>
 </body>
 
 </html>

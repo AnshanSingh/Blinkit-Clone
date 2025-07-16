@@ -365,7 +365,8 @@
 <body>
 
     <div class="container header sticky-top d-flex align-items-center">
-        <i class="fa-solid fa-arrow-left"></i>
+        <!-- <i class="fa-solid fa-arrow-left"></i> -->
+          <i class="fa-solid fa-arrow-left" onclick="goBack()" style="cursor: pointer;"></i>
         <p class="fw-bold mt-3 ms-2">Profile</p>
     </div>
 
@@ -373,7 +374,7 @@
         <h2>Your account</h2>
         <div class="call d-flex align-items-center">
             <i class="fa-solid fa-phone"></i>
-            <p class=" ms-2 m-0">8005243920</p>
+            <p class=" ms-2 m-0">800524XXXX</p>
         </div>
     </div>
 
@@ -673,6 +674,11 @@
 
 
     <script>
+
+
+    function goBack(){
+        window.history.back();
+    }
         function openGSTPopup() {
             document.getElementById("gstPopup").style.display = "flex";
             document.body.style.overflow = "hidden";

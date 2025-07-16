@@ -28,7 +28,7 @@
   </style>
   <body>
     <div class="container d-flex align-items-center header p-3">
-      <i class="fa-solid fa-arrow-left"></i>
+      <i class="fa-solid fa-arrow-left" onclick="goBack()" style="cursor: pointer;"></i>
       <p class="fw-bold ms-3 mb-0">About Us</p>
     </div>
 
@@ -87,5 +87,11 @@
 
       <p>Terms & Condition</p>
     </div>
+
+    <script>
+      function goBack(){
+        window.history.back()
+      }
+    </script>
   </body>
 </html>
