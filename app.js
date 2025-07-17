@@ -13,18 +13,23 @@
     // category-item
       document.querySelectorAll('.category-item').forEach(item => {
     item.addEventListener('click', function () {
-      // Remove active class from all
+     
       document.querySelectorAll('.category-item').forEach(i => i.classList.remove('active'));
-      
-      // Add active class to clicked item
       this.classList.add('active');
     });
   });
 
+
+
+  // for logo
+   setTimeout(() => {
+    document.getElementById('splash-screen').style.display = 'none';
+    document.getElementById('main-content').style.display = 'block';
+  }, 3000);
+
     // vetables.html
 
   document.addEventListener("DOMContentLoaded", function () {
-    // Target all boxes with the class
     document.querySelectorAll(".custom-box").forEach(function (box) {
       box.style.cursor = "pointer";
 
@@ -50,52 +55,16 @@
     voicePopup.style.display = "none";
   }
 
-// // Example product list (you can replace this with API call later)
-// const items = [
-//   "Mango", "Banana", "Apple", "Litchi", "Tomato", "Diaper XXL",
-//   "Milk", "Bread", "Butter", "Chips", "Chocolates"
-// ];
-
-// searchInput.addEventListener("input", () => {
-//   const query = searchInput.value.toLowerCase();
-//   if (query.trim() === "") {
-//     liveResults.style.display = "none";
-//     return;
-//   }
-
-//   const filtered = items.filter(item => item.toLowerCase().includes(query));
-  
-//   if (filtered.length === 0) {
-//     liveResults.innerHTML = "<p>No results found</p>";
-//   } else {
-//     liveResults.innerHTML = filtered.map(item => `<p>${item}</p>`).join("");
-//   }
-
-//   liveResults.style.display = "block";
-// });
-
-// // Optional: Hide result box when user clicks outside
-// document.addEventListener("click", function (e) {
-//   if (!searchInput.contains(e.target) && !liveResults.contains(e.target)) {
-//     liveResults.style.display = "none";
-//   }
-// });
-
-
-
-
-
   // oil html
 
     document.addEventListener("DOMContentLoaded", function () {
-    // Target all boxes with the class
     document.querySelectorAll(".flex-week").forEach(function (box) {
       box.style.cursor = "pointer"; 
 
       box.addEventListener("click", function () {
         const url = box.getAttribute("data-url"); 
         if (url) {
-          window.location.href = url; // redirect
+          window.location.href = url;
         }
       });
     });
@@ -151,7 +120,6 @@ categoryItems.forEach(item => {
   item.addEventListener("click", () => {
     const category = item.getAttribute("data-category");
 
-    // Scroll to top and show loader
     window.scrollTo({ top: 0, behavior: 'smooth' });
     loader.style.display = "block";
     contentArea.style.display = "none";
@@ -197,22 +165,6 @@ html += `</div>`;
   });
 });
 
-
-
-// for footer fix when i navigate
-function loadPage(page) {
-  const content = document.getElementById("content-area");
-
-  if (page === "home") {
-    content.innerHTML = "<h1>Welcome to Home Page</h1>";
-  } else if (page === "order") {
-    content.innerHTML = "<h1>Order Again Page</h1>";
-  } else if (page === "categories") {
-    content.innerHTML = "<h1>Categories Page</h1>";
-  } else if (page === "print") {
-    content.innerHTML = "<h1>Print Page</h1>";
-  }
-}
 
 
 
