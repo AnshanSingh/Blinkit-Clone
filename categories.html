@@ -12,6 +12,53 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
+
+
+.navbar-brand {
+  color: #f5d000;
+}
+.container span {
+  color: #f5d000;
+}
+
+.voice-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  height: 250px;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 25px 35px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  z-index: 9999;
+  text-align: center;
+}
+
+.voice-popup i {
+  font-size: 32px;
+  color: green;
+  margin-bottom: 10px;
+}
+
+.voice-popup button {
+  margin-top: 10px;
+}
+
+
+.banner-box {
+  max-height: 430px;
+}
+.category {
+  position: relative;
+}
+.main-wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: #004953;
+}
     .custom-box {
         height: 230px;
         border-radius: 10px;
@@ -82,9 +129,63 @@
             border: none !important;
         }
     }
+
+
 </style>
 
 <body>
+
+
+     <div class="main-wrapper py-3">
+    <div class="container header-top">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <div class="fw-bold text-white">Blinkit in</div>
+          <div class="d-flex align-items-center text-white">
+            <h3 class="fw-bold mb-0 me-2">19 minute</h3>
+            <span class="surge-badge">Surge applicable</span>
+          </div>
+          <div class="text-white">Block D, Sector 10, Meerut Divison</div>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <!-- <i class="fa-solid fa-wallet"></i> -->
+           <span style="background-color: white; padding: 3px; border-radius: 50%;">
+          <a href="money.html">
+            <img src="https://png.pngtree.com/png-vector/20240204/ourmid/pngtree-yellow-wallet-and-debit-card-isolated-png-image_11607446.png" alt="" width="40" height="40"/>
+          </a></span>
+          <span style="background-color: white; padding: 8px; border-radius: 50%;">
+          <a href="profile.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/9131/9131478.png" alt="" width="30" height="30" />
+          </a>
+          </span>
+        </div>
+      </div>
+    </div>
+     
+
+
+    <div class="sticky-wrapper" id="stickyElement">
+      <div class="container my-3">
+        <div class="input-group rounded-4 bg-white px-3 py-2 align-items-center position-relative" data-url="input.html">
+          <span class="input-group-text bg-white border-0">
+            <i class="fa-solid fa-magnifying-glass text-dark"></i>
+          </span>
+          <input type="text" id="searchInput" class="form-control border-0" placeholder='Search "diaper xxl"' aria-label="Search" />
+          <span class="input-group-text bg-white border-0 text-dark">|</span>
+          <i class="fa-solid fa-microphone" id="micIcon" style="cursor: pointer;"></i>
+          
+        </div>
+      </div>
+
+      <div id="voicePopup" class="voice-popup">
+  <div class="popup-box">
+    <i class="fa-solid fa-microphone"></i>
+    <p>Listening... Please say something</p>
+    <button class="btn btn-danger btn-sm mt-2" onclick="closePopup()">Close</button>
+  </div>
+</div>
+</div>
+     </div>
 
 
     <div class="border p-2 mt-2 grocery">

@@ -71,7 +71,7 @@
 
      <div class="bottom-nav-wrapper">
     <div class="bottom-nav">
-      <div class="nav-item">
+      <div class="nav-item category-item">
         <a href="index.html"class="text-decoration-none text-dark fs-5">
           <i class="fas fa-home"></i>
         </a>
@@ -103,17 +103,18 @@
     </div>
   </div>
 
-  <!-- <script>
-   function changeTheme(el) {
-    // Remove color from all nav-item spans
-    document.querySelectorAll('.bottom-nav .nav-item span').forEach(span => {
-      span.style.color = '';
-    });
+  <script>
+  const micIcon = document.getElementById("micIcon");
+  const voicePopup = document.getElementById("voicePopup");
 
-    // Highlight only the clicked one
-    el.style.color = '#00C853'; // green like Blinkit
-    }
-  </script> -->
+  micIcon.addEventListener("click", () => {
+    voicePopup.style.display = "block";
+  });
+
+  function closePopup() {
+    voicePopup.style.display = "none";
+  }
+  </script>
 
 </body>
 </html>

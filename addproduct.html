@@ -424,6 +424,53 @@
             </div>
         </div>
     </div>
+
+     <footer>
+    <div class="container d-flex align-items-center justify-content-between bg-light mt-2 p-2">
+      <div class="paisa">
+        <h6 class="m-0">2 pieces (500 g- 800g)</h6>
+        <p class="m-0"><strong>₹199 MRP</strong> <strike>₹252</strike> <small>21% OFF</small></p>
+        <small>Inclusive of all taxes</small>
+      </div>
+    
+      <button onclick="toggleCart()" id="cartBtn" class="p-2 rounded-3 d-flex align-items-center" id="addToCartBtn" style="background-color: green; color: white; border: 0;">
+       <span id="cartText"> Add to cart</span>
+      </button> 
+
+  
+    </div>
+  </footer>
+
+     <script>
+ let qty = 1;
+  let isAdded = false;
+
+  function toggleCart() {
+    const btn = document.getElementById('cartBtn');
+    const cartText = document.getElementById('cartText');
+
+    if (!isAdded) {
+      isAdded = true;
+      cartText.innerHTML = `
+        <span onclick="updateQty(-1)" style="cursor:pointer;">-</span>
+        <span id="qty" class="mx-2">${qty}</span>
+        <span onclick="updateQty(1)" style="cursor:pointer;">+</span>
+      `;
+    }
+  }
+
+  function updateQty(change) {
+    qty += change;
+
+    if (qty <= 0) {
+      qty = 1;
+      isAdded = false;
+      document.getElementById('cartText').innerText = "Add to cart";
+    } else {
+      document.getElementById('qty').innerText = qty;
+    }
+  }
+  </script>
 </body>
 
 </html>
